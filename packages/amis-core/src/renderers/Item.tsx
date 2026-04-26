@@ -2420,7 +2420,7 @@ export function registerFormItem(config: FormItemConfig): RendererConfig {
   });
 }
 
-export function FormItem(config: FormItemBasicConfig) {
+export /* #__PURE__ */ function FormItem(config: FormItemBasicConfig) {
   return function (component: FormControlComponent): any {
     const renderer = registerFormItem({
       ...config,

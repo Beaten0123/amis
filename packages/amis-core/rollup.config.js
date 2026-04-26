@@ -208,7 +208,10 @@ function getPlugins(format = 'esm') {
       `
     }),
     // Tree shaking re-enabled - previously disabled due to implicit side effects in renderers
-    // TODO: Add /* #__PURE__ */ annotations to renderer exports for optimal tree shaking
+    // Note: Full tree shaking requires architectural changes - renderer registration
+    // via side-effect imports (registerRenderer calls) prevents unused renderers
+    // from being eliminated. Consider dynamic imports for heavy renderers.
+    // Partial #__PURE__ annotations added to factory functions (FormItem, OptionsControl)
     // {
     //   name: 'disable-treeshake',
     //   transform(code, id) {

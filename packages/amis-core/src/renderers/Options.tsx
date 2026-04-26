@@ -1474,7 +1474,7 @@ export function registerOptionsControl(config: OptionsConfig) {
   });
 }
 
-export function OptionsControl(config: OptionsBasicConfig) {
+export /* #__PURE__ */ function OptionsControl(config: OptionsBasicConfig) {
   return function <T extends React.ComponentType<OptionsControlProps>>(
     component: T
   ): T {
