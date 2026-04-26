@@ -37,17 +37,17 @@ import {
   AMISFunction
 } from 'amis-core';
 import {Button, Icon} from 'amis-ui';
-import omit from 'lodash/omit';
-import findIndex from 'lodash/findIndex';
+import omit from 'lodash-es/omit';
+import findIndex from 'lodash-es/findIndex';
 import {BaseTableSchema, TableSchema} from '../Table';
 import {SchemaApi, AMISClassName} from '../../Schema';
-import find from 'lodash/find';
-import debounce from 'lodash/debounce';
+import find from 'lodash-es/find';
+import debounce from 'lodash-es/debounce';
 import moment from 'moment';
 import {sortArray, str2function} from 'amis-core';
 
 import type {SchemaTokenizeableString} from '../../Schema';
-import isPlainObject from 'lodash/isPlainObject';
+import isPlainObject from 'lodash-es/isPlainObject';
 
 // 占位符定义为常量
 const PLACE_HOLDER = '__isPlaceholder';

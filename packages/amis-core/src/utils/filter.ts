@@ -1,10 +1,10 @@
 import {extendsFilters, FilterContext, filters} from 'amis-formula';
 import moment from 'moment';
 import {makeSorter} from './makeSorter';
-import transform from 'lodash/transform';
-import groupBy from 'lodash/groupBy';
-import uniqBy from 'lodash/uniqBy';
-import uniq from 'lodash/uniq';
+import transform from 'lodash-es/transform';
+import groupBy from 'lodash-es/groupBy';
+import uniqBy from 'lodash-es/uniqBy';
+import uniq from 'lodash-es/uniq';
 import {createObject, pickValues} from './object';
 import {string2regExp} from './string2regExp';
 import {resolveVariable} from './resolveVariable';

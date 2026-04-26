@@ -7,7 +7,7 @@ import {
 } from 'amis-core';
 import {BaseSchema} from '../Schema';
 import {resolveVariable, resolveVariableAndFilter} from 'amis-core';
-import mapValues from 'lodash/mapValues';
+import mapValues from 'lodash-es/mapValues';
 
 /**
  * WebComponent 容器渲染器。

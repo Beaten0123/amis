@@ -3,8 +3,8 @@
  */
 
 import {resolveVariableAndFilter} from './tpl-builtin';
-import mapValues from 'lodash/mapValues';
-import camelCase from 'lodash/camelCase';
+import mapValues from 'lodash-es/mapValues';
+import camelCase from 'lodash-es/camelCase';
 import {valueMap} from './style-helper';
 
 function autoAddImageURL(image: string) {

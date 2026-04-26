@@ -5,10 +5,10 @@
 
 import React from 'react';
 import {findDomCompat as findDOMNode} from 'amis-core';
-import find from 'lodash/find';
-import isEqual from 'lodash/isEqual';
-import debounce from 'lodash/debounce';
-import intersection from 'lodash/intersection';
+import find from 'lodash-es/find';
+import isEqual from 'lodash-es/isEqual';
+import debounce from 'lodash-es/debounce';
+import intersection from 'lodash-es/intersection';
 import Sortable from 'sortablejs';
 
 import {

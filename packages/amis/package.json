@@ -37,8 +37,8 @@
     }
   ],
   "dependencies": {
-    "amis-core": "^6.13.0",
-    "amis-ui": "^6.13.0",
+    "amis-core": "*",
+    "amis-ui": "*",
     "attr-accept": "2.2.2",
     "blueimp-canvastoblob": "2.1.0",
     "classnames": "2.3.2",
@@ -49,6 +49,7 @@
     "exceljs": "^4.4.0",
     "file-saver": "^2.0.2",
     "file64": "^1.0.4",
+    "fis-optimizer-terser": "^1.3.0",
     "hls.js": "1.1.3",
     "hoist-non-react-statics": "^3.3.2",
     "hotkeys-js": "^3.8.7",
@@ -59,6 +60,7 @@
     "match-sorter": "^6.3.1",
     "mobx": "^4.5.0",
     "mobx-react": "^6.3.1",
+    "mobx-react-lite": "^2.2.0",
     "mobx-state-tree": "^3.17.3",
     "moment": "^2.19.4",
     "moment-timezone": "^0.5.34",
@@ -74,8 +76,7 @@
     "sortablejs": "1.15.0",
     "tslib": "^2.3.1",
     "video-react": "0.15.0",
-    "xlsx": "^0.18.5",
-    "mobx-react-lite": "^2.2.0"
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.1.1",
@@ -111,6 +112,7 @@
     "@types/react-transition-group": "4.4.3",
     "@types/sortablejs": "^1.3.32",
     "@types/tinymce": "^4.5.24",
+    "@vitest/coverage-v8": "^4.1.5",
     "axios": "^0.25 || ^1.0",
     "babel-plugin-import": "^1.13.8",
     "bce-sdk-js": "^0.2.9",
@@ -126,6 +128,7 @@
     "jest-canvas-mock": "^2.3.0",
     "jest-environment-jsdom": "^29.0.3",
     "js-yaml": "^4.1.0",
+    "jsdom": "^29.0.2",
     "json5": "^2.2.1",
     "marked": ">=4.0.12",
     "mkdirp": "^1.0.4",
@@ -149,7 +152,8 @@
     "ts-jest": "^29.0.2",
     "ts-json-schema-generator": "2.4.0",
     "ts-node": "^10.5.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vitest": "^4.1.5"
   },
   "files": [
     "lib",
@@ -260,5 +264,23 @@
     "react": ">=16.8.6",
     "react-dom": ">=16.8.6"
   },
-  "gitHead": "37d23b4a8eb1c663bc38e8dd9040889ea1526ec4"
+  "gitHead": "37d23b4a8eb1c663bc38e8dd9040889ea1526ec4",
+  "turbo": {
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": [
+          "lib/**",
+          "esm/**"
+        ]
+      },
+      "test": {
+        "dependsOn": [
+          "build"
+        ]
+      }
+    }
+  }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import extend from 'lodash/extend';
-import cloneDeep from 'lodash/cloneDeep';
+import extend from 'lodash-es/extend';
+import cloneDeep from 'lodash-es/cloneDeep';
 import {Renderer, RendererProps, filterTarget} from 'amis-core';
 import {ServiceStore, IServiceStore} from 'amis-core';
 import {Api, RendererData, ActionObject} from 'amis-core';
@@ -39,7 +39,7 @@ import type {
   ListenerAction
 } from 'amis-core';
 import type {ScopedComponentType} from 'amis-core';
-import isPlainObject from 'lodash/isPlainObject';
+import isPlainObject from 'lodash-es/isPlainObject';
 import {isAlive} from 'mobx-state-tree';
 
 export const eventTypes = [

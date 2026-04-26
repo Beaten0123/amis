@@ -6,7 +6,7 @@ import {noop, themeable, ThemeProps} from 'amis-core';
 import {useForm, UseFormReturn, FormProvider} from 'react-hook-form';
 import {useValidationResolver} from '../hooks/use-validation-resolver';
 import {localeable, LocaleProps} from 'amis-core';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash-es/debounce';
 import {isObjectShallowModified} from 'amis-core';
 
 export type FormRef = React.MutableRefObject<

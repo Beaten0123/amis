@@ -7,8 +7,8 @@
 import React from 'react';
 import {findDomCompat as findDOMNode} from 'amis-core';
 import moment, {locale, unitOfTime} from 'moment';
-import omit from 'lodash/omit';
-import kebabCase from 'lodash/kebabCase';
+import omit from 'lodash-es/omit';
+import kebabCase from 'lodash-es/kebabCase';
 import {
   PopOver,
   Overlay,

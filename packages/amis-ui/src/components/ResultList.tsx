@@ -4,7 +4,7 @@
 import React from 'react';
 import Sortable from 'sortablejs';
 import {findDomCompat as findDOMNode} from 'amis-core';
-import cloneDeep from 'lodash/cloneDeep';
+import cloneDeep from 'lodash-es/cloneDeep';
 import cx from 'classnames';
 
 import {Option, Options} from './Select';

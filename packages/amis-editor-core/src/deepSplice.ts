@@ -1,4 +1,4 @@
-import isPlainObject from 'lodash/isPlainObject';
+import isPlainObject from 'lodash-es/isPlainObject';
 
 /**
  * 深度 splice 数组，同时返回新的对象，按需拷贝，没有副作用

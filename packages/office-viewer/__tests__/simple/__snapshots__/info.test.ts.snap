@@ -1,9 +1,9 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`info 1`] = `
 <article>
   <section
-    style="position: relative; width: 815.98px; padding: 96.00px 96.00px 96.00px 96.00px;"
+    style="position: relative; width: 815.98px; padding: 96px;"
   >
     <p
       class="docx-viewer-0-p"
@@ -38,14 +38,14 @@ exports[`info 1`] = `
     </p>
     <table
       class="enable-hBand enable-vBand docx-classname-0"
-      style="width: auto; margin-left: 7.20px; border-top: 2.00px solid black; border-left: 2.00px solid black; border-bottom: 2.00px solid black; border-right: 2.00px solid black; table-layout: fixed;"
+      style="width: auto; margin-left: 7.2px; border-top: 2px solid black; border-left: 2px solid black; border-bottom: 2px solid black; border-right: 2px solid black; table-layout: fixed;"
     >
       <tbody>
         <tr>
           <td
             class="nwCell firstRow firstCol band2Horz band2Vert"
             rowspan="2"
-            style="width: 60.00px; border-top: 2.00px solid black; border-left: 2.00px solid black; border-bottom: 1.00px solid black; border-right: 1.00px solid black;"
+            style="width: 60px; border-top: 2px solid black; border-left: 2px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"
           >
             <p
               class="docx-viewer-0-p"
@@ -72,7 +72,7 @@ exports[`info 1`] = `
             class="firstRow band2Horz band2Vert"
             colspan="2"
             rowspan="2"
-            style="width: 111.40px; border-top: 2.00px solid black; border-left: 1.00px solid black; border-bottom: 1.00px solid black; border-right: 1.00px solid black;"
+            style="width: 111.4px; border-top: 2px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"
           >
             <p
               class="docx-viewer-0-p"
@@ -92,7 +92,7 @@ exports[`info 1`] = `
           </td>
           <td
             class="neCell firstRow lastCol band2Horz band2Vert"
-            style="width: 68.60px; border-top: 2.00px solid black; border-left: 1.00px solid black; border-bottom: 1.00px solid black; border-right: 1.00px solid black;"
+            style="width: 68.6px; border-top: 2px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"
           >
             <p
               class="docx-viewer-0-p"
@@ -117,7 +117,7 @@ exports[`info 1`] = `
           </td>
           <td
             class="firstRow band2Horz band1Vert"
-            style="width: 227.99px; border-top: 2.00px solid black; border-left: 1.00px solid black; border-bottom: 1.00px solid black; border-right: 1.00px solid black;"
+            style="width: 227.99px; border-top: 2px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"
           >
             <p
               class="docx-viewer-0-p"
@@ -163,7 +163,7 @@ exports[`info 1`] = `
           <td
             class="firstRow band2Horz band2Vert"
             rowspan="7"
-            style="width: 120.00px; border-top: 2.00px solid black; border-left: 1.00px solid black; border-bottom: 1.00px solid black; border-right: 2.00px solid black; vertical-align: middle;"
+            style="width: 120px; border-top: 2px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 2px solid black; vertical-align: middle;"
           >
             <p
               class="docx-viewer-0-p"
@@ -220,7 +220,7 @@ exports[`info 1`] = `
         <tr>
           <td
             class="firstCol band1Horz band2Vert"
-            style="width: 68.60px; border-top: 1.00px solid black; border-left: 1.00px solid black; border-bottom: 1.00px solid black; border-right: 1.00px solid black;"
+            style="width: 68.6px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"
           >
             <p
               class="docx-viewer-0-p"
@@ -231,7 +231,7 @@ exports[`info 1`] = `
           </td>
           <td
             class="lastCol band1Horz band1Vert"
-            style="width: 227.99px; border-top: 1.00px solid black; border-left: 1.00px solid black; border-bottom: 1.00px solid black; border-right: 1.00px solid black; vertical-align: bottom;"
+            style="width: 227.99px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; vertical-align: bottom;"
           >
             <p
               class="docx-viewer-0-p"
@@ -278,7 +278,7 @@ exports[`info 1`] = `
         <tr>
           <td
             class="firstCol band2Horz band2Vert"
-            style="width: 60.00px; border-top: 1.00px solid black; border-left: 2.00px solid black; border-bottom: 1.00px solid black; border-right: 1.00px solid black;"
+            style="width: 60px; border-top: 1px solid black; border-left: 2px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"
           >
             <p
               class="docx-viewer-0-p"
@@ -309,7 +309,7 @@ exports[`info 1`] = `
           <td
             class="lastCol band2Horz band1Vert"
             colspan="4"
-            style="width: 407.99px; border-top: 1.00px solid black; border-left: 1.00px solid black; border-bottom: 1.00px solid black; border-right: 1.00px solid black;"
+            style="width: 407.99px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"
           >
             <p
               class="docx-viewer-0-p"
@@ -341,7 +341,7 @@ exports[`info 1`] = `
         <tr>
           <td
             class="firstCol band1Horz band2Vert"
-            style="width: 60.00px; border-top: 1.00px solid black; border-left: 2.00px solid black; border-bottom: 1.00px solid black; border-right: 1.00px solid black;"
+            style="width: 60px; border-top: 1px solid black; border-left: 2px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"
           >
             <p
               class="docx-viewer-0-p"
@@ -357,7 +357,7 @@ exports[`info 1`] = `
           <td
             class="lastCol band1Horz band1Vert"
             colspan="4"
-            style="width: 407.99px; border-top: 1.00px solid black; border-left: 1.00px solid black; border-bottom: 1.00px solid black; border-right: 1.00px solid black;"
+            style="width: 407.99px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"
           >
             <p
               class="docx-viewer-0-p"
@@ -371,7 +371,7 @@ exports[`info 1`] = `
           <td
             class="firstCol band2Horz band2Vert"
             colspan="2"
-            style="width: 96.00px; border-top: 1.00px solid black; border-left: 2.00px solid black; border-bottom: 1.00px solid black; border-right: 1.00px solid black;"
+            style="width: 96px; border-top: 1px solid black; border-left: 2px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"
           >
             <p
               class="docx-viewer-0-p"
@@ -387,7 +387,7 @@ exports[`info 1`] = `
           <td
             class="lastCol band2Horz band1Vert"
             colspan="3"
-            style="width: 371.99px; border-top: 1.00px solid black; border-left: 1.00px solid black; border-bottom: 1.00px solid black; border-right: 1.00px solid black;"
+            style="width: 371.99px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"
           >
             <p
               class="docx-viewer-0-p"
@@ -401,7 +401,7 @@ exports[`info 1`] = `
           <td
             class="firstCol band1Horz band2Vert"
             colspan="2"
-            style="width: 96.00px; border-top: 1.00px solid black; border-left: 2.00px solid black; border-bottom: 1.00px solid black; border-right: 1.00px solid black;"
+            style="width: 96px; border-top: 1px solid black; border-left: 2px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"
           >
             <p
               class="docx-viewer-0-p"
@@ -417,7 +417,7 @@ exports[`info 1`] = `
           <td
             class="lastCol band1Horz band1Vert"
             colspan="3"
-            style="width: 371.99px; border-top: 1.00px solid black; border-left: 1.00px solid black; border-bottom: 1.00px solid black; border-right: 1.00px solid black;"
+            style="width: 371.99px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"
           >
             <p
               class="docx-viewer-0-p"
@@ -440,7 +440,7 @@ exports[`info 1`] = `
           <td
             class="firstCol band2Horz band2Vert"
             colspan="2"
-            style="width: 96.00px; border-top: 1.00px solid black; border-left: 2.00px solid black; border-bottom: 1.00px solid black; border-right: 1.00px solid black;"
+            style="width: 96px; border-top: 1px solid black; border-left: 2px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"
           >
             <p
               class="docx-viewer-0-p"
@@ -456,7 +456,7 @@ exports[`info 1`] = `
           <td
             class="lastCol band2Horz band1Vert"
             colspan="3"
-            style="width: 371.99px; border-top: 1.00px solid black; border-left: 1.00px solid black; border-bottom: 1.00px solid black; border-right: 1.00px solid black;"
+            style="width: 371.99px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"
           >
             <p
               class="docx-viewer-0-p"
@@ -479,7 +479,7 @@ exports[`info 1`] = `
           <td
             class="swCell lastRow firstCol band1Horz band2Vert"
             colspan="2"
-            style="width: 96.00px; border-top: 1.00px solid black; border-left: 2.00px solid black; border-bottom: 1.00px solid black; border-right: 1.00px solid black;"
+            style="width: 96px; border-top: 1px solid black; border-left: 2px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"
           >
             <p
               class="docx-viewer-0-p"
@@ -495,7 +495,7 @@ exports[`info 1`] = `
           <td
             class="lastRow band1Horz band1Vert"
             colspan="3"
-            style="width: 371.99px; border-top: 1.00px solid black; border-left: 1.00px solid black; border-bottom: 1.00px solid black; border-right: 1.00px solid black;"
+            style="width: 371.99px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"
           >
             <p
               class="docx-viewer-0-p"
@@ -511,7 +511,7 @@ exports[`info 1`] = `
           </td>
           <td
             class="seCell lastRow lastCol band1Horz band2Vert"
-            style="width: 120.00px; border-top: 1.00px solid black; border-left: 1.00px solid black; border-bottom: 1.00px solid black; border-right: 2.00px solid black;"
+            style="width: 120px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 2px solid black;"
           >
             <p
               class="docx-viewer-0-p"

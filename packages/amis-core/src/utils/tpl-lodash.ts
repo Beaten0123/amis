@@ -1,5 +1,5 @@
 import {registerTplEnginer, filter, Enginer} from './tpl';
-import template from 'lodash/template';
+import template from 'lodash-es/template';
 import {getFilters} from './tpl-builtin';
 import React from 'react';
 import moment from 'moment';

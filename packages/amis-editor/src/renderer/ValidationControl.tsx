@@ -3,9 +3,9 @@
  */
 
 import React, {ReactNode} from 'react';
-import groupBy from 'lodash/groupBy';
-import remove from 'lodash/remove';
-import omit from 'lodash/omit';
+import groupBy from 'lodash-es/groupBy';
+import remove from 'lodash-es/remove';
+import omit from 'lodash-es/omit';
 import cx from 'classnames';
 import {ConditionBuilderFields, FormItem, flattenTree} from 'amis';
 

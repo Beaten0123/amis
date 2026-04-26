@@ -111,7 +111,7 @@ import ScaleOrigin from '../icons/scale-origin.svg';
 import If from '../icons/if.svg';
 import RotateScreen from '../icons/rotate-screen.svg';
 
-import isObject from 'lodash/isObject';
+import isObject from 'lodash-es/isObject';
 import {
   type CustomVendorFn,
   getCustomVendor,

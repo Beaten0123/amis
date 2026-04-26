@@ -16,8 +16,8 @@ const makeRegexp = (reg: string | RegExp) => {
 
   return /^$/;
 };
-import memoize from 'lodash/memoize';
-import isPlainObject from 'lodash/isPlainObject';
+import memoize from 'lodash-es/memoize';
+import isPlainObject from 'lodash-es/isPlainObject';
 import {isId, isId15, isId18} from './validateId';
 
 const makeUrlRegexp = memoize(function (options: any) {

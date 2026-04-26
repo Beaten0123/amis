@@ -2,7 +2,7 @@
  * 默认的拖拽模式实现。
  */
 import {animation} from 'amis';
-import findIndex from 'lodash/findIndex';
+import findIndex from 'lodash-es/findIndex';
 import {EditorDNDManager} from './index';
 import {renderThumbToGhost} from '../component/factory';
 import {EditorNodeType} from '../store/node';

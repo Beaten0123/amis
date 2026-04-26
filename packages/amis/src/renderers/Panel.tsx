@@ -12,7 +12,7 @@ import {
 import {BaseSchema, AMISClassName, SchemaTpl} from '../Schema';
 import {ActionSchema} from './Action';
 import {FormHorizontal} from 'amis-core';
-import omit from 'lodash/omit';
+import omit from 'lodash-es/omit';
 import {Icon} from 'amis-ui';
 
 /**

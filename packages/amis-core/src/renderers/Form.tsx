@@ -32,9 +32,9 @@ import {
   createObject
 } from '../utils/helper';
 
-import debouce from 'lodash/debounce';
-import flatten from 'lodash/flatten';
-import find from 'lodash/find';
+import debouce from 'lodash-es/debounce';
+import flatten from 'lodash-es/flatten';
+import find from 'lodash-es/find';
 import {
   ScopedContext,
   IScopedContext,
@@ -59,10 +59,10 @@ import {
   setThemeClassName
 } from '../utils';
 import {reaction} from 'mobx';
-import groupBy from 'lodash/groupBy';
-import isEqual from 'lodash/isEqual';
+import groupBy from 'lodash-es/groupBy';
+import isEqual from 'lodash-es/isEqual';
 import CustomStyle from '../components/CustomStyle';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash-es/debounce';
 import {
   AMISApi,
   AMISButtonWithAction,

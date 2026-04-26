@@ -7,7 +7,7 @@ import {EditorStoreType} from '../../store/editor';
 import {Tab, Tabs} from 'amis';
 import {autobind} from '../../util';
 import {findDomCompat as findDOMNode} from 'amis-core';
-import find from 'lodash/find';
+import find from 'lodash-es/find';
 import {PanelItem} from '../../plugin';
 import {DrawerPanel} from './DrawerPanel';
 import {DrawerRendererPanel} from './DrawerRendererPanel';

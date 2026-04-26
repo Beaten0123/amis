@@ -1,7 +1,7 @@
 import React from 'react';
 import {getPropValue, FormControlProps, createObject} from 'amis-core';
 import {ErrorBoundary} from 'amis-core';
-import omit from 'lodash/omit';
+import omit from 'lodash-es/omit';
 
 function renderCommonStatic(props: any, defaultValue: string) {
   const {type, render, staticSchema} = props;

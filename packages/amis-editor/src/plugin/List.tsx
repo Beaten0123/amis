@@ -17,7 +17,7 @@ import {
 } from 'amis-editor-core';
 import {defaultValue, getSchemaTpl} from 'amis-editor-core';
 import {diff, JSONPipeOut, repeatArray} from 'amis-editor-core';
-import set from 'lodash/set';
+import set from 'lodash-es/set';
 import {
   schemaArrayFormat,
   resolveArrayDatasource,

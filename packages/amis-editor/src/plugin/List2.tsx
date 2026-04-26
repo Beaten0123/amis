@@ -11,9 +11,9 @@ import {
 } from 'amis-editor-core';
 import {defaultValue, getSchemaTpl} from 'amis-editor-core';
 import {repeatArray} from 'amis-editor-core';
-import set from 'lodash/set';
+import set from 'lodash-es/set';
 import {escapeFormula, generateId, resolveArrayDatasource} from '../util';
-import merge from 'lodash/merge';
+import merge from 'lodash-es/merge';
 
 export class List2Plugin extends BasePlugin {
   static id = 'List2Plugin';

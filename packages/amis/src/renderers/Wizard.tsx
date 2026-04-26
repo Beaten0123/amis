@@ -37,7 +37,7 @@ import {ActionSchema} from './Action';
 
 import {tokenize, evalExpressionWithConditionBuilderAsync} from 'amis-core';
 import {StepSchema} from './Steps';
-import isEqual from 'lodash/isEqual';
+import isEqual from 'lodash-es/isEqual';
 import {AMISButtonSchema} from 'amis-core';
 
 export interface WizardStepSchema extends AMISFormBase, StepSchema {

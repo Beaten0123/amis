@@ -1,4 +1,4 @@
-import omit from 'lodash/omit';
+import omit from 'lodash-es/omit';
 import {RendererProps} from '../factory';
 import {ConditionGroupValue} from '../types';
 import {createObject} from '../utils/helper';

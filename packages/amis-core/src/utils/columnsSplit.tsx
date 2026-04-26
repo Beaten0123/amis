@@ -2,7 +2,7 @@
  * columnsCount 支持数字和数组两种格式
  */
 import React from 'react';
-import chunk from 'lodash/chunk';
+import chunk from 'lodash-es/chunk';
 
 export function columnsSplit(
   body: any[],

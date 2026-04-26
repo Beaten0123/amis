@@ -3,7 +3,7 @@ import {findDomCompat as findDOMNode} from 'amis-core';
 import Picker from './Picker';
 import PopUp from './PopUp';
 import {autobind, highlight} from 'amis-core';
-import merge from 'lodash/merge';
+import merge from 'lodash-es/merge';
 // @ts-ignore
 import {matchSorter} from 'match-sorter';
 import {Option, value2array, SelectProps} from './Select';

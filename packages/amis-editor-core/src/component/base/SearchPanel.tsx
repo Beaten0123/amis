@@ -3,7 +3,7 @@ import {observer} from 'mobx-react';
 import {Icon, InputBox, resolveVariable} from 'amis';
 import cx from 'classnames';
 import {autobind, stringRegExp} from '../../util';
-import isString from 'lodash/isString';
+import isString from 'lodash-es/isString';
 import {matchSorter} from 'match-sorter';
 
 /**

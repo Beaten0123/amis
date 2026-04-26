@@ -1,8 +1,8 @@
 import React, {ReactNode} from 'react';
-import isNumber from 'lodash/isNumber';
-import isObject from 'lodash/isObject';
-import isEqual from 'lodash/isEqual';
-import forEach from 'lodash/forEach';
+import isNumber from 'lodash-es/isNumber';
+import isObject from 'lodash-es/isObject';
+import isEqual from 'lodash-es/isEqual';
+import forEach from 'lodash-es/forEach';
 
 import {
   FormItem,

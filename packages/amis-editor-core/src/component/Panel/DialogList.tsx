@@ -10,7 +10,7 @@ import {
 } from '../../util';
 import {Button, Icon, ListMenu, PopOverContainer, confirm} from 'amis';
 import {EditorManager} from '../../manager';
-import cloneDeep from 'lodash/cloneDeep';
+import cloneDeep from 'lodash-es/cloneDeep';
 
 export interface DialogListProps {
   classnames: ClassNamesFn;

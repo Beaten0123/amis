@@ -13,8 +13,8 @@ import {
   Tree,
   Button
 } from 'amis';
-import cloneDeep from 'lodash/cloneDeep';
-import groupBy from 'lodash/groupBy';
+import cloneDeep from 'lodash-es/cloneDeep';
+import groupBy from 'lodash-es/groupBy';
 import {
   FormControlProps,
   JSONTraverse,

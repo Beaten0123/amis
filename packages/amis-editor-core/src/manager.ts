@@ -5,9 +5,9 @@
 import {reaction} from 'mobx';
 import {isAlive} from 'mobx-state-tree';
 import {parse, stringify} from 'json-ast-comments';
-import debounce from 'lodash/debounce';
-import findIndex from 'lodash/findIndex';
-import omit from 'lodash/omit';
+import debounce from 'lodash-es/debounce';
+import findIndex from 'lodash-es/findIndex';
+import omit from 'lodash-es/omit';
 import {openContextMenus, toast, alert, DataScope, DataSchema} from 'amis';
 import {
   getRenderers,

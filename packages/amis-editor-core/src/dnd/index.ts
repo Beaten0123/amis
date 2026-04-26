@@ -1,10 +1,10 @@
 /**
  * @file 拖拽相关逻辑
  */
-import find from 'lodash/find';
+import find from 'lodash-es/find';
 import {isAlive} from 'mobx-state-tree';
 import {findTree, toast} from 'amis';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash-es/debounce';
 import {EditorManager} from '../manager';
 import {DragEventContext, SubRendererInfo} from '../plugin';
 import {EditorStoreType} from '../store/editor';

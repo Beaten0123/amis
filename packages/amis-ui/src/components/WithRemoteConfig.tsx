@@ -4,7 +4,7 @@
  */
 import React from 'react';
 import hoistNonReactStatic from 'hoist-non-react-statics';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash-es/debounce';
 
 import {flow, Instance, isAlive, types} from 'mobx-state-tree';
 import {

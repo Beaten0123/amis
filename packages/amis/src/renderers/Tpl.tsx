@@ -8,7 +8,7 @@ import {
   setThemeClassName
 } from 'amis-core';
 import {filter, asyncFilter, TestIdBuilder} from 'amis-core';
-import isEmpty from 'lodash/isEmpty';
+import isEmpty from 'lodash-es/isEmpty';
 import {anyChanged, getPropValue} from 'amis-core';
 import {escapeHtml} from 'amis-core';
 import {BaseSchema, SchemaTpl} from '../Schema';

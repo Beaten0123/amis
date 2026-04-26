@@ -9,7 +9,7 @@ import {
   AMISSchemaCollection,
   AMISSchema
 } from 'amis-core';
-import pick from 'lodash/pick';
+import pick from 'lodash-es/pick';
 import {BaseSchema, AMISClassName} from '../Schema';
 
 import {ucFirst} from 'amis-core';

@@ -13,7 +13,7 @@ import AssociatedCheckboxes from './AssociatedSelection';
 import {localeable} from 'amis-core';
 import {ItemRenderStates} from './Selection';
 import {Icon} from './icons';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash-es/debounce';
 import {SpinnerExtraProps} from './Spinner';
 
 export interface TabsTransferProps

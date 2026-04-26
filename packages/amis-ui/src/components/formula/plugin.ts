@@ -6,7 +6,7 @@ import type CodeMirror from 'codemirror';
 import {findTree} from 'amis-core';
 import {FuncGroup, VariableItem} from './CodeEditor';
 import {parse} from 'amis-formula';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash-es/debounce';
 
 export function editorFactory(
   dom: HTMLElement,

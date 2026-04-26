@@ -18,8 +18,8 @@ import {isMobile, createObject} from 'amis-core';
 import {ActionObject} from 'amis-core';
 import {FormOptionsSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';
-import find from 'lodash/find';
-import isEmpty from 'lodash/isEmpty';
+import find from 'lodash-es/find';
+import isEmpty from 'lodash-es/isEmpty';
 
 /**
  * 链式下拉框

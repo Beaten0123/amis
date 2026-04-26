@@ -3,7 +3,7 @@
  */
 
 import {JSONValueMap} from './utils/helper';
-import isPlainObject from 'lodash/isPlainObject';
+import isPlainObject from 'lodash-es/isPlainObject';
 const isMobile = (window as any).matchMedia?.('(max-width: 768px)').matches
   ? true
   : false;

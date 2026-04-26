@@ -14,7 +14,7 @@ import {SelectWithRemoteOptions as Select} from '../Select';
 import Switch from '../Switch';
 import {FormulaPicker, FormulaPickerProps} from '../formula/Picker';
 import type {AMISOperatorType, TestIdBuilder} from 'amis-core';
-import omit from 'lodash/omit';
+import omit from 'lodash-es/omit';
 
 export interface ValueProps extends ThemeProps, LocaleProps {
   value: any;

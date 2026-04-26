@@ -10,9 +10,9 @@ import {
 import {findObjectsWithKey} from 'amis-core';
 import {Button, Icon} from 'amis-ui';
 import type {SchemaObject} from 'amis';
-import assign from 'lodash/assign';
-import cloneDeep from 'lodash/cloneDeep';
-import omit from 'lodash/omit';
+import assign from 'lodash-es/assign';
+import cloneDeep from 'lodash-es/cloneDeep';
+import omit from 'lodash-es/omit';
 
 import type {RendererProps} from 'amis';
 import type {EditorManager} from 'amis-editor-core';

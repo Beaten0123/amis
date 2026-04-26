@@ -1,5 +1,5 @@
 import React from 'react';
-import isInteger from 'lodash/isInteger';
+import isInteger from 'lodash-es/isInteger';
 // @ts-ignore
 import InputNumber from 'rc-input-number';
 import getMiniDecimal, {

@@ -1,6 +1,6 @@
 import {JSONValueMap, findTree, resolveVariableAndFilter} from 'amis';
 import {EditorManager, guid} from 'amis-editor-core';
-import isString from 'lodash/isString';
+import isString from 'lodash-es/isString';
 
 /**
  * 布局配置项，数值设置时需要

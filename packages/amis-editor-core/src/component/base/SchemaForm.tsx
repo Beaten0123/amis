@@ -2,7 +2,7 @@ import React from 'react';
 import {EditorNodeType} from '../../store/node';
 import {EditorManager} from '../../manager';
 import {diff, getThemeConfig} from '../../util';
-import pick from 'lodash/pick';
+import pick from 'lodash-es/pick';
 import {
   createObjectFromChain,
   createObject,
@@ -11,7 +11,7 @@ import {
   render,
   toast
 } from 'amis';
-import omit from 'lodash/omit';
+import omit from 'lodash-es/omit';
 import cx from 'classnames';
 
 export const SchemaForm = React.forwardRef(

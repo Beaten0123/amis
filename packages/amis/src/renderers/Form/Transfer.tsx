@@ -1,6 +1,6 @@
 import React from 'react';
-import find from 'lodash/find';
-import pick from 'lodash/pick';
+import find from 'lodash-es/find';
+import pick from 'lodash-es/pick';
 import {isAlive} from 'mobx-state-tree';
 import {matchSorter} from 'match-sorter';
 import {

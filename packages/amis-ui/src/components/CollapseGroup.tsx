@@ -13,7 +13,7 @@ export interface CollapseItem {
 
 import {ClassNamesFn, themeable, autobind} from 'amis-core';
 import type {SchemaNode, ThemeProps} from 'amis-core';
-import isEqual from 'lodash/isEqual';
+import isEqual from 'lodash-es/isEqual';
 
 export interface CollapseGroupProps extends ThemeProps {
   defaultActiveKey?: Array<string | number | never> | string | number;

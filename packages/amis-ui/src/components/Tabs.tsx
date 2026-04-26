@@ -19,7 +19,7 @@ import {uncontrollable} from 'amis-core';
 import {isObjectShallowModified} from 'amis-core';
 import {autobind, guid} from 'amis-core';
 import {Icon} from './icons';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash-es/debounce';
 import {findDomCompat as findDOMNode} from 'amis-core';
 import TooltipWrapper from './TooltipWrapper';
 import {resizeSensor} from 'amis-core';

@@ -1,5 +1,5 @@
 import React from 'react';
-import mapValues from 'lodash/mapValues';
+import mapValues from 'lodash-es/mapValues';
 
 import {Tabs as CTabs, Tab} from 'amis-ui';
 import {AMISSchemaBase, Renderer, RendererProps} from 'amis-core';

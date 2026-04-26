@@ -1,12 +1,12 @@
 import {PlainObject} from '../types';
 import {uuid} from './helper';
-import cloneDeep from 'lodash/cloneDeep';
-import isObject from 'lodash/isObject';
-import map from 'lodash/map';
-import isEmpty from 'lodash/isEmpty';
-import kebabCase from 'lodash/kebabCase';
+import cloneDeep from 'lodash-es/cloneDeep';
+import isObject from 'lodash-es/isObject';
+import map from 'lodash-es/map';
+import isEmpty from 'lodash-es/isEmpty';
+import kebabCase from 'lodash-es/kebabCase';
 import {resolveVariableAndFilter} from './resolveVariableAndFilter';
-import some from 'lodash/some';
+import some from 'lodash-es/some';
 import {isExpression} from './formula';
 
 export const valueMap: PlainObject = {

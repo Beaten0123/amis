@@ -1,9 +1,9 @@
 import React from 'react';
 import {Button} from 'amis';
-import omit from 'lodash/omit';
-import uniq from 'lodash/uniq';
-import get from 'lodash/get';
-import cloneDeep from 'lodash/cloneDeep';
+import omit from 'lodash-es/omit';
+import uniq from 'lodash-es/uniq';
+import get from 'lodash-es/get';
+import cloneDeep from 'lodash-es/cloneDeep';
 import {
   EditorManager,
   EditorNodeType,

@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import isEqual from 'lodash/isEqual';
+import isEqual from 'lodash-es/isEqual';
 
 // @ts-ignore
 import FroalaEditor from 'froala-editor';

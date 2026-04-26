@@ -42,7 +42,7 @@ import 'tinymce/plugins/help/js/i18n/keynav/en';
 import 'tinymce/plugins/help/js/i18n/keynav/de';
 
 import {LocaleProps, autobind} from 'amis-core';
-import isEqual from 'lodash/isEqual';
+import isEqual from 'lodash-es/isEqual';
 
 interface TinymceEditorProps extends LocaleProps {
   model: string;

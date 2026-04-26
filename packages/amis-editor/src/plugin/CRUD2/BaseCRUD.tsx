@@ -5,14 +5,14 @@
 
 import React from 'react';
 import DeepDiff from 'deep-diff';
-import isFunction from 'lodash/isFunction';
-import flattenDeep from 'lodash/flattenDeep';
-import cloneDeep from 'lodash/cloneDeep';
-import isEmpty from 'lodash/isEmpty';
-import uniqBy from 'lodash/uniqBy';
-import uniq from 'lodash/uniq';
-import sortBy from 'lodash/sortBy';
-import pick from 'lodash/pick';
+import isFunction from 'lodash-es/isFunction';
+import flattenDeep from 'lodash-es/flattenDeep';
+import cloneDeep from 'lodash-es/cloneDeep';
+import isEmpty from 'lodash-es/isEmpty';
+import uniqBy from 'lodash-es/uniqBy';
+import uniq from 'lodash-es/uniq';
+import sortBy from 'lodash-es/sortBy';
+import pick from 'lodash-es/pick';
 import {toast, autobind, isObject} from 'amis';
 import {
   BasePlugin,

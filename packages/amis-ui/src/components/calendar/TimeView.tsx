@@ -1,6 +1,6 @@
 import moment from 'moment';
 import React from 'react';
-import merge from 'lodash/merge';
+import merge from 'lodash-es/merge';
 import {
   LocaleProps,
   localeable,

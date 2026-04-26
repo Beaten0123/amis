@@ -8,7 +8,7 @@ import {
 } from 'amis-core';
 import moment from 'moment';
 import {BaseSchema} from '../Schema';
-import isNumber from 'lodash/isNumber';
+import isNumber from 'lodash-es/isNumber';
 import {getPropValue, Option, PlainObject, normalizeOptions} from 'amis-core';
 
 import getMiniDecimal, {

@@ -4,8 +4,8 @@
  */
 
 import React from 'react';
-import pick from 'lodash/pick';
-import mapValues from 'lodash/mapValues';
+import pick from 'lodash-es/pick';
+import mapValues from 'lodash-es/mapValues';
 import {getSchemaTpl} from 'amis-editor-core';
 import {fontFamilyList} from './font-family';
 import {string2CSSUnit, isObject} from 'amis-editor-core';

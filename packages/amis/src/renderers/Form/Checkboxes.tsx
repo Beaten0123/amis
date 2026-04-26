@@ -1,5 +1,5 @@
 import React from 'react';
-import inRange from 'lodash/inRange';
+import inRange from 'lodash-es/inRange';
 import {
   OptionsControl,
   createObject,
@@ -23,7 +23,7 @@ import {Checkbox, Icon, Spinner, TooltipWrapper} from 'amis-ui';
 import {FormOptionsSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';
 import type {TestIdBuilder} from 'amis-core';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash-es/debounce';
 
 /**
  * 复选框

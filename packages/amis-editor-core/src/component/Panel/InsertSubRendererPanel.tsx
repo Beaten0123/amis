@@ -1,5 +1,5 @@
 import {Button, Html, Icon, InputBox, render} from 'amis';
-import find from 'lodash/find';
+import find from 'lodash-es/find';
 import {observer} from 'mobx-react';
 import React from 'react';
 import {PanelProps, SubRendererInfo} from '../../plugin';

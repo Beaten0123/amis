@@ -19,7 +19,7 @@ import {
   injectObjectChain
 } from '../utils';
 import {DataChangeReason} from '../types';
-import findLastIndex from 'lodash/findLastIndex';
+import findLastIndex from 'lodash-es/findLastIndex';
 
 export const iRendererStore = StoreNode.named('iRendererStore')
   .props({

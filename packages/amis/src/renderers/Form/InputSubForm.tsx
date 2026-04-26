@@ -1,8 +1,8 @@
 import React from 'react';
 import {FormItem, FormControlProps, FormBaseControl} from 'amis-core';
 import cx from 'classnames';
-import omit from 'lodash/omit';
-import pick from 'lodash/pick';
+import omit from 'lodash-es/omit';
+import pick from 'lodash-es/pick';
 import {createObject, guid} from 'amis-core';
 import {Icon} from 'amis-ui';
 import {FormBaseControlSchema, AMISClassName} from '../../Schema';

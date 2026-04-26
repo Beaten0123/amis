@@ -2,7 +2,7 @@ import {PlainObject} from '../types';
 import {isPureVariable} from './isPureVariable';
 import {resolveVariableAndFilter} from './resolveVariableAndFilter';
 import {tokenize} from './tokenize';
-import isPlainObject from 'lodash/isPlainObject';
+import isPlainObject from 'lodash-es/isPlainObject';
 import {createObject, deleteVariable, setVariable} from './object';
 
 export function resolveMapping(

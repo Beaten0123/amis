@@ -1,8 +1,8 @@
 import React from 'react';
 import {findDomCompat as findDOMNode} from 'amis-core';
-import cloneDeep from 'lodash/cloneDeep';
-import isNumber from 'lodash/isNumber';
-import get from 'lodash/get';
+import cloneDeep from 'lodash-es/cloneDeep';
+import isNumber from 'lodash-es/isNumber';
+import get from 'lodash-es/get';
 import {
   FormItem,
   FormControlProps,
@@ -36,12 +36,12 @@ import {
   isPureVariable,
   resolveVariableAndFilter
 } from 'amis-core';
-import find from 'lodash/find';
+import find from 'lodash-es/find';
 import {Select} from 'amis-ui';
 import {dataMapping, resolveVariable} from 'amis-core';
 import {isEffectiveApi, str2AsyncFunction} from 'amis-core';
 import {Alert2} from 'amis-ui';
-import memoize from 'lodash/memoize';
+import memoize from 'lodash-es/memoize';
 import {Icon} from 'amis-ui';
 import {
   isAlive,
@@ -57,8 +57,8 @@ import {
 } from '../../Schema';
 import {ListenerAction} from 'amis-core';
 import type {SchemaTokenizeableString} from '../../Schema';
-import isPlainObject from 'lodash/isPlainObject';
-import isEqual from 'lodash/isEqual';
+import isPlainObject from 'lodash-es/isPlainObject';
+import isEqual from 'lodash-es/isEqual';
 
 import type {
   AMISApi,

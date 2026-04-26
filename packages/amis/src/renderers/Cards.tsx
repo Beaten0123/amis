@@ -48,7 +48,7 @@ import type {
   AMISLocalSource,
   AMISExpression
 } from 'amis-core';
-import find from 'lodash/find';
+import find from 'lodash-es/find';
 
 /**
  * Cards 卡片集合渲染器。

@@ -14,7 +14,7 @@ import {
   VRendererConfig
 } from 'amis-editor-core';
 import {defaultValue, getSchemaTpl} from 'amis-editor-core';
-import flatten from 'lodash/flatten';
+import flatten from 'lodash-es/flatten';
 import {VRenderer} from 'amis-editor-core';
 import {generateId} from '../util';
 

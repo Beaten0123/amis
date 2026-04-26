@@ -7,7 +7,7 @@ import cx from 'classnames';
 import React, {useEffect, useState} from 'react';
 import {FormItem, RendererProps, resolveVariableAndFilter} from 'amis-core';
 import type {FormControlProps} from 'amis-core';
-import cloneDeep from 'lodash/cloneDeep';
+import cloneDeep from 'lodash-es/cloneDeep';
 import ThemeSelect from './ThemeSelect';
 import {getDefaultValue} from '../util';
 

@@ -2,7 +2,7 @@
  * @file 代码高亮
  */
 import React from 'react';
-import isPlainObject from 'lodash/isPlainObject';
+import isPlainObject from 'lodash-es/isPlainObject';
 import {BaseSchema} from '../Schema';
 import {AMISSchemaBase, Renderer, RendererProps, anyChanged} from 'amis-core';
 import {getPropValue} from 'amis-core';

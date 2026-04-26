@@ -4,7 +4,7 @@ import {IScopedContext} from '../Scoped';
 import {isExpression} from './formula';
 import {TreeItem, eachTree, getTree} from './helper';
 import {createObject, extendObject} from './object';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash-es/debounce';
 import {resolveVariableAndFilterForAsync} from './resolveVariableAndFilterForAsync';
 import {evalExpression, evalExpressionWithConditionBuilderAsync} from './tpl';
 import type {PlainObject} from '../types';

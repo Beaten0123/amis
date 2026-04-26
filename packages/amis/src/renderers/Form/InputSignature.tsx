@@ -16,7 +16,7 @@ import {
   autobind
 } from 'amis-core';
 import {Signature} from 'amis-ui';
-import pick from 'lodash/pick';
+import pick from 'lodash-es/pick';
 import {FormBaseControlSchema, SchemaApi} from '../../Schema';
 import {base64ToBlob} from 'file64';
 import {AMISFormItem} from 'amis-core';

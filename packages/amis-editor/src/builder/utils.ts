@@ -3,7 +3,7 @@
  * @desc builder用到的 utils
  */
 
-import isObjectLike from 'lodash/isObjectLike';
+import isObjectLike from 'lodash-es/isObjectLike';
 import {DSFeature} from './constants';
 import type {DSFeatureType} from './type';
 

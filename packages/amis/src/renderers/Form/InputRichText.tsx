@@ -8,7 +8,7 @@ import {
   autobind,
   AMISFormItem
 } from 'amis-core';
-import isEqual from 'lodash/isEqual';
+import isEqual from 'lodash-es/isEqual';
 import cx from 'classnames';
 import {LazyComponent} from 'amis-core';
 import {normalizeApi} from 'amis-core';

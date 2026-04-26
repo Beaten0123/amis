@@ -4,9 +4,9 @@ import {
   defaultValue,
   tipedLabel
 } from 'amis-editor-core';
-import isNumber from 'lodash/isNumber';
-import isString from 'lodash/isString';
-import compact from 'lodash/compact';
+import isNumber from 'lodash-es/isNumber';
+import isString from 'lodash-es/isString';
+import compact from 'lodash-es/compact';
 
 /**
  * 布局相关配置项

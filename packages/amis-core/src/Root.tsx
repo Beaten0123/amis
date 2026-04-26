@@ -1,5 +1,5 @@
 import React from 'react';
-import isPlainObject from 'lodash/isPlainObject';
+import isPlainObject from 'lodash-es/isPlainObject';
 import {RendererEnv} from './env';
 import {RendererProps} from './factory';
 import {LocaleContext, TranslateFn} from './locale';

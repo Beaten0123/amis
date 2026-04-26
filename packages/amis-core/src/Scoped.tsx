@@ -4,8 +4,8 @@
  */
 
 import React from 'react';
-import find from 'lodash/find';
-import values from 'lodash/values';
+import find from 'lodash-es/find';
+import values from 'lodash-es/values';
 import hoistNonReactStatic from 'hoist-non-react-statics';
 import {dataMapping, registerFunction} from './utils/tpl-builtin';
 import {RendererEnv, RendererProps} from './factory';

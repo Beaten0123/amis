@@ -5,7 +5,7 @@ import {
   tipedLabel
 } from 'amis-editor-core';
 import {createAnimationStyle, formateId, type SchemaCollection} from 'amis';
-import kebabCase from 'lodash/kebabCase';
+import kebabCase from 'lodash-es/kebabCase';
 import {styleManager} from 'amis-core';
 import {MixedInput} from 'amis-ui';
 

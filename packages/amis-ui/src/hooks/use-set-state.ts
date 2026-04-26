@@ -1,5 +1,5 @@
 import {useCallback, useState} from 'react';
-import isFunction from 'lodash/isFunction';
+import isFunction from 'lodash-es/isFunction';
 
 const useSetState = <T extends object>(
   initialState: T = {} as T

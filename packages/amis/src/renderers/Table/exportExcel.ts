@@ -22,7 +22,7 @@ import {
 import {isPureVariable, resolveVariableAndFilter} from 'amis-core';
 import {BaseSchema} from '../../Schema';
 import {toDataURL, getImageDimensions} from 'amis-core';
-import memoize from 'lodash/memoize';
+import memoize from 'lodash-es/memoize';
 import {getSnapshot} from 'mobx-state-tree';
 import moment from 'moment';
 import type {TableProps, ExportExcelToolbar} from './index';

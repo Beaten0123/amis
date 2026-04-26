@@ -5,9 +5,9 @@
 
 import React from 'react';
 import {reaction} from 'mobx';
-import pick from 'lodash/pick';
-import isEqual from 'lodash/isEqual';
-import debounce from 'lodash/debounce';
+import pick from 'lodash-es/pick';
+import isEqual from 'lodash-es/isEqual';
+import debounce from 'lodash-es/debounce';
 import {isObject} from 'amis-core';
 import {findDomCompat as findDOMNode} from 'amis-core';
 import {

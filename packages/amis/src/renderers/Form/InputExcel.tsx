@@ -1,9 +1,9 @@
 import React from 'react';
 import Dropzone from 'react-dropzone';
-import omit from 'lodash/omit';
-import merge from 'lodash/merge';
-import isEmpty from 'lodash/isEmpty';
-import isPlainObject from 'lodash/isPlainObject';
+import omit from 'lodash-es/omit';
+import merge from 'lodash-es/merge';
+import isEmpty from 'lodash-es/isEmpty';
+import isPlainObject from 'lodash-es/isPlainObject';
 import {
   autobind,
   dataMapping,

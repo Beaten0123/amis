@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import isEqual from 'lodash/isEqual';
+import isEqual from 'lodash-es/isEqual';
 import {toast} from 'amis';
 import {TableViewSchema, TrObject} from 'amis';
 import {EditorManager} from 'amis-editor-core';

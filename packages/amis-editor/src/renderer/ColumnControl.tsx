@@ -4,7 +4,7 @@
 
 import React from 'react';
 import cx from 'classnames';
-import findIndex from 'lodash/findIndex';
+import findIndex from 'lodash-es/findIndex';
 import {FormControlProps, FormItem, TreeSelection} from 'amis';
 
 export interface ColumnControlProps extends FormControlProps {

@@ -1,7 +1,7 @@
 import React from 'react';
 import {FormItem, Button, render as amisRender} from 'amis';
 import {autobind, getI18nEnabled} from 'amis-editor-core';
-import uniqBy from 'lodash/uniqBy';
+import uniqBy from 'lodash-es/uniqBy';
 
 import type {FormControlProps} from 'amis-core';
 

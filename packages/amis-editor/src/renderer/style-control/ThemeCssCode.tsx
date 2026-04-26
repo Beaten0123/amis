@@ -7,9 +7,9 @@ import {FormControlProps, FormItem} from 'amis-core';
 // @ts-ignore
 import {parse as cssParse} from 'amis-postcss';
 import {PlainObject} from './types';
-import isObject from 'lodash/isObject';
-import debounce from 'lodash/debounce';
-import isEmpty from 'lodash/isEmpty';
+import isObject from 'lodash-es/isObject';
+import debounce from 'lodash-es/debounce';
+import isEmpty from 'lodash-es/isEmpty';
 import {Icon} from '../../icons/index';
 
 const editorPlaceholder = `自定义样式仅对当前组件生效。示例：

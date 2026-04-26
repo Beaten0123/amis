@@ -7,8 +7,8 @@ import {Option} from './Select';
 import {resolveVariable} from 'amis-core';
 import {localeable} from 'amis-core';
 import VirtualList, {AutoSizer, RenderedRows} from './virtual-list';
-import isEqual from 'lodash/isEqual';
-import forEach from 'lodash/forEach';
+import isEqual from 'lodash-es/isEqual';
+import forEach from 'lodash-es/forEach';
 
 export interface TableSelectionProps extends BaseSelectionProps {
   /** 是否为结果渲染列表 */

@@ -1,7 +1,7 @@
 /**
  * 对文本进行替换
  */
-import cloneDeep from 'lodash/cloneDeep';
+import cloneDeep from 'lodash-es/cloneDeep';
 import {isObject, JSONValueMap} from './helper';
 
 export function replaceText(

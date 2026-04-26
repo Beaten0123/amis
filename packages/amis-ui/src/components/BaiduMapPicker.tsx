@@ -1,7 +1,7 @@
 import React from 'react';
 import {ClassNamesFn, themeable} from 'amis-core';
 import {loadScript, autobind, uuid} from 'amis-core';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash-es/debounce';
 import {Icon} from './icons';
 
 declare const BMap: any;

@@ -1,6 +1,6 @@
 import {Button} from 'amis';
 import React from 'react';
-import get from 'lodash/get';
+import get from 'lodash-es/get';
 import {
   getI18nEnabled,
   registerEditorPlugin,

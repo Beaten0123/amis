@@ -11,7 +11,7 @@ import {
   RendererPluginEvent
 } from 'amis-editor-core';
 import {isExpression, isPureVariable} from 'amis-core';
-import omit from 'lodash/omit';
+import omit from 'lodash-es/omit';
 import {ValidatorTag} from '../../validator';
 import {
   getEventControlConfig,

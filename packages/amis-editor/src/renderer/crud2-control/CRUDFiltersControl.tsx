@@ -5,8 +5,8 @@
 
 import React from 'react';
 import {findDomCompat as findDOMNode} from 'amis-core';
-import cloneDeep from 'lodash/cloneDeep';
-import uniq from 'lodash/uniq';
+import cloneDeep from 'lodash-es/cloneDeep';
+import uniq from 'lodash-es/uniq';
 import {
   FormItem,
   Button,

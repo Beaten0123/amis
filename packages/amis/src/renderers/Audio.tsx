@@ -1,5 +1,5 @@
 import React from 'react';
-import upperFirst from 'lodash/upperFirst';
+import upperFirst from 'lodash-es/upperFirst';
 import {AMISSchemaBase, AMISUrlPath, Renderer, RendererProps} from 'amis-core';
 import {autobind, detectPropValueChanged, getPropValue} from 'amis-core';
 import {Icon} from 'amis-ui';

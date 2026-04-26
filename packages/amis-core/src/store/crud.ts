@@ -14,7 +14,7 @@ import {
   getVariable
 } from '../utils/helper';
 import {Api, Payload, fetchOptions, ActionObject, ApiObject} from '../types';
-import pick from 'lodash/pick';
+import pick from 'lodash-es/pick';
 import {resolveVariableAndFilter} from '../utils/tpl-builtin';
 import {normalizeApiResponseData} from '../utils/api';
 import {matchSorter} from 'match-sorter';

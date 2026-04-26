@@ -13,7 +13,7 @@ import {uuidv4, importLazyComponent} from './helper';
 import position from './position';
 import {resolveVariableAndFilter} from './resolveVariableAndFilter';
 import {callStrFunction} from './api';
-import isPlainObject from 'lodash/isPlainObject';
+import isPlainObject from 'lodash-es/isPlainObject';
 
 export const JsonView = React.lazy(() =>
   import('react-json-view').then(importLazyComponent)

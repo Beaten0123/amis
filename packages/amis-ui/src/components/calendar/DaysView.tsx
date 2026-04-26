@@ -3,12 +3,12 @@
 import moment from 'moment';
 import React from 'react';
 import Downshift from 'downshift';
-import findIndex from 'lodash/findIndex';
-import extend from 'lodash/extend';
-import merge from 'lodash/merge';
-import omit from 'lodash/omit';
-import each from 'lodash/each';
-import kebabCase from 'lodash/kebabCase';
+import findIndex from 'lodash-es/findIndex';
+import extend from 'lodash-es/extend';
+import merge from 'lodash-es/merge';
+import omit from 'lodash-es/omit';
+import each from 'lodash-es/each';
+import kebabCase from 'lodash-es/kebabCase';
 import {
   LocaleProps,
   localeable,

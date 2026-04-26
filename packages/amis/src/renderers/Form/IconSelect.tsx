@@ -11,8 +11,8 @@ import {
   SpinnerExtraProps
 } from 'amis-ui';
 
-import debounce from 'lodash/debounce';
-import find from 'lodash/find';
+import debounce from 'lodash-es/debounce';
+import find from 'lodash-es/find';
 import {FormBaseControlSchema} from '../../Schema';
 
 import * as IconSelectStore from './IconSelectStore';

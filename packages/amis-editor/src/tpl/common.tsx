@@ -8,14 +8,14 @@ import {
   EditorManager
 } from 'amis-editor-core';
 import {render, type SchemaObject} from 'amis';
-import flatten from 'lodash/flatten';
+import flatten from 'lodash-es/flatten';
 import {InputComponentName} from '../component/InputComponentName';
 import {FormulaDateType} from '../renderer/FormulaControl';
 import type {VariableItem} from 'amis-ui/lib/components/formula/CodeEditor';
-import reduce from 'lodash/reduce';
-import map from 'lodash/map';
-import omit from 'lodash/omit';
-import keys from 'lodash/keys';
+import reduce from 'lodash-es/reduce';
+import map from 'lodash-es/map';
+import omit from 'lodash-es/omit';
+import keys from 'lodash-es/keys';
 import type {Schema} from 'amis';
 
 import type {DSField} from '../builder';

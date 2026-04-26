@@ -9,9 +9,9 @@ import {ValidationOptions} from '../component/BaseControl';
 import {Schema, str2rules} from 'amis';
 import {ValidatorTag} from '../validator';
 
-import find from 'lodash/find';
-import reduce from 'lodash/reduce';
-import forEach from 'lodash/forEach';
+import find from 'lodash-es/find';
+import reduce from 'lodash-es/reduce';
+import forEach from 'lodash-es/forEach';
 
 setSchemaTpl('validations', function () {
   const options = [

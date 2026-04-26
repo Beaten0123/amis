@@ -11,13 +11,13 @@ import {
   types,
   SnapshotIn
 } from 'mobx-state-tree';
-import uniq from 'lodash/uniq';
+import uniq from 'lodash-es/uniq';
 import {RegionConfig, RendererInfo} from '../plugin';
 import {guid, JSONPipeIn} from '../util';
 import {filterSchema} from 'amis';
 import React from 'react';
 import {EditorStoreType} from './editor';
-import findIndex from 'lodash/findIndex';
+import findIndex from 'lodash-es/findIndex';
 import type {RendererConfig} from 'amis-core';
 
 export const EditorNode = types

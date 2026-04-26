@@ -8,7 +8,7 @@ import {
   RendererPluginEvent,
   registerEditorPlugin
 } from 'amis-editor-core';
-import sortBy from 'lodash/sortBy';
+import sortBy from 'lodash-es/sortBy';
 import {getEventControlConfig} from '../renderer/event-control/helper';
 
 export class PaginationPlugin extends BasePlugin {

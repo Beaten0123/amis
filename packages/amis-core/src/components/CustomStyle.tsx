@@ -7,7 +7,7 @@ import {
   insertEditCustomStyle,
   hasExpression
 } from '../utils/style-helper';
-import isEmpty from 'lodash/isEmpty';
+import isEmpty from 'lodash-es/isEmpty';
 
 interface CustomStyleProps {
   config: {

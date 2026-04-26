@@ -1,10 +1,10 @@
 import React from 'react';
 import cx from 'classnames';
-import omit from 'lodash/omit';
-import find from 'lodash/find';
-import isEqual from 'lodash/isEqual';
-import findIndex from 'lodash/findIndex';
-import merge from 'lodash/merge';
+import omit from 'lodash-es/omit';
+import find from 'lodash-es/find';
+import isEqual from 'lodash-es/isEqual';
+import findIndex from 'lodash-es/findIndex';
+import merge from 'lodash-es/merge';
 import {
   OptionsControl,
   OptionsControlProps,
@@ -28,7 +28,7 @@ import {
 } from 'amis-core';
 import {Html, Icon, OverflowTpl, TooltipWrapper} from 'amis-ui';
 import {FormOptionsSchema, SchemaTpl} from '../../Schema';
-import intersectionWith from 'lodash/intersectionWith';
+import intersectionWith from 'lodash-es/intersectionWith';
 import type {AMISTooltipWrapperSchema} from '../TooltipWrapper';
 import type {AMISFormItemWithOptions, Option} from 'amis-core';
 import {supportStatic} from './StaticHoc';

@@ -1,8 +1,8 @@
 import React from 'react';
 import Downshift, {StateChangeOptions} from 'downshift';
 import {matchSorter} from 'match-sorter';
-import debouce from 'lodash/debounce';
-import find from 'lodash/find';
+import debouce from 'lodash-es/debounce';
+import find from 'lodash-es/find';
 import {
   OptionsControl,
   OptionsControlProps,

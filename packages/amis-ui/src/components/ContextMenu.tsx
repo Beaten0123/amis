@@ -7,7 +7,7 @@ import Transition, {
   ENTERING,
   EXITING
 } from 'react-transition-group/Transition';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash-es/debounce';
 import type {DebouncedFunc} from 'lodash';
 // import {createRoot} from 'react-dom/client';
 const fadeStyles: {

@@ -1,7 +1,7 @@
 {
   "name": "amis-editor-core",
   "version": "6.13.0",
-  "description": "amis 可视化编辑器",
+  "description": "amis \u53ef\u89c6\u5316\u7f16\u8f91\u5668",
   "main": "lib/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -120,5 +120,23 @@
     "i18n-runtime": "1.0.10",
     "react": ">=16.8.6",
     "react-dom": ">=16.8.6"
+  },
+  "turbo": {
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": [
+          "lib/**",
+          "esm/**"
+        ]
+      },
+      "test": {
+        "dependsOn": [
+          "build"
+        ]
+      }
+    }
   }
 }

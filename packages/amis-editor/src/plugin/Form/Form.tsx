@@ -1,9 +1,9 @@
 import React from 'react';
 import cx from 'classnames';
 import DeepDiff from 'deep-diff';
-import flatten from 'lodash/flatten';
-import cloneDeep from 'lodash/cloneDeep';
-import pick from 'lodash/pick';
+import flatten from 'lodash-es/flatten';
+import cloneDeep from 'lodash-es/cloneDeep';
+import pick from 'lodash-es/pick';
 import {isObject, getRendererByName, setVariable} from 'amis-core';
 import {
   BasePlugin,

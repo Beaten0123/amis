@@ -1,11 +1,11 @@
-import get from 'lodash/get';
-import endsWith from 'lodash/endsWith';
-import isEmpty from 'lodash/isEmpty';
-import isEqual from 'lodash/isEqual';
-import startsWith from 'lodash/startsWith';
+import get from 'lodash-es/get';
+import endsWith from 'lodash-es/endsWith';
+import isEmpty from 'lodash-es/isEmpty';
+import isEqual from 'lodash-es/isEqual';
+import startsWith from 'lodash-es/startsWith';
 import {resolveVariableAndFilterForAsync} from './resolveVariableAndFilterForAsync';
 import moment from 'moment';
-import capitalize from 'lodash/capitalize';
+import capitalize from 'lodash-es/capitalize';
 import {isPureVariable, resolveVariableAndFilter} from './tpl-builtin';
 
 const conditionResolverMap: {

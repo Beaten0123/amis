@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import memoize from 'lodash/memoize';
-import isString from 'lodash/isString';
+import memoize from 'lodash-es/memoize';
+import isString from 'lodash-es/isString';
 import {AMISSchemaBase, Renderer, RendererProps} from 'amis-core';
 import {BaseSchema} from '../Schema';
 import {FormControlProps} from 'amis-core';
-import isEqual from 'lodash/isEqual';
+import isEqual from 'lodash-es/isEqual';
 
 /**
  * 自定义组件

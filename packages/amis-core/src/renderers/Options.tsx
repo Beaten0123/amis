@@ -49,9 +49,9 @@ import {
 } from '../utils/tpl-builtin';
 
 import {filter} from '../utils/tpl';
-import findIndex from 'lodash/findIndex';
+import findIndex from 'lodash-es/findIndex';
 
-import isPlainObject from 'lodash/isPlainObject';
+import isPlainObject from 'lodash-es/isPlainObject';
 import {normalizeOptions} from '../utils/normalizeOptions';
 import {optionValueCompare} from '../utils/optionValueCompare';
 import type {BaseApi, Option} from '../types';

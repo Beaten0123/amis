@@ -9,8 +9,8 @@ import {
   ScopedComponentType,
   AMISSchemaBase
 } from 'amis-core';
-import isEqual from 'lodash/isEqual';
-import pick from 'lodash/pick';
+import isEqual from 'lodash-es/isEqual';
+import pick from 'lodash-es/pick';
 import cx from 'classnames';
 import {BaseSchema, AMISClassName, SchemaTpl} from '../Schema';
 import {autobind, getPropValue, createObject} from 'amis-core';

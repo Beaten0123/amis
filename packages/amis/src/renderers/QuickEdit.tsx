@@ -20,7 +20,7 @@ import {ActionObject} from 'amis-core';
 import keycode from 'keycode';
 import {Overlay} from 'amis-core';
 import {PopOver, AMISSchemaCollection} from 'amis-core';
-import omit from 'lodash/omit';
+import omit from 'lodash-es/omit';
 import {AMISFormBase} from 'packages/amis-core/lib';
 import {SchemaApi} from '../Schema';
 

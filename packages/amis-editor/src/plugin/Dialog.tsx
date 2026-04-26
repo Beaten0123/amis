@@ -22,11 +22,11 @@ import {
   getEventControlConfig,
   getActionCommonProps
 } from '../renderer/event-control/helper';
-import omit from 'lodash/omit';
+import omit from 'lodash-es/omit';
 import type {RendererConfig, Schema} from 'amis-core';
 import {ModalProps} from 'amis-ui/lib/components/Modal';
 import ModalSettingPanel from '../component/ModalSettingPanel';
-import find from 'lodash/find';
+import find from 'lodash-es/find';
 
 interface InlineModalProps extends ModalProps {
   type: string;

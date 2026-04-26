@@ -1,6 +1,6 @@
 import React from 'react';
-import omit from 'lodash/omit';
-import debounce from 'lodash/debounce';
+import omit from 'lodash-es/omit';
+import debounce from 'lodash-es/debounce';
 import cx from 'classnames';
 import {matchSorter} from 'match-sorter';
 import {SpinnerExtraProps, Tree as TreeSelector} from 'amis-ui';

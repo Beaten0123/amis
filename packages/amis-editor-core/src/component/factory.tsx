@@ -3,14 +3,14 @@ import {isAlive} from 'mobx-state-tree';
 import React from 'react';
 import {NodeWrapper} from './NodeWrapper';
 import {PanelProps, RegionConfig, RendererInfo} from '../plugin';
-import groupBy from 'lodash/groupBy';
+import groupBy from 'lodash-es/groupBy';
 import {RegionWrapper} from './RegionWrapper';
-import find from 'lodash/find';
+import find from 'lodash-es/find';
 import {ContainerWrapper} from './ContainerWrapper';
 import {observer} from 'mobx-react';
 import {EditorNodeContext, EditorNodeType} from '../store/node';
 import {EditorManager} from '../manager';
-import flatten from 'lodash/flatten';
+import flatten from 'lodash-es/flatten';
 import {render as reactRender, unmountComponentAtNode} from 'react-dom';
 import {autobind, JSONGetById, JSONUpdate, appTranslate} from '../util';
 import {ErrorBoundary, LazyComponent} from 'amis-core';
@@ -20,7 +20,7 @@ import type {DataScope} from 'amis-core';
 import type {RendererConfig} from 'amis-core';
 import type {SchemaCollection} from 'amis';
 import {SchemaForm} from './base/SchemaForm';
-import memoize from 'lodash/memoize';
+import memoize from 'lodash-es/memoize';
 import {FormConfigWrapper} from './FormConfigWrapper';
 
 // 创建 Node Store 并构建成树

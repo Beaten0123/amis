@@ -5,7 +5,7 @@ import {
   getVariable
 } from 'amis-core';
 import React from 'react';
-import find from 'lodash/find';
+import find from 'lodash-es/find';
 import {Spinner, SpinnerExtraProps} from 'amis-ui';
 import {
   AMISTransferSchemaBase,

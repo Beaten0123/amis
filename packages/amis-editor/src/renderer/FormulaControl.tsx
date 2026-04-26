@@ -3,8 +3,8 @@
  */
 
 import React from 'react';
-import isString from 'lodash/isString';
-import omit from 'lodash/omit';
+import isString from 'lodash-es/isString';
+import omit from 'lodash-es/omit';
 import cx from 'classnames';
 import {FormItem, Button, InputBox, Icon, TooltipWrapper} from 'amis';
 import {FormulaExec, isExpression} from 'amis';

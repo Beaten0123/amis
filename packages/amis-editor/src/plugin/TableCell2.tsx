@@ -1,6 +1,6 @@
 import React, {StrictMode} from 'react';
-import get from 'lodash/get';
-import flattenDeep from 'lodash/flattenDeep';
+import get from 'lodash-es/get';
+import flattenDeep from 'lodash-es/flattenDeep';
 import {Button, Icon} from 'amis';
 import {dataMapping, getVariable, isObject} from 'amis-core';
 import {
@@ -20,7 +20,7 @@ import {remarkTpl} from '../component/BaseControl';
 
 import type {DSField} from '../builder';
 import {schemaToArray} from '../util';
-import omit from 'lodash/omit';
+import omit from 'lodash-es/omit';
 
 export type TableCell2DynamicControls = Partial<
   Record<

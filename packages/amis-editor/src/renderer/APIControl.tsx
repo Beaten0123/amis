@@ -1,6 +1,6 @@
 import React from 'react';
-import mergeWith from 'lodash/mergeWith';
-import cloneDeep from 'lodash/cloneDeep';
+import mergeWith from 'lodash-es/mergeWith';
+import cloneDeep from 'lodash-es/cloneDeep';
 import cx from 'classnames';
 import {FormItem, Icon} from 'amis';
 import {Input, PickerContainer, Spinner} from 'amis-ui';
@@ -21,7 +21,7 @@ import type {SchemaObject, SchemaApi} from 'amis';
 import type {Api, AMISButtonSchema} from 'amis';
 import type {AMISSchemaCollection, FormControlProps} from 'amis-core';
 import type {ActionSchema} from 'amis';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash-es/debounce';
 
 export type ApiObject = Api & {
   messages?: Record<

@@ -1,13 +1,13 @@
 import React from 'react';
-import isInteger from 'lodash/isInteger';
-import debounce from 'lodash/debounce';
+import isInteger from 'lodash-es/isInteger';
+import debounce from 'lodash-es/debounce';
 import moment from 'moment';
 import {TestIdBuilder, ThemeProps, themeable} from 'amis-core';
 import {Icon} from './icons';
 import {uncontrollable} from 'amis-core';
 import {autobind} from 'amis-core';
 import {LocaleProps, localeable} from 'amis-core';
-import chain from 'lodash/chain';
+import chain from 'lodash-es/chain';
 import Input from './Input';
 import Spinner from './Spinner';
 

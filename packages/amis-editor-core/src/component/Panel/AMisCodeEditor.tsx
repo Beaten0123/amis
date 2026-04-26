@@ -8,11 +8,11 @@ import {
 } from '../../util';
 import cx from 'classnames';
 import {prompt, toast} from 'amis';
-import debounce from 'lodash/debounce';
-import isArray from 'lodash/isArray';
-import findIndex from 'lodash/findIndex';
+import debounce from 'lodash-es/debounce';
+import isArray from 'lodash-es/isArray';
+import findIndex from 'lodash-es/findIndex';
 import {parse, stringify} from 'json-ast-comments';
-import isPlainObject from 'lodash/isPlainObject';
+import isPlainObject from 'lodash-es/isPlainObject';
 
 const internalSchema = /^\/schemas\/(.*).json$/;
 

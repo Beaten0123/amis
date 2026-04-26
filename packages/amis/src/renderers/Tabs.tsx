@@ -10,7 +10,7 @@ import {
   setThemeClassName
 } from 'amis-core';
 import {ActionObject, isGlobalVarExpression} from 'amis-core';
-import find from 'lodash/find';
+import find from 'lodash-es/find';
 import {
   isVisible,
   autobind,
@@ -22,7 +22,7 @@ import {
   BaseSchemaWithoutType,
   AMISSchemaCollection
 } from 'amis-core';
-import findIndex from 'lodash/findIndex';
+import findIndex from 'lodash-es/findIndex';
 import {Tabs as CTabs, Tab} from 'amis-ui';
 import {
   BaseSchema,
@@ -38,8 +38,8 @@ import {FormHorizontal} from 'amis-core';
 import {str2AsyncFunction} from 'amis-core';
 import {ScopedContext, IScopedContext} from 'amis-core';
 import type {TabsMode} from 'amis-ui/lib/components/Tabs';
-import isNaN from 'lodash/isNaN';
-import debounce from 'lodash/debounce';
+import isNaN from 'lodash-es/isNaN';
+import debounce from 'lodash-es/debounce';
 
 export interface TabSchema extends AMISSchemaBase {
   /**

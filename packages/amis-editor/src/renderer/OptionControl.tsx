@@ -6,8 +6,8 @@ import React from 'react';
 import {findDomCompat as findDOMNode} from 'amis-core';
 import cx from 'classnames';
 import DeepDiff from 'deep-diff';
-import uniqBy from 'lodash/uniqBy';
-import omit from 'lodash/omit';
+import uniqBy from 'lodash-es/uniqBy';
+import omit from 'lodash-es/omit';
 import Sortable from 'sortablejs';
 import {
   Renderer,
@@ -27,7 +27,7 @@ import type {Option} from 'amis';
 import {createObject, FormControlProps} from 'amis-core';
 import type {OptionValue} from 'amis-core';
 import type {SchemaApi} from 'amis';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash-es/debounce';
 import {valueType} from './ValueFormatControl';
 import {getOwnValue} from '../util';
 

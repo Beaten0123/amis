@@ -6,8 +6,8 @@ import {
   getEnv,
   Instance
 } from 'mobx-state-tree';
-import isEqualWith from 'lodash/isEqualWith';
-import uniqWith from 'lodash/uniqWith';
+import isEqualWith from 'lodash-es/isEqualWith';
+import uniqWith from 'lodash-es/uniqWith';
 import {FormStore, IFormStore} from './form';
 import {str2rules, validate as doValidate} from '../utils/validations';
 import {Api, Payload, fetchOptions, ApiObject} from '../types';
@@ -15,7 +15,7 @@ import {ComboStore, IComboStore, IUniqueGroup} from './combo';
 import {evalExpression} from '../utils/tpl';
 import {resolveVariableAndFilter} from '../utils/tpl-builtin';
 import {buildApi, isEffectiveApi} from '../utils/api';
-import findIndex from 'lodash/findIndex';
+import findIndex from 'lodash-es/findIndex';
 import {
   isObject,
   isArrayChildrenModified,
@@ -32,9 +32,9 @@ import {
   promisify
 } from '../utils/helper';
 import {flattenTree} from '../utils/helper';
-import find from 'lodash/find';
-import isEqual from 'lodash/isEqual';
-import isPlainObject from 'lodash/isPlainObject';
+import find from 'lodash-es/find';
+import isEqual from 'lodash-es/isEqual';
+import isPlainObject from 'lodash-es/isPlainObject';
 import {SimpleMap} from '../utils/SimpleMap';
 import {StoreNode} from './node';
 import {getStoreById} from './manager';

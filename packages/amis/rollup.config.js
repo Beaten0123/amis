@@ -243,20 +243,21 @@ function getPlugins(format = 'esm') {
       `
     }),
 
-    {
-      name: 'disable-treeshake',
-      transform(code, id) {
-        if (/\/src\/renderers\//.test(id)) {
-          // Disable tree shake for modules under `src/renderers`
-          return {
-            code,
-            map: null,
-            moduleSideEffects: 'no-treeshake'
-          };
-        }
-
-        return null;
-      }
-    }
+    // Tree shaking re-enabled - previously disabled due to implicit side effects in renderers
+    // TODO: Add /* #__PURE__ */ annotations to renderer exports for optimal tree shaking
+    // {
+    //   name: 'disable-treeshake',
+    //   transform(code, id) {
+    //     if (/\/src\/renderers\//.test(id)) {
+    //       // Disable tree shake for modules under `src/renderers`
+    //       return {
+    //         code,
+    //         map: null,
+    //         moduleSideEffects: 'no-treeshake'
+    //       };
+    //     }
+    //     return null;
+    //   }
+    // }
   ].filter(item => item);
 }

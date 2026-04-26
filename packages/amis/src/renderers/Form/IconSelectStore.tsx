@@ -1,4 +1,4 @@
-import cloneDeep from 'lodash/cloneDeep';
+import cloneDeep from 'lodash-es/cloneDeep';
 import {TranslateFn, makeTranslator, getDefaultLocale} from 'amis-core';
 
 export interface SvgIcon {

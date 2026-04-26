@@ -16,9 +16,9 @@ import type {SchemaCollection} from 'amis';
 import type {IScopedContext} from 'amis-core';
 import type {FormSchema} from 'amis';
 import type {FormControlProps} from 'amis-core';
-import fromPairs from 'lodash/fromPairs';
-import some from 'lodash/some';
-import pick from 'lodash/pick';
+import fromPairs from 'lodash-es/fromPairs';
+import some from 'lodash-es/some';
+import pick from 'lodash-es/pick';
 
 export interface SwitchMoreProps extends FormControlProps {
   className?: string;

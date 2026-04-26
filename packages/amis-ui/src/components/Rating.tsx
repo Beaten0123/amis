@@ -10,7 +10,7 @@ import {isObject} from 'amis-core';
 import {validations} from 'amis-core';
 import {Icon} from './icons';
 import {isObjectShallowModified} from 'amis-core';
-import isEmpty from 'lodash/isEmpty';
+import isEmpty from 'lodash-es/isEmpty';
 
 export type textPositionType = 'left' | 'right';
 

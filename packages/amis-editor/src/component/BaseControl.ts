@@ -2,7 +2,7 @@
  * @file 基础控件集合
  */
 
-import flatten from 'lodash/flatten';
+import flatten from 'lodash-es/flatten';
 import {NO_SUPPORT_STATIC_FORMITEM_CMPTS} from '../renderer/event-control/constants';
 import {getEventControlConfig} from '../renderer/event-control/helper';
 import {getSchemaTpl, isObject, tipedLabel} from 'amis-editor-core';

@@ -6,8 +6,8 @@ import React from 'react';
 import {FormItem} from 'amis';
 import {tipedLabel} from 'amis-editor-core';
 import type {FormControlProps} from 'amis-core';
-import set from 'lodash/set';
-import get from 'lodash/get';
+import set from 'lodash-es/set';
+import get from 'lodash-es/get';
 
 export interface BadgeControlProps extends FormControlProps {}
 

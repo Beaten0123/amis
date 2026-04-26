@@ -23,7 +23,7 @@ import {
   type DraggableData,
   type DraggableEvent
 } from 'react-draggable';
-import isNumber from 'lodash/isNumber';
+import isNumber from 'lodash-es/isNumber';
 
 export const getContainerWithFullscreen =
   (container?: () => HTMLElement | HTMLElement | null) => () => {

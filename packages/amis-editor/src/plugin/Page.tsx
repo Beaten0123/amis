@@ -14,7 +14,7 @@ import {RendererPluginAction, RendererPluginEvent} from 'amis-editor-core';
 import type {SchemaObject} from 'amis';
 import {tipedLabel} from 'amis-editor-core';
 import {jsonToJsonSchema, EditorNodeType} from 'amis-editor-core';
-import omit from 'lodash/omit';
+import omit from 'lodash-es/omit';
 import {generateId} from '../util';
 import {InlineEditableElement} from 'amis-editor-core';
 

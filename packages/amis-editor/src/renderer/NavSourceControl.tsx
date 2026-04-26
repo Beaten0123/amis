@@ -6,9 +6,9 @@ import React from 'react';
 
 import cx from 'classnames';
 import Sortable from 'sortablejs';
-import set from 'lodash/set';
-import get from 'lodash/get';
-import cloneDeep from 'lodash/cloneDeep';
+import set from 'lodash-es/set';
+import get from 'lodash-es/get';
+import cloneDeep from 'lodash-es/cloneDeep';
 import {render as renderAmis} from 'amis-core';
 
 import {FormItem, Button, InputBox, Icon, Modal, toast} from 'amis';

@@ -1,4 +1,4 @@
-import update from 'lodash/update';
+import update from 'lodash-es/update';
 import {
   BaseEventContext,
   BasePlugin,

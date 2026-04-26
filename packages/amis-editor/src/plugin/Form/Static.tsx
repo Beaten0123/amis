@@ -1,5 +1,5 @@
 import React from 'react';
-import get from 'lodash/get';
+import get from 'lodash-es/get';
 import {getVariable} from 'amis-core';
 import {Button} from 'amis';
 import {

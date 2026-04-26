@@ -9,7 +9,7 @@ import {
   defaultValue,
   getSchemaTpl
 } from 'amis-editor-core';
-import cloneDeep from 'lodash/cloneDeep';
+import cloneDeep from 'lodash-es/cloneDeep';
 import type {Schema} from 'amis';
 import {ValidatorTag} from '../../validator';
 import {

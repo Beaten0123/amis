@@ -18,7 +18,7 @@ import {
   getActionCommonProps
 } from '../renderer/event-control/helper';
 import {tipedLabel} from 'amis-editor-core';
-import omit from 'lodash/omit';
+import omit from 'lodash-es/omit';
 import {InlineModal} from './Dialog';
 
 export class DrawerPlugin extends BasePlugin {

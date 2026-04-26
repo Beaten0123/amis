@@ -1,6 +1,6 @@
 import {buildApi} from '../utils/api';
 import {RendererEvent} from '../utils/renderer-event';
-import omit from 'lodash/omit';
+import omit from 'lodash-es/omit';
 import {
   RendererAction,
   ListenerContext,

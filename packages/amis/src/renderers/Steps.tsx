@@ -14,7 +14,7 @@ import {
 import {Steps, RemoteOptionsProps, withRemoteConfig} from 'amis-ui';
 import {StepStatus} from 'amis-ui/lib/components/Steps';
 import {BaseSchema} from '../Schema';
-import isPlainObject from 'lodash/isPlainObject';
+import isPlainObject from 'lodash-es/isPlainObject';
 import type {
   AMISSchemaBase,
   SchemaExpression,

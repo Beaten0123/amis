@@ -11,8 +11,8 @@ import {
   Spinner
 } from 'amis';
 import {FormControlProps, Renderer, RendererProps} from 'amis-core';
-import debounce from 'lodash/debounce';
-import remove from 'lodash/remove';
+import debounce from 'lodash-es/debounce';
+import remove from 'lodash-es/remove';
 import React from 'react';
 import {EditorManager, EditorNodeType, autobind} from 'amis-editor-core';
 import {matchSorter} from 'match-sorter';

@@ -34,7 +34,7 @@ import type {SchemaObject} from 'amis';
 import type {IFormItemStore, IFormStore} from 'amis-core';
 import type {EditorManager} from 'amis-editor-core';
 import {getActionCommonProps} from '../renderer/event-control/helper';
-import cloneDeep from 'lodash/cloneDeep';
+import cloneDeep from 'lodash-es/cloneDeep';
 import {addSchema2Toolbar, deepRemove} from './CRUD2/utils';
 import {is} from '@babel/types';
 

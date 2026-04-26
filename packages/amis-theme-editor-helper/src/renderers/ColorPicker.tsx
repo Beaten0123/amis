@@ -25,8 +25,8 @@ import {
   TooltipWrapper
 } from 'amis-ui';
 import type {GlobalData} from '../helper/getGlobalData';
-import cloneDeep from 'lodash/cloneDeep';
-import debounce from 'lodash/debounce';
+import cloneDeep from 'lodash-es/cloneDeep';
+import debounce from 'lodash-es/debounce';
 import {i18n as _i18n} from 'i18n-runtime';
 import {getDefaultValue} from '../util';
 import {Icon as ThemeIcon} from '../icons/index';

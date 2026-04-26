@@ -3,7 +3,7 @@
  * @param url
  */
 
-import memoize from 'lodash/memoize';
+import memoize from 'lodash-es/memoize';
 
 /**
  * 将 url 转成 dataurl

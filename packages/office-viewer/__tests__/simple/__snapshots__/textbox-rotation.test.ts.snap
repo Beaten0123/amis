@@ -1,9 +1,9 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`textbox-rotation 1`] = `
 <article>
   <section
-    style="position: relative; width: 815.98px; padding: 96.00px 96.00px 96.00px 96.00px;"
+    style="position: relative; width: 815.98px; padding: 96px;"
   >
     <p
       class="docx-viewer-0-p"

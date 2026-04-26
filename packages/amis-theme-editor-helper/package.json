@@ -1,7 +1,7 @@
 {
   "name": "amis-theme-editor-helper",
   "version": "2.0.26",
-  "description": "amis主题编辑器通用方法",
+  "description": "amis\u4e3b\u9898\u7f16\u8f91\u5668\u901a\u7528\u65b9\u6cd5",
   "main": "lib/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -71,5 +71,18 @@
     "i18n-runtime": "1.0.10",
     "react": ">=16.8.6",
     "react-dom": ">=16.8.6"
+  },
+  "turbo": {
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": [
+          "lib/**",
+          "esm/**"
+        ]
+      }
+    }
   }
 }

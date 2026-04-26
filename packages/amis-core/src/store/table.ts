@@ -13,9 +13,9 @@ import {
   resolveVariableAndFilter,
   isPureVariable
 } from '../utils/tpl-builtin';
-import isEqual from 'lodash/isEqual';
-import find from 'lodash/find';
-import sortBy from 'lodash/sortBy';
+import isEqual from 'lodash-es/isEqual';
+import find from 'lodash-es/find';
+import sortBy from 'lodash-es/sortBy';
 import {
   isBreakpoint,
   createObject,

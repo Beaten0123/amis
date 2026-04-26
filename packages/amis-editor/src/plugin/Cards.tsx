@@ -17,8 +17,8 @@ import {
 } from 'amis-editor-core';
 import {defaultValue, getSchemaTpl} from 'amis-editor-core';
 import {diff, JSONPipeOut, repeatArray} from 'amis-editor-core';
-import set from 'lodash/set';
-import merge from 'lodash/merge';
+import set from 'lodash-es/set';
+import merge from 'lodash-es/merge';
 import {escapeFormula, generateId, resolveArrayDatasource} from '../util';
 
 export class CardsPlugin extends BasePlugin {

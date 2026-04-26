@@ -4,7 +4,7 @@
  */
 
 import {useEffect, useRef} from 'react';
-import omit from 'lodash/omit';
+import omit from 'lodash-es/omit';
 import React, {useState, useCallback} from 'react';
 import {Button, Modal, themeable, ThemeProps, utils} from 'amis';
 import {getSchemaTpl, JSONPipeIn, EditorManager} from 'amis-editor-core';

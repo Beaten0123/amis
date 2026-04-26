@@ -1,0 +1,1146 @@
+
+> amis-ui@6.13.0 build
+> npm run clean-dist && cross-env NODE_ENV=production rollup -c
+
+
+> amis-ui@6.13.0 clean-dist
+> rimraf lib/** esm/**
+
+[1mloaded rollup.config.js with warnings[22m
+[1m[33m(!) Unused external imports[39m[22m
+dependencies imported from external module "/Users/m5/installed/easymdd/amis/packages/amis-ui/package.json" but never used in "rollup.config.js"
+[36m
+[1m./src/index.tsx, ./src/components/ColorPicker.tsx, ./src/components/BarCode.tsx, ./src/components/Markdown.tsx, ./src/components/Tinymce.tsx, ./src/components/RichText.tsx, ./src/components/CityDB.ts, ./src/components/PdfViewer.tsx, ./scss/themes/antd.scss, ./scss/themes/ang.scss, ./scss/themes/cxd.scss, ./scss/themes/dark.scss, ./scss/themes/default.scss, ./scss/helper.scss[22m → [1mlib[22m...[39m
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import './functions';
+  │         ^^^^^^^^^^^^^
+  ╵
+    scss/helper.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import './variables';
+  │         ^^^^^^^^^^^^^
+  ╵
+    scss/helper.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+3 │ @import './mixins';
+  │         ^^^^^^^^^^
+  ╵
+    scss/helper.scss 3:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+5 │ @import './utilities';
+  │         ^^^^^^^^^^^^^
+  ╵
+    scss/helper.scss 5:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+8 │ @import './helper/background/background-color';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    scss/helper.scss 8:9  root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass($n < length($breakpoint-names)): nth($breakpoint-names, $n + 1))
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+10 │     @return if(
+   │ ┌───────────^
+11 │ │     $n < length($breakpoint-names),
+12 │ │     nth($breakpoint-names, $n + 1),
+13 │ │     null
+14 │ │   );
+   │ └───^
+   ╵
+    scss/_functions.scss 10:11  @import
+    scss/helper.scss 1:9        root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass($next): breakpoint-min($next, $breakpoints) - 1px)
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+26 │   @return if($next, breakpoint-min($next, $breakpoints) - 1px, null);
+   │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    scss/_functions.scss 26:11  @import
+    scss/helper.scss 1:9        root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass(breakpoint-min($name, $breakpoints) == null): ""; else: "-#{$name}")
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+31 │   @return if(breakpoint-min($name, $breakpoints) ==null, '', '-#{$name}');
+   │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    scss/_functions.scss 31:11  @import
+    scss/helper.scss 1:9        root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+152 │ $white: map-get($colors, white);
+    │         ^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 152:9  @import
+    scss/helper.scss 2:9        root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+154 │   map-get($colors, gray),
+    │   ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 154:3  @import
+    scss/helper.scss 2:9        root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+153 │   $gray50: map-get(
+    │ ┌──────────^
+154 │ │   map-get($colors, gray),
+155 │ │   50
+156 │ │ ); // node-sass 不支持多个参数用法，所以先这么写。
+    │ └─^
+    ╵
+    scss/_variables.scss 153:10  @import
+    scss/helper.scss 2:9         root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+157 │ $gray100: map-get(map-get($colors, gray), 100) !default;
+    │                   ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 157:19  @import
+    scss/helper.scss 2:9         root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+157 │ $gray100: map-get(map-get($colors, gray), 100) !default;
+    │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 157:11  @import
+    scss/helper.scss 2:9         root stylesheet
+
+WARNING: 177 repetitive deprecation warnings omitted.
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import '../properties';
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    scss/themes/antd.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+3 │ @import '../components';
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    scss/themes/antd.scss 3:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+4 │ @import './antd-variables';
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    scss/themes/antd.scss 4:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+5 │ @import './common';
+  │         ^^^^^^^^^^
+  ╵
+    scss/themes/antd.scss 5:9  root stylesheet
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import '../properties';
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    scss/themes/ang.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+3 │ @import '../components';
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    scss/themes/ang.scss 3:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+4 │ @import './ang-variables';
+  │         ^^^^^^^^^^^^^^^^^
+  ╵
+    scss/themes/ang.scss 4:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+5 │ @import './common';
+  │         ^^^^^^^^^^
+  ╵
+    scss/themes/ang.scss 5:9  root stylesheet
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import './cxd';
+  │         ^^^^^^^
+  ╵
+    scss/themes/default.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import './functions';
+  │         ^^^^^^^^^^^^^
+  ╵
+    scss/_properties.scss 2:9  @import
+    scss/themes/antd.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import './functions';
+  │         ^^^^^^^^^^^^^
+  ╵
+    scss/_properties.scss 2:9  @import
+    scss/themes/ang.scss 2:9   root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import '../properties';
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    scss/themes/cxd.scss 2:9      @import
+    scss/themes/default.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+3 │ @import '../components';
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    scss/themes/cxd.scss 3:9      @import
+    scss/themes/default.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+4 │ @import './cxd-variables';
+  │         ^^^^^^^^^^^^^^^^^
+  ╵
+    scss/themes/cxd.scss 4:9      @import
+    scss/themes/default.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+5 │ @import './common';
+  │         ^^^^^^^^^^
+  ╵
+    scss/themes/cxd.scss 5:9      @import
+    scss/themes/default.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass($n < length($breakpoint-names)): nth($breakpoint-names, $n + 1))
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+10 │     @return if(
+   │ ┌───────────^
+11 │ │     $n < length($breakpoint-names),
+12 │ │     nth($breakpoint-names, $n + 1),
+13 │ │     null
+14 │ │   );
+   │ └───^
+   ╵
+    scss/_functions.scss 10:11  @import
+    scss/_properties.scss 2:9   @import
+    scss/themes/antd.scss 2:9   root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass($next): breakpoint-min($next, $breakpoints) - 1px)
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+26 │   @return if($next, breakpoint-min($next, $breakpoints) - 1px, null);
+   │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    scss/_functions.scss 26:11  @import
+    scss/_properties.scss 2:9   @import
+    scss/themes/antd.scss 2:9   root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass(breakpoint-min($name, $breakpoints) == null): ""; else: "-#{$name}")
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+31 │   @return if(breakpoint-min($name, $breakpoints) ==null, '', '-#{$name}');
+   │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    scss/_functions.scss 31:11  @import
+    scss/_properties.scss 2:9   @import
+    scss/themes/antd.scss 2:9   root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass($n < length($breakpoint-names)): nth($breakpoint-names, $n + 1))
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+10 │     @return if(
+   │ ┌───────────^
+11 │ │     $n < length($breakpoint-names),
+12 │ │     nth($breakpoint-names, $n + 1),
+13 │ │     null
+14 │ │   );
+   │ └───^
+   ╵
+    scss/_functions.scss 10:11  @import
+    scss/_properties.scss 2:9   @import
+    scss/themes/ang.scss 2:9    root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass($next): breakpoint-min($next, $breakpoints) - 1px)
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+26 │   @return if($next, breakpoint-min($next, $breakpoints) - 1px, null);
+   │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    scss/_functions.scss 26:11  @import
+    scss/_properties.scss 2:9   @import
+    scss/themes/ang.scss 2:9    root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass(breakpoint-min($name, $breakpoints) == null): ""; else: "-#{$name}")
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+31 │   @return if(breakpoint-min($name, $breakpoints) ==null, '', '-#{$name}');
+   │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    scss/_functions.scss 31:11  @import
+    scss/_properties.scss 2:9   @import
+    scss/themes/ang.scss 2:9    root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass($n < length($breakpoint-names)): nth($breakpoint-names, $n + 1))
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+10 │     @return if(
+   │ ┌───────────^
+11 │ │     $n < length($breakpoint-names),
+12 │ │     nth($breakpoint-names, $n + 1),
+13 │ │     null
+14 │ │   );
+   │ └───^
+   ╵
+    scss/_functions.scss 10:11    @import
+    scss/_properties.scss 2:9     @import
+    scss/themes/cxd.scss 2:9      @import
+    scss/themes/default.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass($next): breakpoint-min($next, $breakpoints) - 1px)
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+26 │   @return if($next, breakpoint-min($next, $breakpoints) - 1px, null);
+   │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    scss/_functions.scss 26:11    @import
+    scss/_properties.scss 2:9     @import
+    scss/themes/cxd.scss 2:9      @import
+    scss/themes/default.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass(breakpoint-min($name, $breakpoints) == null): ""; else: "-#{$name}")
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+31 │   @return if(breakpoint-min($name, $breakpoints) ==null, '', '-#{$name}');
+   │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    scss/_functions.scss 31:11    @import
+    scss/_properties.scss 2:9     @import
+    scss/themes/cxd.scss 2:9      @import
+    scss/themes/default.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+152 │ $white: map-get($colors, white);
+    │         ^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 152:9  @import
+    scss/_properties.scss 3:9   @import
+    scss/themes/antd.scss 2:9   root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+152 │ $white: map-get($colors, white);
+    │         ^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 152:9  @import
+    scss/_properties.scss 3:9   @import
+    scss/themes/ang.scss 2:9    root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+152 │ $white: map-get($colors, white);
+    │         ^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 152:9    @import
+    scss/_properties.scss 3:9     @import
+    scss/themes/cxd.scss 2:9      @import
+    scss/themes/default.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+154 │   map-get($colors, gray),
+    │   ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 154:3  @import
+    scss/_properties.scss 3:9   @import
+    scss/themes/antd.scss 2:9   root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+154 │   map-get($colors, gray),
+    │   ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 154:3  @import
+    scss/_properties.scss 3:9   @import
+    scss/themes/ang.scss 2:9    root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+153 │   $gray50: map-get(
+    │ ┌──────────^
+154 │ │   map-get($colors, gray),
+155 │ │   50
+156 │ │ ); // node-sass 不支持多个参数用法，所以先这么写。
+    │ └─^
+    ╵
+    scss/_variables.scss 153:10  @import
+    scss/_properties.scss 3:9    @import
+    scss/themes/antd.scss 2:9    root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+153 │   $gray50: map-get(
+    │ ┌──────────^
+154 │ │   map-get($colors, gray),
+155 │ │   50
+156 │ │ ); // node-sass 不支持多个参数用法，所以先这么写。
+    │ └─^
+    ╵
+    scss/_variables.scss 153:10  @import
+    scss/_properties.scss 3:9    @import
+    scss/themes/ang.scss 2:9     root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+154 │   map-get($colors, gray),
+    │   ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 154:3    @import
+    scss/_properties.scss 3:9     @import
+    scss/themes/cxd.scss 2:9      @import
+    scss/themes/default.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+153 │   $gray50: map-get(
+    │ ┌──────────^
+154 │ │   map-get($colors, gray),
+155 │ │   50
+156 │ │ ); // node-sass 不支持多个参数用法，所以先这么写。
+    │ └─^
+    ╵
+    scss/_variables.scss 153:10   @import
+    scss/_properties.scss 3:9     @import
+    scss/themes/cxd.scss 2:9      @import
+    scss/themes/default.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+157 │ $gray100: map-get(map-get($colors, gray), 100) !default;
+    │                   ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 157:19  @import
+    scss/_properties.scss 3:9    @import
+    scss/themes/antd.scss 2:9    root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+157 │ $gray100: map-get(map-get($colors, gray), 100) !default;
+    │                   ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 157:19  @import
+    scss/_properties.scss 3:9    @import
+    scss/themes/ang.scss 2:9     root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+157 │ $gray100: map-get(map-get($colors, gray), 100) !default;
+    │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 157:11  @import
+    scss/_properties.scss 3:9    @import
+    scss/themes/antd.scss 2:9    root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+157 │ $gray100: map-get(map-get($colors, gray), 100) !default;
+    │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 157:11  @import
+    scss/_properties.scss 3:9    @import
+    scss/themes/ang.scss 2:9     root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+157 │ $gray100: map-get(map-get($colors, gray), 100) !default;
+    │                   ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 157:19   @import
+    scss/_properties.scss 3:9     @import
+    scss/themes/cxd.scss 2:9      @import
+    scss/themes/default.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+157 │ $gray100: map-get(map-get($colors, gray), 100) !default;
+    │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 157:11   @import
+    scss/_properties.scss 3:9     @import
+    scss/themes/cxd.scss 2:9      @import
+    scss/themes/default.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [slash-div]: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div(100, $i) or calc(100 / $i)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+549 │     width: 100 / $i * 1%;
+    │            ^^^^^^^^
+    ╵
+    scss/components/form/_form.scss 549:12  @import
+    scss/themes/_common.scss 133:9          @import
+    scss/themes/cxd.scss 5:9                @import
+    scss/themes/default.scss 2:9            root stylesheet
+
+DEPRECATION WARNING [slash-div]: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div(100, $i) or calc(100 / $i)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+549 │     width: 100 / $i * 1%;
+    │            ^^^^^^^^
+    ╵
+    scss/components/form/_form.scss 549:12  @import
+    scss/themes/_common.scss 133:9          @import
+    scss/themes/ang.scss 5:9                root stylesheet
+
+DEPRECATION WARNING [slash-div]: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div(100, $i) or calc(100 / $i)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+549 │     width: 100 / $i * 1%;
+    │            ^^^^^^^^
+    ╵
+    scss/components/form/_form.scss 549:12  @import
+    scss/themes/_common.scss 133:9          @import
+    scss/themes/antd.scss 5:9               root stylesheet
+
+WARNING: 261 repetitive deprecation warnings omitted.
+
+WARNING: 260 repetitive deprecation warnings omitted.
+
+WARNING: 260 repetitive deprecation warnings omitted.
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import '../properties';
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    scss/themes/dark.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import '../components';
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    scss/themes/dark.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+3 │ @import './dark-variables';
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    scss/themes/dark.scss 3:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+4 │ @import './common';
+  │         ^^^^^^^^^^
+  ╵
+    scss/themes/dark.scss 4:9  root stylesheet
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import '../properties';
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    scss/themes/cxd.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+3 │ @import '../components';
+  │         ^^^^^^^^^^^^^^^
+  ╵
+    scss/themes/cxd.scss 3:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+4 │ @import './cxd-variables';
+  │         ^^^^^^^^^^^^^^^^^
+  ╵
+    scss/themes/cxd.scss 4:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+5 │ @import './common';
+  │         ^^^^^^^^^^
+  ╵
+    scss/themes/cxd.scss 5:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import './functions';
+  │         ^^^^^^^^^^^^^
+  ╵
+    scss/_properties.scss 2:9  @import
+    scss/themes/dark.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import './functions';
+  │         ^^^^^^^^^^^^^
+  ╵
+    scss/_properties.scss 2:9  @import
+    scss/themes/cxd.scss 2:9   root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass($n < length($breakpoint-names)): nth($breakpoint-names, $n + 1))
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+10 │     @return if(
+   │ ┌───────────^
+11 │ │     $n < length($breakpoint-names),
+12 │ │     nth($breakpoint-names, $n + 1),
+13 │ │     null
+14 │ │   );
+   │ └───^
+   ╵
+    scss/_functions.scss 10:11  @import
+    scss/_properties.scss 2:9   @import
+    scss/themes/dark.scss 1:9   root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass($next): breakpoint-min($next, $breakpoints) - 1px)
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+26 │   @return if($next, breakpoint-min($next, $breakpoints) - 1px, null);
+   │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    scss/_functions.scss 26:11  @import
+    scss/_properties.scss 2:9   @import
+    scss/themes/dark.scss 1:9   root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass(breakpoint-min($name, $breakpoints) == null): ""; else: "-#{$name}")
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+31 │   @return if(breakpoint-min($name, $breakpoints) ==null, '', '-#{$name}');
+   │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    scss/_functions.scss 31:11  @import
+    scss/_properties.scss 2:9   @import
+    scss/themes/dark.scss 1:9   root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass($n < length($breakpoint-names)): nth($breakpoint-names, $n + 1))
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+10 │     @return if(
+   │ ┌───────────^
+11 │ │     $n < length($breakpoint-names),
+12 │ │     nth($breakpoint-names, $n + 1),
+13 │ │     null
+14 │ │   );
+   │ └───^
+   ╵
+    scss/_functions.scss 10:11  @import
+    scss/_properties.scss 2:9   @import
+    scss/themes/cxd.scss 2:9    root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass($next): breakpoint-min($next, $breakpoints) - 1px)
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+26 │   @return if($next, breakpoint-min($next, $breakpoints) - 1px, null);
+   │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    scss/_functions.scss 26:11  @import
+    scss/_properties.scss 2:9   @import
+    scss/themes/cxd.scss 2:9    root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass(breakpoint-min($name, $breakpoints) == null): ""; else: "-#{$name}")
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+31 │   @return if(breakpoint-min($name, $breakpoints) ==null, '', '-#{$name}');
+   │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    scss/_functions.scss 31:11  @import
+    scss/_properties.scss 2:9   @import
+    scss/themes/cxd.scss 2:9    root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+152 │ $white: map-get($colors, white);
+    │         ^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 152:9  @import
+    scss/_properties.scss 3:9   @import
+    scss/themes/dark.scss 1:9   root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+152 │ $white: map-get($colors, white);
+    │         ^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 152:9  @import
+    scss/_properties.scss 3:9   @import
+    scss/themes/cxd.scss 2:9    root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+154 │   map-get($colors, gray),
+    │   ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 154:3  @import
+    scss/_properties.scss 3:9   @import
+    scss/themes/dark.scss 1:9   root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+154 │   map-get($colors, gray),
+    │   ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 154:3  @import
+    scss/_properties.scss 3:9   @import
+    scss/themes/cxd.scss 2:9    root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+153 │   $gray50: map-get(
+    │ ┌──────────^
+154 │ │   map-get($colors, gray),
+155 │ │   50
+156 │ │ ); // node-sass 不支持多个参数用法，所以先这么写。
+    │ └─^
+    ╵
+    scss/_variables.scss 153:10  @import
+    scss/_properties.scss 3:9    @import
+    scss/themes/dark.scss 1:9    root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+153 │   $gray50: map-get(
+    │ ┌──────────^
+154 │ │   map-get($colors, gray),
+155 │ │   50
+156 │ │ ); // node-sass 不支持多个参数用法，所以先这么写。
+    │ └─^
+    ╵
+    scss/_variables.scss 153:10  @import
+    scss/_properties.scss 3:9    @import
+    scss/themes/cxd.scss 2:9     root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+157 │ $gray100: map-get(map-get($colors, gray), 100) !default;
+    │                   ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 157:19  @import
+    scss/_properties.scss 3:9    @import
+    scss/themes/dark.scss 1:9    root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+157 │ $gray100: map-get(map-get($colors, gray), 100) !default;
+    │                   ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 157:19  @import
+    scss/_properties.scss 3:9    @import
+    scss/themes/cxd.scss 2:9     root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+157 │ $gray100: map-get(map-get($colors, gray), 100) !default;
+    │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 157:11  @import
+    scss/_properties.scss 3:9    @import
+    scss/themes/dark.scss 1:9    root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+157 │ $gray100: map-get(map-get($colors, gray), 100) !default;
+    │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    scss/_variables.scss 157:11  @import
+    scss/_properties.scss 3:9    @import
+    scss/themes/cxd.scss 2:9     root stylesheet
+
+DEPRECATION WARNING [slash-div]: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div(100, $i) or calc(100 / $i)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+549 │     width: 100 / $i * 1%;
+    │            ^^^^^^^^
+    ╵
+    scss/components/form/_form.scss 549:12  @import
+    scss/themes/_common.scss 133:9          @import
+    scss/themes/cxd.scss 5:9                root stylesheet
+
+DEPRECATION WARNING [slash-div]: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div(100, $i) or calc(100 / $i)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+549 │     width: 100 / $i * 1%;
+    │            ^^^^^^^^
+    ╵
+    scss/components/form/_form.scss 549:12  @import
+    scss/themes/_common.scss 133:9          @import
+    scss/themes/dark.scss 4:9               root stylesheet
+
+WARNING: 260 repetitive deprecation warnings omitted.
+
+WARNING: 261 repetitive deprecation warnings omitted.
+
+[1m[33m(!) Circular dependencies[39m[22m
+src/components/Select.tsx -> src/components/SelectMobile.tsx -> src/components/Select.tsx
+src/components/table/index.tsx -> src/components/table/ColGroup.tsx -> src/components/table/index.tsx
+src/components/json-schema/Item.tsx -> src/components/json-schema/Array.tsx -> src/components/json-schema/Item.tsx
+...and 5 more
+[1m[33m(!) Plugin typescript: @rollup/plugin-typescript TS5051: Option 'sourceRoot can only be used when either option '--inlineSourceMap' or option '--sourceMap' is provided.[39m[22m
+[1m[33m(!) Plugin postcss: Replace fill-available to stretch, because spec had been changed[39m[22m
+[1mscss/themes/default.scss[22m
+[1mscss/themes/antd.scss[22m
+[1mscss/themes/ang.scss[22m
+[1mscss/themes/dark.scss[22m
+[1mscss/themes/cxd.scss[22m
+[32mcreated [1mlib[22m in [1m24.8s[22m[39m
+[36m
+[1m./src/index.tsx, ./src/components/ColorPicker.tsx, ./src/components/BarCode.tsx, ./src/components/Markdown.tsx, ./src/components/Tinymce.tsx, ./src/components/RichText.tsx, ./src/components/CityDB.ts, ./src/components/PdfViewer.tsx[22m → [1mesm[22m...[39m
+[1m[33m(!) Circular dependencies[39m[22m
+src/components/Select.tsx -> src/components/SelectMobile.tsx -> src/components/Select.tsx
+src/components/table/index.tsx -> src/components/table/ColGroup.tsx -> src/components/table/index.tsx
+src/components/json-schema/Item.tsx -> src/components/json-schema/Array.tsx -> src/components/json-schema/Item.tsx
+...and 5 more
+[1m[33m(!) Plugin typescript: @rollup/plugin-typescript TS5051: Option 'sourceRoot can only be used when either option '--inlineSourceMap' or option '--sourceMap' is provided.[39m[22m
+[32mcreated [1mesm[22m in [1m13s[22m[39m

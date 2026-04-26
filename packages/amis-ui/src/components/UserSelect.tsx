@@ -12,12 +12,12 @@ import Sortable from 'sortablejs';
 import PopUp from './PopUp';
 import InputBox from './InputBox';
 import {Icon} from './icons';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash-es/debounce';
 import {autobind, findTree} from 'amis-core';
 import Checkbox from './Checkbox';
 import {optionValueCompare, value2array} from './Select';
 import Spinner, {SpinnerExtraProps} from './Spinner';
-import flatten from 'lodash/flatten';
+import flatten from 'lodash-es/flatten';
 import {findDomCompat as findDOMNode} from 'amis-core';
 import {Api, PlainObject} from 'amis-core';
 

@@ -22,8 +22,8 @@ import {
 
 import {Tree as TreeSelector} from 'amis-ui';
 import {matchSorter} from 'match-sorter';
-import debouce from 'lodash/debounce';
-import find from 'lodash/find';
+import debouce from 'lodash-es/debounce';
+import find from 'lodash-es/find';
 import {Api} from 'amis-core';
 import {isEffectiveApi} from 'amis-core';
 import {Spinner} from 'amis-ui';

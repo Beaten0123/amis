@@ -1,7 +1,7 @@
 import {types, getParent, SnapshotIn, Instance} from 'mobx-state-tree';
 import {iRendererStore} from './iRenderer';
-import isEqual from 'lodash/isEqual';
-import find from 'lodash/find';
+import isEqual from 'lodash-es/isEqual';
+import find from 'lodash-es/find';
 import {
   createObject,
   isObject,

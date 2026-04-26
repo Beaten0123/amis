@@ -25,7 +25,7 @@ import type {IListStore} from './list';
 import {ModalStore} from './modal';
 import type {IModalStore} from './modal';
 import {TranslateFn} from '../locale';
-import find from 'lodash/find';
+import find from 'lodash-es/find';
 import {StoreNode} from './node';
 import type {IStoreNode} from './node';
 import {FormItemStore} from './formItem';

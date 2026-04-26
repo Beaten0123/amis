@@ -2,11 +2,11 @@ import React from 'react';
 import {isAlive} from 'mobx-state-tree';
 import {reaction} from 'mobx';
 import Sortable from 'sortablejs';
-import isEqual from 'lodash/isEqual';
-import find from 'lodash/find';
-import debounce from 'lodash/debounce';
-import intersection from 'lodash/intersection';
-import isPlainObject from 'lodash/isPlainObject';
+import isEqual from 'lodash-es/isEqual';
+import find from 'lodash-es/find';
+import debounce from 'lodash-es/debounce';
+import intersection from 'lodash-es/intersection';
+import isPlainObject from 'lodash-es/isPlainObject';
 import {
   TableStore,
   ITableStore,

@@ -13,7 +13,7 @@ import {
 import {defaultValue, getSchemaTpl} from 'amis-editor-core';
 import {mapReactElement} from 'amis-editor-core';
 import {VRenderer} from 'amis-editor-core';
-import findIndex from 'lodash/findIndex';
+import findIndex from 'lodash-es/findIndex';
 import {RegionWrapper as Region} from 'amis-editor-core';
 import {Tab} from 'amis';
 import {tipedLabel} from 'amis-editor-core';

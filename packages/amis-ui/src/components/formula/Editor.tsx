@@ -28,7 +28,7 @@ import Transition, {
   EXITING
 } from 'react-transition-group/Transition';
 import MonacoEditor from '../Editor';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash-es/debounce';
 
 const collapseStyles: {
   [propName: string]: string;

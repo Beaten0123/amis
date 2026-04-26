@@ -6,7 +6,7 @@
 import cx from 'classnames';
 import React from 'react';
 import {observer} from 'mobx-react';
-import camelCase from 'lodash/camelCase';
+import camelCase from 'lodash-es/camelCase';
 import {FormItem} from 'amis';
 
 import {isNumeric} from 'amis-editor-core';

@@ -1,9 +1,9 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`textbox-behindDoc 1`] = `
 <article>
   <section
-    style="position: relative; width: 815.98px; padding: 96.00px 96.00px 96.00px 96.00px;"
+    style="position: relative; width: 815.98px; padding: 96px;"
   >
     <p
       class="docx-viewer-0-p"
@@ -15,7 +15,7 @@ exports[`textbox-behindDoc 1`] = `
         <div
           data-id="1"
           data-name="Text Box 1"
-          style="z-index: 251659264; position: absolute; left: 144.00px; top: 77.80px; width: 122.79px; height: 53.58px; display: table;"
+          style="z-index: 251659264; position: absolute; left: 144px; top: 77.8px; width: 122.79px; height: 53.58px; display: table;"
         >
           <svg
             height="53.58px"

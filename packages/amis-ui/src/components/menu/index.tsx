@@ -5,8 +5,8 @@
  */
 
 import React from 'react';
-import uniq from 'lodash/uniq';
-import isEqual from 'lodash/isEqual';
+import uniq from 'lodash-es/uniq';
+import isEqual from 'lodash-es/isEqual';
 import RcMenu, {
   MenuProps as RcMenuProps,
   Divider as RcDivider,

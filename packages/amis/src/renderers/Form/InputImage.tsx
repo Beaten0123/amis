@@ -16,7 +16,7 @@ const Cropper = React.lazy(() => import('react-cropper'));
 import DropZone from 'react-dropzone';
 import {FileRejection, ErrorCode, DropEvent} from 'react-dropzone';
 import 'blueimp-canvastoblob';
-import find from 'lodash/find';
+import find from 'lodash-es/find';
 import {Payload, ActionObject} from 'amis-core';
 import {
   buildApi,
@@ -40,10 +40,10 @@ import {
   SchemaUrlPath
 } from '../../Schema';
 import {filter} from 'amis-core';
-import isPlainObject from 'lodash/isPlainObject';
-import merge from 'lodash/merge';
-import omit from 'lodash/omit';
-import isNil from 'lodash/isNil';
+import isPlainObject from 'lodash-es/isPlainObject';
+import merge from 'lodash-es/merge';
+import omit from 'lodash-es/omit';
+import isNil from 'lodash-es/isNil';
 import {AMISTplSchema} from '../Tpl';
 import Sortable from 'sortablejs';
 

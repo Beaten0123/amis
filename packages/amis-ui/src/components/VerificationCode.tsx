@@ -12,7 +12,7 @@ import React, {
 } from 'react';
 import {themeable, ThemeProps} from 'amis-core';
 import InputComponent from './Input';
-import isEqualWith from 'lodash/isEqualWith';
+import isEqualWith from 'lodash-es/isEqualWith';
 
 const defaultLength = 6;
 

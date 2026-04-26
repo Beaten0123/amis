@@ -4,7 +4,7 @@ import {getSchemaTpl} from 'amis-editor-core';
 import {BasePlugin, RendererInfo, VRendererConfig} from 'amis-editor-core';
 import {VRenderer} from 'amis-editor-core';
 import {mapReactElement} from 'amis-editor-core';
-import findIndex from 'lodash/findIndex';
+import findIndex from 'lodash-es/findIndex';
 import {RegionWrapper as Region} from 'amis-editor-core';
 import {AnchorNavSection} from 'amis-ui';
 import {registerFilter} from 'amis-formula';

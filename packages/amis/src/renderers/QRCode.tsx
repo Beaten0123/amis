@@ -17,7 +17,7 @@ import {filter} from 'amis-core';
 import {QRCode as QRCodeRender} from 'qrcode-react-next';
 import {BaseSchema, AMISClassName} from '../Schema';
 import {getPropValue} from 'amis-core';
-import mapValues from 'lodash/mapValues';
+import mapValues from 'lodash-es/mapValues';
 import {saveAs} from 'file-saver';
 
 function downloadBlob(blob: Blob, filename: string) {

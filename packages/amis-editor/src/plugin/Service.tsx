@@ -1,8 +1,8 @@
 import React from 'react';
 import DeepDiff from 'deep-diff';
-import pick from 'lodash/pick';
+import pick from 'lodash-es/pick';
 import {render as amisRender} from 'amis';
-import flattenDeep from 'lodash/flattenDeep';
+import flattenDeep from 'lodash-es/flattenDeep';
 import {
   EditorNodeType,
   JSONPipeOut,

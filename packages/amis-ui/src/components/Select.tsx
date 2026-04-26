@@ -12,9 +12,9 @@ import {
   uncontrollable
 } from 'amis-core';
 import React from 'react';
-import isInteger from 'lodash/isInteger';
-import omit from 'lodash/omit';
-import merge from 'lodash/merge';
+import isInteger from 'lodash-es/isInteger';
+import omit from 'lodash-es/omit';
+import merge from 'lodash-es/merge';
 import VirtualList from './virtual-list';
 import {Overlay} from 'amis-core';
 import {PopOver} from 'amis-core';
@@ -30,9 +30,9 @@ import {
   ucFirst,
   normalizeNodePath
 } from 'amis-core';
-import find from 'lodash/find';
-import isPlainObject from 'lodash/isPlainObject';
-import union from 'lodash/union';
+import find from 'lodash-es/find';
+import isPlainObject from 'lodash-es/isPlainObject';
+import union from 'lodash-es/union';
 import {highlight} from 'amis-core';
 import {findDomCompat as findDOMNode} from 'amis-core';
 import {ClassNamesFn, themeable, ThemeProps} from 'amis-core';

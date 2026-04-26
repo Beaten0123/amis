@@ -5,8 +5,8 @@
 
 import React from 'react';
 import {findDomCompat as findDOMNode} from 'amis-core';
-import cloneDeep from 'lodash/cloneDeep';
-import pick from 'lodash/pick';
+import cloneDeep from 'lodash-es/cloneDeep';
+import pick from 'lodash-es/pick';
 import {FormItem, Button, Icon, toast, Spinner, autobind} from 'amis';
 import {TooltipWrapper} from 'amis-ui';
 import {JSONPipeIn} from 'amis-editor-core';

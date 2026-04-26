@@ -4,9 +4,9 @@
 
 import React from 'react';
 import cx from 'classnames';
-import cloneDeep from 'lodash/cloneDeep';
-import get from 'lodash/get';
-import set from 'lodash/set';
+import cloneDeep from 'lodash-es/cloneDeep';
+import get from 'lodash-es/get';
+import set from 'lodash-es/set';
 import Sortable from 'sortablejs';
 import {
   FormItem,

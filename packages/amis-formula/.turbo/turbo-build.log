@@ -1,0 +1,23 @@
+
+> amis-formula@6.13.0 build
+> npm run clean-dist && npm run genDoc && cross-env NODE_ENV=production rollup -c && cp src/doc.md lib/doc.md && cp src/doc.md esm/doc.md
+
+
+> amis-formula@6.13.0 clean-dist
+> rimraf lib/**
+
+
+> amis-formula@6.13.0 genDoc
+> ts-node ./scripts/genDoc.ts
+
+公式文档生成 > /Users/m5/installed/easymdd/amis/packages/amis-formula/src/doc.ts
+公式md生成 > /Users/m5/installed/easymdd/amis/packages/amis-formula/src/doc.md
+[1mloaded rollup.config.js with warnings[22m
+[1m[33m(!) Unused external imports[39m[22m
+dependencies imported from external module "/Users/m5/installed/easymdd/amis/packages/amis-formula/package.json" but never used in "rollup.config.js"
+[36m
+[1m./src/index.ts[22m → [1mlib[22m...[39m
+[32mcreated [1mlib[22m in [1m1.8s[22m[39m
+[36m
+[1m./src/index.ts[22m → [1mesm[22m...[39m
+[32mcreated [1mesm[22m in [1m1.9s[22m[39m

@@ -1,5 +1,5 @@
 import {toast, normalizeApiResponseData} from 'amis';
-import cloneDeep from 'lodash/cloneDeep';
+import cloneDeep from 'lodash-es/cloneDeep';
 import React from 'react';
 import {
   getEventControlConfig,
@@ -36,8 +36,8 @@ import type {
   RendererPluginAction,
   RendererPluginEvent
 } from 'amis-editor-core';
-import isPlainObject from 'lodash/isPlainObject';
-import findLastIndex from 'lodash/findLastIndex';
+import isPlainObject from 'lodash-es/isPlainObject';
+import findLastIndex from 'lodash-es/findLastIndex';
 
 interface ColumnItem {
   label: string;

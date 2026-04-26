@@ -8,8 +8,8 @@ import {
   flow,
   getEnv
 } from 'mobx-state-tree';
-import find from 'lodash/find';
-import isEqual from 'lodash/isEqual';
+import find from 'lodash-es/find';
+import isEqual from 'lodash-es/isEqual';
 
 import {
   isVisible,

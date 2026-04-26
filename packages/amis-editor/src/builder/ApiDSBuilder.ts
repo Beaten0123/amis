@@ -3,13 +3,13 @@
  * @desc 外部 API 接口数据源构造器
  */
 
-import sortBy from 'lodash/sortBy';
-import pick from 'lodash/pick';
-import get from 'lodash/get';
-import uniq from 'lodash/uniq';
-import omit from 'lodash/omit';
-import intersection from 'lodash/intersection';
-import isFunction from 'lodash/isFunction';
+import sortBy from 'lodash-es/sortBy';
+import pick from 'lodash-es/pick';
+import get from 'lodash-es/get';
+import uniq from 'lodash-es/uniq';
+import omit from 'lodash-es/omit';
+import intersection from 'lodash-es/intersection';
+import isFunction from 'lodash-es/isFunction';
 import {isObject} from 'amis-core';
 import {toast} from 'amis';
 import {

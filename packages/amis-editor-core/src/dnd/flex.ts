@@ -2,14 +2,14 @@ import {isMobile} from 'amis-core';
 /**
  * 支持上下左右拖拽模式
  */
-import findIndex from 'lodash/findIndex';
+import findIndex from 'lodash-es/findIndex';
 import {EditorDNDManager} from '.';
 import {renderThumbToGhost} from '../component/factory';
 import {EditorNodeType} from '../store/node';
 import {translateSchema} from '../util';
 import {DNDModeInterface} from './interface';
-import findLastIndex from 'lodash/findLastIndex';
-import find from 'lodash/find';
+import findLastIndex from 'lodash-es/findLastIndex';
+import find from 'lodash-es/find';
 import {AutoScroll, getScrollableParent} from './autoScroll';
 
 const className = 'PushHighlight';

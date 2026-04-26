@@ -2,7 +2,7 @@ import React from 'react';
 import {autobind, PopOver, Overlay, toNumber} from 'amis-core';
 import PopUp from './PopUp';
 import {findDomCompat as findDOMNode} from 'amis-core';
-import isNumber from 'lodash/isNumber';
+import isNumber from 'lodash-es/isNumber';
 
 export type OverlayAlignType = 'left' | 'center' | 'right';
 

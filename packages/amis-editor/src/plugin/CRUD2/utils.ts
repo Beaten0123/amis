@@ -1,8 +1,8 @@
-import isEmpty from 'lodash/isEmpty';
-import isObject from 'lodash/isObject';
-import remove from 'lodash/remove';
-import pickBy from 'lodash/pickBy';
-import cloneDeep from 'lodash/cloneDeep';
+import isEmpty from 'lodash-es/isEmpty';
+import isObject from 'lodash-es/isObject';
+import remove from 'lodash-es/remove';
+import pickBy from 'lodash-es/pickBy';
+import cloneDeep from 'lodash-es/cloneDeep';
 
 export function findAndUpdate<T = any>(
   arr: T[],

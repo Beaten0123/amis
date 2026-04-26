@@ -8,7 +8,7 @@
  */
 
 import React from 'react';
-import mapValues from 'lodash/mapValues';
+import mapValues from 'lodash-es/mapValues';
 
 import {FormItem} from 'amis';
 

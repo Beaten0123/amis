@@ -4,8 +4,8 @@
 
 import React from 'react';
 import cx from 'classnames';
-import camelCase from 'lodash/camelCase';
-import mapKeys from 'lodash/mapKeys';
+import camelCase from 'lodash-es/camelCase';
+import mapKeys from 'lodash-es/mapKeys';
 import {FormItem, Switch} from 'amis';
 
 import {

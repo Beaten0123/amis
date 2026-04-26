@@ -1,9 +1,9 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`svg 1`] = `
 <article>
   <section
-    style="position: relative; width: 815.98px; padding: 96.00px 96.00px 96.00px 96.00px;"
+    style="position: relative; width: 815.98px; padding: 96px;"
   >
     <p
       class="docx-viewer-0-p"
@@ -20,7 +20,7 @@ exports[`svg 1`] = `
           <img
             alt=""
             src="blob:http://localhost/mock"
-            style="position: relative; left: 0.00px; top: 0.00px; width: 623.98px; height: 623.98px;"
+            style="position: relative; left: 0px; top: 0px; width: 623.98px; height: 623.98px;"
           />
         </div>
       </span>

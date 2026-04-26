@@ -1,9 +1,9 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`group 1`] = `
 <article>
   <section
-    style="position: relative; width: 815.98px; padding: 96.00px 96.00px 96.00px 96.00px;"
+    style="position: relative; width: 815.98px; padding: 96px;"
   >
     <p
       class="docx-viewer-0-p"
@@ -132,7 +132,7 @@ exports[`group 1`] = `
                 >
                   <p
                     class="docx-viewer-0-p docx-viewer-0-Normal docx-classname-0"
-                    style="line-height: 1.15; position: relative; text-indent: -28.00px; margin-left: 28.00px;"
+                    style="line-height: 1.15; position: relative; text-indent: -28px; margin-left: 28px;"
                   >
                     <span
                       style="font-family: Wingdings;"
@@ -160,7 +160,7 @@ exports[`group 1`] = `
 exports[`group-in-group 1`] = `
 <article>
   <section
-    style="position: relative; width: 815.98px; padding: 96.00px 96.00px 96.00px 96.00px;"
+    style="position: relative; width: 815.98px; padding: 96px;"
   >
     <p
       class="docx-viewer-1-p"
@@ -172,7 +172,7 @@ exports[`group-in-group 1`] = `
         <div
           data-id="25"
           data-name="组合 25"
-          style="z-index: 251659264; position: absolute; left: -54.22px; top: -23.56px; width: 191.00px; height: 41.59px;"
+          style="z-index: 251659264; position: absolute; left: -54.22px; top: -23.56px; width: 191px; height: 41.59px;"
         >
           <div>
             <div>
@@ -212,7 +212,7 @@ exports[`group-in-group 1`] = `
               </div>
             </div>
             <div
-              style="width: 191.00px; height: 41.59px;"
+              style="width: 191px; height: 41.59px;"
             >
               <div
                 style="position: absolute; left: 23.38361567635904px; top: 0px; width: 167.61638432364094px; height: 41.59px; display: table;"
@@ -234,17 +234,17 @@ exports[`group-in-group 1`] = `
                 >
                   <p
                     class="docx-viewer-1-p docx-viewer-1-Normal docx-viewer-1-NormalWeb"
-                    style="margin-top: 0.00px; margin-bottom: 0.00px; position: relative;"
+                    style="margin-top: 0px; margin-bottom: 0px; position: relative;"
                   >
                     <span
                       class="docx-viewer-1-r"
-                      style="font-family: var(--docx-theme-font-minorHAnsi), "Microsoft YaHei"; font-weight: bold; color: rgb(128, 128, 128); font-size: 24.00px;"
+                      style="font-family: var(--docx-theme-font-minorHAnsi), "Microsoft YaHei"; font-weight: bold; color: rgb(128, 128, 128); font-size: 24px;"
                     >
                       Basic 
                     </span>
                     <span
                       class="docx-viewer-1-r"
-                      style="font-family: var(--docx-theme-font-minorHAnsi), "Microsoft YaHei"; font-weight: bold; color: rgb(128, 128, 128); font-size: 24.00px;"
+                      style="font-family: var(--docx-theme-font-minorHAnsi), "Microsoft YaHei"; font-weight: bold; color: rgb(128, 128, 128); font-size: 24px;"
                     >
                       informatin
                     </span>
@@ -263,7 +263,7 @@ exports[`group-in-group 1`] = `
 exports[`shape-group 1`] = `
 <article>
   <section
-    style="position: relative; width: 815.98px; padding: 96.00px 96.00px 96.00px 96.00px;"
+    style="position: relative; width: 815.98px; padding: 96px;"
   >
     <p
       class="docx-viewer-2-p"
@@ -275,7 +275,7 @@ exports[`shape-group 1`] = `
         <div
           data-id="82"
           data-name="Group 36"
-          style="z-index: 251659264; position: absolute; left: 0.00px; top: 96.73px; width: 21.53px; height: 21.53px;"
+          style="z-index: 251659264; position: absolute; left: 0px; top: 96.73px; width: 21.53px; height: 21.53px;"
         >
           <div>
             <div

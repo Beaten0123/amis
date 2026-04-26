@@ -13,7 +13,7 @@ import {
 } from 'amis-editor-core';
 import {FormControlProps, isObject} from 'amis-core';
 import type {SchemaApi} from 'amis';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash-es/debounce';
 
 enum MapType {
   CUSTOM = 'custom',

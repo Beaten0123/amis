@@ -7,7 +7,7 @@ import InputBoxWithSuggestion from '../InputBoxWithSuggestion';
 import Select from '../Select';
 import type {InputJSONSchemaItemProps} from './index';
 import InputJSONSchemaItem from './Item';
-import isEqual from 'lodash/isEqual';
+import isEqual from 'lodash-es/isEqual';
 
 type JSONSchemaObjectMember = {
   key: string;

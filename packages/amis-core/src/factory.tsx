@@ -22,7 +22,7 @@ import {
 import {observer} from 'mobx-react';
 import Scoped from './Scoped';
 import {ThemeProps} from './theme';
-import find from 'lodash/find';
+import find from 'lodash-es/find';
 import {LocaleProps} from './locale';
 import {HocStoreFactory} from './WithStore';
 import type {RendererEnv} from './env';

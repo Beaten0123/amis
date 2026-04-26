@@ -1,4 +1,4 @@
-import omit from 'lodash/omit';
+import omit from 'lodash-es/omit';
 import {
   Api,
   ApiObject,
@@ -25,12 +25,12 @@ import {
   JSONTraverse,
   isEmpty
 } from './helper';
-import isPlainObject from 'lodash/isPlainObject';
+import isPlainObject from 'lodash-es/isPlainObject';
 import {debug, warning} from './debug';
 import {evaluate} from 'amis-formula';
 import {memoryParse} from './memoryParse';
-import cloneDeep from 'lodash/cloneDeep';
-import isEqual from 'lodash/isEqual';
+import cloneDeep from 'lodash-es/cloneDeep';
+import isEqual from 'lodash-es/isEqual';
 
 const rSchema =
   /(?:^|raw\:)(get|post|put|delete|patch|options|head|jsonp|js):/i;

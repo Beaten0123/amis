@@ -1,6 +1,6 @@
 import React from 'react';
-import omit from 'lodash/omit';
-import extend from 'lodash/extend';
+import omit from 'lodash-es/omit';
+import extend from 'lodash-es/extend';
 import {Renderer, RendererProps} from 'amis-core';
 import {SchemaNode, Schema, ActionObject, PlainObject} from 'amis-core';
 import {filter, evalExpression} from 'amis-core';

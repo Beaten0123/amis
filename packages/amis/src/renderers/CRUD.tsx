@@ -1,8 +1,8 @@
 import React from 'react';
-import isEqual from 'lodash/isEqual';
-import pickBy from 'lodash/pickBy';
-import omitBy from 'lodash/omitBy';
-import partition from 'lodash/partition';
+import isEqual from 'lodash-es/isEqual';
+import pickBy from 'lodash-es/pickBy';
+import omitBy from 'lodash-es/omitBy';
+import partition from 'lodash-es/partition';
 import {
   Renderer,
   RendererProps,
@@ -50,13 +50,13 @@ import {ScopedContext, IScopedContext} from 'amis-core';
 import {Button, SpinnerExtraProps, TooltipWrapper} from 'amis-ui';
 import {Select} from 'amis-ui';
 import {getExprProperties, isObject} from 'amis-core';
-import pick from 'lodash/pick';
+import pick from 'lodash-es/pick';
 import {findDomCompat as findDOMNode} from 'amis-core';
 import {evalExpression, filter} from 'amis-core';
 import {isEffectiveApi, isApiOutdated, str2function} from 'amis-core';
-import omit from 'lodash/omit';
-import find from 'lodash/find';
-import findIndex from 'lodash/findIndex';
+import omit from 'lodash-es/omit';
+import find from 'lodash-es/find';
+import findIndex from 'lodash-es/findIndex';
 import {Html} from 'amis-ui';
 import {Icon, confirm} from 'amis-ui';
 import {
@@ -87,8 +87,8 @@ import {
 
 import type {AMISPaginationSchema, PaginationProps} from './Pagination';
 import {isAlive} from 'mobx-state-tree';
-import isPlainObject from 'lodash/isPlainObject';
-import memoize from 'lodash/memoize';
+import isPlainObject from 'lodash-es/isPlainObject';
+import memoize from 'lodash-es/memoize';
 import {Spinner} from 'amis-ui';
 import {AutoFoldedList} from 'amis-ui';
 import {getQuickEditApi, type AMISQuickEditObject} from './QuickEdit';

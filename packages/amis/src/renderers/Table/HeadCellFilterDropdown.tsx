@@ -1,5 +1,5 @@
 import React from 'react';
-import xor from 'lodash/xor';
+import xor from 'lodash-es/xor';
 import {findDomCompat as findDOMNode} from 'amis-core';
 import {
   Overlay,

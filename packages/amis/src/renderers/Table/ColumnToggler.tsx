@@ -1,7 +1,7 @@
 import React from 'react';
 import {findDomCompat as findDOMNode} from 'amis-core';
 import Sortable from 'sortablejs';
-import cloneDeep from 'lodash/cloneDeep';
+import cloneDeep from 'lodash-es/cloneDeep';
 import {RendererProps} from 'amis-core';
 import {Overlay} from 'amis-core';
 import {PopOver} from 'amis-core';

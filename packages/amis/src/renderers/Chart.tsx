@@ -41,9 +41,9 @@ import {
 } from '../Schema';
 import {ActionSchema} from './Action';
 import {isAlive} from 'mobx-state-tree';
-import debounce from 'lodash/debounce';
-import pick from 'lodash/pick';
-import isString from 'lodash/isString';
+import debounce from 'lodash-es/debounce';
+import pick from 'lodash-es/pick';
+import isString from 'lodash-es/isString';
 import {ApiObject} from 'amis-core';
 import {AMISSchemaBase} from 'amis-core';
 import {AMISVariableName} from 'amis-core';

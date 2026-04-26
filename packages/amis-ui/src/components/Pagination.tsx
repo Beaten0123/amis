@@ -4,7 +4,7 @@
  * @Date: 2021-11-01 16:57:38
  */
 import React from 'react';
-import isInteger from 'lodash/isInteger';
+import isInteger from 'lodash-es/isInteger';
 import {
   localeable,
   LocaleProps,

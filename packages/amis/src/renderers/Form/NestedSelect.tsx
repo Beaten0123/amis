@@ -35,9 +35,9 @@ import {
   CustomStyle
 } from 'amis-core';
 import {findDomCompat as findDOMNode} from 'amis-core';
-import xor from 'lodash/xor';
-import union from 'lodash/union';
-import compact from 'lodash/compact';
+import xor from 'lodash-es/xor';
+import union from 'lodash-es/union';
+import compact from 'lodash-es/compact';
 import {FormOptionsSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';
 import {matchSorter} from 'match-sorter';

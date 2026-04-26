@@ -10,8 +10,8 @@ import React, {
   useCallback,
   forwardRef
 } from 'react';
-import isObject from 'lodash/isObject';
-import cloneDeep from 'lodash/cloneDeep';
+import isObject from 'lodash-es/isObject';
+import cloneDeep from 'lodash-es/cloneDeep';
 import {uncontrollable, highlight, labelToString} from 'amis-core';
 
 import {useSetState, useUpdateEffect} from '../hooks';

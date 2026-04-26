@@ -9,7 +9,7 @@ import {ThemeProps, themeable} from 'amis-core';
 
 import {autobind} from 'amis-core';
 import {uncontrollable} from 'amis-core';
-import find from 'lodash/find';
+import find from 'lodash-es/find';
 import type {Schema} from 'amis-core';
 
 export interface AnchorNavSectionProps extends ThemeProps {

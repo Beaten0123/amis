@@ -2,7 +2,7 @@
  * @file 一种更简单的拖拽模式，直接在某个位置显示条线来告知用户拖拽即将拖拽到哪。
  * 比如 Table 里面的列位置的移动，如果真要移动dom，那可能要命。
  */
-import findIndex from 'lodash/findIndex';
+import findIndex from 'lodash-es/findIndex';
 import {DNDModeInterface} from './interface';
 import {EditorNodeType} from '../store/node';
 import {EditorDNDManager} from './index';

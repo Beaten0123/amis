@@ -9,7 +9,7 @@ import {isExpression} from './utils/formula';
 import {reaction} from 'mobx';
 import {resolveVariableAndFilter} from './utils/resolveVariableAndFilter';
 import {IRootStore} from './store/root';
-import isPlainObject from 'lodash/isPlainObject';
+import isPlainObject from 'lodash-es/isPlainObject';
 
 /**
  * 全局变量的定义

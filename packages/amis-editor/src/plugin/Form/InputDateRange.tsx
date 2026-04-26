@@ -9,7 +9,7 @@ import {
   RendererPluginEvent
 } from 'amis-editor-core';
 import {getRendererByName} from 'amis-core';
-import omit from 'lodash/omit';
+import omit from 'lodash-es/omit';
 import type {Schema} from 'amis';
 import {ValidatorTag} from '../../validator';
 import {

@@ -4,10 +4,10 @@
  * @author fex
  */
 
-import range from 'lodash/range';
-import keys from 'lodash/keys';
-import isString from 'lodash/isString';
-import difference from 'lodash/difference';
+import range from 'lodash-es/range';
+import keys from 'lodash-es/keys';
+import isString from 'lodash-es/isString';
+import difference from 'lodash-es/difference';
 import React from 'react';
 import TooltipWrapper from './TooltipWrapper';
 import {uncontrollable} from 'amis-core';

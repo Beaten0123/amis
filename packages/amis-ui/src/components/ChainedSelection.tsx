@@ -8,7 +8,7 @@ import {uncontrollable} from 'amis-core';
 import Checkbox from './Checkbox';
 import {Option} from './Select';
 import {getTreeDepth} from 'amis-core';
-import times from 'lodash/times';
+import times from 'lodash-es/times';
 import Spinner, {SpinnerExtraProps} from './Spinner';
 import {localeable} from 'amis-core';
 import VirtualList, {AutoSizer} from './virtual-list';

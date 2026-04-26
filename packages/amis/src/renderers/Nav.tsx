@@ -1,9 +1,9 @@
 import React from 'react';
 import {findDomCompat as findDOMNode} from 'amis-core';
 import {matchSorter} from 'match-sorter';
-import isEqual from 'lodash/isEqual';
-import isString from 'lodash/isString';
-import cloneDeep from 'lodash/cloneDeep';
+import isEqual from 'lodash-es/isEqual';
+import isString from 'lodash-es/isString';
+import cloneDeep from 'lodash-es/cloneDeep';
 import {
   Renderer,
   RendererEnv,

@@ -1,9 +1,9 @@
 import React from 'react';
 import {findDomCompat as findDOMNode} from 'amis-core';
-import omitBy from 'lodash/omitBy';
-import pick from 'lodash/pick';
-import findIndex from 'lodash/findIndex';
-import upperFirst from 'lodash/upperFirst';
+import omitBy from 'lodash-es/omitBy';
+import pick from 'lodash-es/pick';
+import findIndex from 'lodash-es/findIndex';
+import upperFirst from 'lodash-es/upperFirst';
 import {
   Renderer,
   RendererProps,
@@ -39,7 +39,7 @@ import {
   AMISExpression,
   AMISSchemaCollection
 } from 'amis-core';
-import pickBy from 'lodash/pickBy';
+import pickBy from 'lodash-es/pickBy';
 import {Html, PullRefresh, SpinnerExtraProps} from 'amis-ui';
 import {
   BaseSchema,
@@ -55,8 +55,8 @@ import {BaseTableSchema2} from './Table2';
 
 import type {Table2RendererEvent} from './Table2';
 import type {CardsRendererEvent} from './Cards';
-import isPlainObject from 'lodash/isPlainObject';
-import isEmpty from 'lodash/isEmpty';
+import isPlainObject from 'lodash-es/isPlainObject';
+import isEmpty from 'lodash-es/isEmpty';
 
 export type CRUDRendererEvent = Table2RendererEvent | CardsRendererEvent;
 

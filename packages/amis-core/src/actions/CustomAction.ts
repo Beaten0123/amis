@@ -1,4 +1,4 @@
-import isPlainObject from 'lodash/isPlainObject';
+import isPlainObject from 'lodash-es/isPlainObject';
 import {ActionObject} from '../types';
 import {promisify, str2AsyncFunction} from '../utils';
 import {RendererEvent} from '../utils/renderer-event';

@@ -3,16 +3,16 @@
  */
 
 import moment from 'moment';
-import upperFirst from 'lodash/upperFirst';
-import padStart from 'lodash/padStart';
-import capitalize from 'lodash/capitalize';
-import escape from 'lodash/escape';
-import truncate from 'lodash/truncate';
-import uniqWith from 'lodash/uniqWith';
-import uniqBy from 'lodash/uniqBy';
-import isEqual from 'lodash/isEqual';
-import isPlainObject from 'lodash/isPlainObject';
-import get from 'lodash/get';
+import upperFirst from 'lodash-es/upperFirst';
+import padStart from 'lodash-es/padStart';
+import capitalize from 'lodash-es/capitalize';
+import escape from 'lodash-es/escape';
+import truncate from 'lodash-es/truncate';
+import uniqWith from 'lodash-es/uniqWith';
+import uniqBy from 'lodash-es/uniqBy';
+import isEqual from 'lodash-es/isEqual';
+import isPlainObject from 'lodash-es/isPlainObject';
+import get from 'lodash-es/get';
 import {EvaluatorOptions, FilterContext, FilterMap, FunctionMap} from './types';
 import {FormulaEvalError} from './error';
 

@@ -13,7 +13,7 @@ import {autobind, createObject} from 'amis-core';
 import {ActionObject, toNumber} from 'amis-core';
 import {supportStatic} from './StaticHoc';
 import {isMobile} from 'amis-core';
-import pick from 'lodash/pick';
+import pick from 'lodash-es/pick';
 
 /**
  * TransferPicker 穿梭器的弹框形态

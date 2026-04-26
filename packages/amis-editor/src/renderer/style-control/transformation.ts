@@ -3,8 +3,8 @@
  * @description CSS样式解析和编译
  */
 
-import isNumber from 'lodash/isNumber';
-import compact from 'lodash/compact';
+import isNumber from 'lodash-es/isNumber';
+import compact from 'lodash-es/compact';
 
 import type {PlainObject, LengthUnit} from './types';
 

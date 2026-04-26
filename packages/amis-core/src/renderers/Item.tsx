@@ -36,7 +36,7 @@ import {
 } from '../types';
 import {HocStoreFactory} from '../WithStore';
 import {wrapControl} from './wrapControl';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash-es/debounce';
 import {isApiOutdated, isEffectiveApi} from '../utils/api';
 import {findDomCompat as findDOMNode} from '../utils/findDomCompat';
 import {
@@ -53,7 +53,7 @@ import Overlay from '../components/Overlay';
 import PopOver from '../components/PopOver';
 import CustomStyle from '../components/CustomStyle';
 import classNames from 'classnames';
-import isPlainObject from 'lodash/isPlainObject';
+import isPlainObject from 'lodash-es/isPlainObject';
 import {IScopedContext} from '../Scoped';
 import {
   AMISApi,

@@ -5,7 +5,7 @@ import {
 } from './tpl';
 import {PlainObject} from '../types';
 import {injectPropsToObject, mapObject} from './helper';
-import isPlainObject from 'lodash/isPlainObject';
+import isPlainObject from 'lodash-es/isPlainObject';
 import {tokenize} from './tokenize';
 import {classnames, type ClassValue} from '../theme';
 

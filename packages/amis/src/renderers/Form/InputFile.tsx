@@ -6,8 +6,8 @@ import {
   resolveEventData,
   AMISFormItem
 } from 'amis-core';
-import find from 'lodash/find';
-import isPlainObject from 'lodash/isPlainObject';
+import find from 'lodash-es/find';
+import isPlainObject from 'lodash-es/isPlainObject';
 import {Payload, ApiObject, ApiString, ActionObject} from 'amis-core';
 import {qsstringify, createObject, guid, isEmpty} from 'amis-core';
 import {
@@ -28,8 +28,8 @@ import {
   AMISClassName,
   SchemaTokenizeableString
 } from '../../Schema';
-import merge from 'lodash/merge';
-import omit from 'lodash/omit';
+import merge from 'lodash-es/merge';
+import omit from 'lodash-es/omit';
 import {filter} from 'amis-core';
 
 /**

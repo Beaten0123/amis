@@ -1,5 +1,5 @@
 import React from 'react';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash-es/debounce';
 import {themeable, ClassNamesFn, ThemeProps} from 'amis-core';
 import {autobind} from 'amis-core';
 import Modal from './Modal';

@@ -3,10 +3,10 @@
  * @desc 主要用于编辑器外部注入变量的管理，用于变量绑定
  */
 
-import sortBy from 'lodash/sortBy';
-import cloneDeep from 'lodash/cloneDeep';
-import reverse from 'lodash/reverse';
-import pick from 'lodash/pick';
+import sortBy from 'lodash-es/sortBy';
+import cloneDeep from 'lodash-es/cloneDeep';
+import reverse from 'lodash-es/reverse';
+import pick from 'lodash-es/pick';
 import {
   JSONSchema,
   DataSchema,

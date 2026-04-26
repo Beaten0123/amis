@@ -5,7 +5,7 @@
 
 import React from 'react';
 import {findDomCompat as findDOMNode} from 'amis-core';
-import isEqual from 'lodash/isEqual';
+import isEqual from 'lodash-es/isEqual';
 
 import {
   themeable,

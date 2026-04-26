@@ -20,8 +20,8 @@ import {
   GlobalVarSetter,
   GlobalVarBulkSetter
 } from '../globalVar';
-import isPlainObject from 'lodash/isPlainObject';
-import debounce from 'lodash/debounce';
+import isPlainObject from 'lodash-es/isPlainObject';
+import debounce from 'lodash-es/debounce';
 import {reaction} from 'mobx';
 
 export const RootStore = ServiceStore.named('RootStore')

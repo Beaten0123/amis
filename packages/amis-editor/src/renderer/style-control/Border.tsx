@@ -5,7 +5,7 @@
 
 import cx from 'classnames';
 import React, {useEffect, useState} from 'react';
-import camelCase from 'lodash/camelCase';
+import camelCase from 'lodash-es/camelCase';
 import {observer} from 'mobx-react';
 import {FormItem, Select, NumberInput} from 'amis';
 

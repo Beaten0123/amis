@@ -1,0 +1,25 @@
+
+> amis-core@6.13.0 build
+> npm run clean-dist && cross-env NODE_ENV=production rollup -c
+
+
+> amis-core@6.13.0 clean-dist
+> rimraf lib/** esm/**
+
+[1mloaded rollup.config.js with warnings[22m
+[1m[33m(!) Unused external imports[39m[22m
+dependencies imported from external module "/Users/m5/installed/easymdd/amis/packages/amis-core/package.json" but never used in "rollup.config.js"
+[36m
+[1m./src/index.tsx[22m → [1mlib[22m...[39m
+[1m[33m(!) Circular dependencies[39m[22m
+src/utils/api.ts -> src/utils/debug.tsx -> src/utils/api.ts
+src/utils/index.ts -> src/utils/renderer-event.ts -> src/actions/Action.ts -> src/utils/index.ts
+src/factory.tsx -> src/Scoped.tsx -> src/actions/index.ts -> src/actions/CmptAction.ts -> src/factory.tsx
+[32mcreated [1mlib[22m in [1m6.3s[22m[39m
+[36m
+[1m./src/index.tsx[22m → [1mesm[22m...[39m
+[1m[33m(!) Circular dependencies[39m[22m
+src/utils/api.ts -> src/utils/debug.tsx -> src/utils/api.ts
+src/utils/index.ts -> src/utils/renderer-event.ts -> src/actions/Action.ts -> src/utils/index.ts
+src/factory.tsx -> src/Scoped.tsx -> src/actions/index.ts -> src/actions/CmptAction.ts -> src/factory.tsx
+[32mcreated [1mesm[22m in [1m6.4s[22m[39m

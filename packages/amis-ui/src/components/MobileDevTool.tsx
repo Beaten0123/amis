@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import {Icon} from './icons';
 import {Select} from 'amis-ui';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash-es/debounce';
 import {Portal} from 'react-overlays';
 
 export const dimensions = [

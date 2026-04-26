@@ -4,8 +4,8 @@
  */
 
 import React from 'react';
-import pick from 'lodash/pick';
-import mapValues from 'lodash/mapValues';
+import pick from 'lodash-es/pick';
+import mapValues from 'lodash-es/mapValues';
 import {FormItem} from 'amis';
 
 import {isObject} from 'amis-editor-core';

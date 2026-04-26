@@ -1,5 +1,5 @@
 import {RendererEvent} from '../utils/renderer-event';
-import pick from 'lodash/pick';
+import pick from 'lodash-es/pick';
 import qs from 'qs';
 import {
   RendererAction,

@@ -1,7 +1,7 @@
 import React from 'react';
 import {findDomCompat as findDOMNode} from 'amis-core';
 import Sortable from 'sortablejs';
-import omit from 'lodash/omit';
+import omit from 'lodash-es/omit';
 import {
   ScopedContext,
   filterClassNameObject,
@@ -61,7 +61,7 @@ import type {
   IScopedContext
 } from 'amis-core';
 import type {OnEventProps, AMISSchema, AMISPopOverBase} from 'amis-core';
-import find from 'lodash/find';
+import find from 'lodash-es/find';
 import {AlphabetIndexer} from 'amis-ui';
 import {AMISQuickEdit} from './QuickEdit';
 

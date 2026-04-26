@@ -2,7 +2,7 @@
  * @file 定义插件的 interface，以及提供一个 BasePlugin 基类，把一些通用的方法放在这。
  */
 
-import omit from 'lodash/omit';
+import omit from 'lodash-es/omit';
 import {RegionWrapperProps} from './component/RegionWrapper';
 import {makeAsyncLayer} from './component/AsyncLayer';
 import {EditorManager} from './manager';
@@ -12,7 +12,7 @@ import {DNDModeInterface} from './dnd/interface';
 import {EditorDNDManager} from './dnd';
 import React from 'react';
 import {DiffChange} from './util';
-import find from 'lodash/find';
+import find from 'lodash-es/find';
 import {RAW_TYPE_MAP} from './util';
 import type {
   GlobalVariableItem,

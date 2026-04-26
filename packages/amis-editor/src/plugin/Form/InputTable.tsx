@@ -19,7 +19,7 @@ import {
 import {someTree} from 'amis-core';
 import type {SchemaType} from 'amis';
 import {isObject} from 'amis';
-import set from 'lodash/set';
+import set from 'lodash-es/set';
 import {DSBuilderManager} from '../../builder/DSBuilderManager';
 import {ValidatorTag} from '../../validator';
 import {
@@ -28,7 +28,7 @@ import {
   getActionCommonProps,
   buildLinkActionDesc
 } from '../../renderer/event-control/helper';
-import cloneDeep from 'lodash/cloneDeep';
+import cloneDeep from 'lodash-es/cloneDeep';
 import {
   generateId,
   resolveArrayDatasource,

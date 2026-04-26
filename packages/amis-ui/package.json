@@ -152,5 +152,23 @@
       "/.rollup.cache/"
     ]
   },
-  "gitHead": "37d23b4a8eb1c663bc38e8dd9040889ea1526ec4"
+  "gitHead": "37d23b4a8eb1c663bc38e8dd9040889ea1526ec4",
+  "turbo": {
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": [
+          "lib/**",
+          "esm/**"
+        ]
+      },
+      "test": {
+        "dependsOn": [
+          "build"
+        ]
+      }
+    }
+  }
 }

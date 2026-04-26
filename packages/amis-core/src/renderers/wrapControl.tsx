@@ -1,7 +1,7 @@
 import React from 'react';
 import {IFormStore, IFormItemStore} from '../store/form';
-import debouce from 'lodash/debounce';
-import isEqual from 'lodash/isEqual';
+import debouce from 'lodash-es/debounce';
+import isEqual from 'lodash-es/isEqual';
 
 import {RendererProps, Renderer, getRendererByName} from '../factory';
 import {ComboStore, IComboStore, IUniqueGroup} from '../store/combo';
@@ -31,7 +31,7 @@ import {withRootStore} from '../WithRootStore';
 import {AMISFormItem, FormItemConfig, FormItemWrap} from './Item';
 import {Api, DataChangeReason} from '../types';
 import {TableStore} from '../store/table';
-import pick from 'lodash/pick';
+import pick from 'lodash-es/pick';
 import {reaction} from 'mobx';
 import {
   callStrFunction,

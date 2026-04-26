@@ -1,6 +1,6 @@
 import React, {useEffect, useCallback} from 'react';
 import moment from 'moment';
-import pick from 'lodash/pick';
+import pick from 'lodash-es/pick';
 import {
   noop,
   themeable,
@@ -23,7 +23,7 @@ import Tag from '../Tag';
 import type {FormulaPickerInputSettings, FormulaPickerProps} from './Picker';
 import CodeEditor, {FuncGroup, VariableItem} from './CodeEditor';
 import InputBox from '../InputBox';
-import omit from 'lodash/omit';
+import omit from 'lodash-es/omit';
 
 export interface FormulaInputProps
   extends Pick<

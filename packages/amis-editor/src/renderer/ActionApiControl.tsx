@@ -1,6 +1,6 @@
 import React from 'react';
-import mergeWith from 'lodash/mergeWith';
-import cloneDeep from 'lodash/cloneDeep';
+import mergeWith from 'lodash-es/mergeWith';
+import cloneDeep from 'lodash-es/cloneDeep';
 import cx from 'classnames';
 import {FormItem, InputBox} from 'amis';
 import {PickerContainer} from 'amis-ui';

@@ -1,5 +1,5 @@
 import React from 'react';
-import pick from 'lodash/pick';
+import pick from 'lodash-es/pick';
 import {FormItem, FormControlProps, AMISFormItem} from 'amis-core';
 import {JSONSchemaEditor} from 'amis-ui';
 import {autobind, isObject} from 'amis-core';

@@ -18,7 +18,7 @@ import {themeable, ThemeProps} from 'amis-core';
 import {noop} from 'amis-core';
 import {LocaleProps, localeable} from 'amis-core';
 import {DateRangePicker} from './DateRangePicker';
-import capitalize from 'lodash/capitalize';
+import capitalize from 'lodash-es/capitalize';
 import {ShortCuts, ShortCutDateRange} from './DatePicker';
 import {availableShortcuts} from './DateRangePicker';
 import CalendarMobile from './CalendarMobile';

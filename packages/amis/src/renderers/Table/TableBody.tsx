@@ -9,7 +9,7 @@ import {createObject} from 'amis-core';
 import {LocaleProps} from 'amis-core';
 import {ActionSchema} from '../Action';
 import type {IColumn, IRow, ITableStore, TestIdBuilder} from 'amis-core';
-import flatten from 'lodash/flatten';
+import flatten from 'lodash-es/flatten';
 import VirtualTableBody from './VirtualTableBody';
 
 export interface TableBodyProps extends LocaleProps {

@@ -1,9 +1,9 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`textbox-background 1`] = `
 <article>
   <section
-    style="position: relative; width: 793.71px; padding: 75.60px 75.60px 75.60px 75.60px;"
+    style="position: relative; width: 793.71px; padding: 75.6px;"
   >
     <p
       class="docx-viewer-0-p"
@@ -15,7 +15,7 @@ exports[`textbox-background 1`] = `
         <div
           data-id="47"
           data-name="矩形 47"
-          style="z-index: 251664384; position: absolute; left: 482.39px; top: -145.60px; width: 341.99px; height: 1205.97px; vertical-align: middle; color: rgb(255, 255, 255);"
+          style="z-index: 251664384; position: absolute; left: 482.39px; top: -145.6px; width: 341.99px; height: 1205.97px; vertical-align: middle; color: rgb(255, 255, 255);"
         >
           <svg
             height="1205.97px"

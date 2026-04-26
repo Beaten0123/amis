@@ -1,6 +1,6 @@
-import isObjectByLodash from 'lodash/isObject';
-import isString from 'lodash/isString';
-import isBoolean from 'lodash/isBoolean';
+import isObjectByLodash from 'lodash-es/isObject';
+import isString from 'lodash-es/isString';
+import isBoolean from 'lodash-es/isBoolean';
 import {evaluate} from 'amis-formula';
 
 import {filter} from './tpl';

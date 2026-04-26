@@ -16,7 +16,7 @@ import {
   PluginInterface
 } from 'amis-editor-core';
 import {defaultValue, getSchemaTpl} from 'amis-editor-core';
-import find from 'lodash/find';
+import find from 'lodash-es/find';
 import {JSONDelete, JSONPipeIn, JSONUpdate} from 'amis-editor-core';
 import {NO_SUPPORT_STATIC_FORMITEM_CMPTS} from '../../renderer/event-control/constants';
 import {

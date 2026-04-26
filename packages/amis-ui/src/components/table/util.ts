@@ -1,5 +1,5 @@
-import findLastIndex from 'lodash/findLastIndex';
-import find from 'lodash/find';
+import findLastIndex from 'lodash-es/findLastIndex';
+import find from 'lodash-es/find';
 import {isBreakpoint} from 'amis-core';
 
 import {ColumnProps, SummaryProps, ThProps, TdProps, SortProps} from './index';

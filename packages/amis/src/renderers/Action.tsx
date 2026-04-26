@@ -29,8 +29,8 @@ import {
 } from 'amis-core';
 import {filter} from 'amis-core';
 import {BadgeObject, Button, SpinnerExtraProps} from 'amis-ui';
-import pick from 'lodash/pick';
-import omit from 'lodash/omit';
+import pick from 'lodash-es/pick';
+import omit from 'lodash-es/omit';
 
 export type ButtonSchema = AMISButton;
 export type AjaxActionSchema = AMISLegacyAjaxActionButton;

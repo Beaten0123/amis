@@ -4,7 +4,7 @@
 import React from 'react';
 import {findDomCompat as findDOMNode} from 'amis-core';
 import cx from 'classnames';
-import uniqBy from 'lodash/uniqBy';
+import uniqBy from 'lodash-es/uniqBy';
 import Sortable from 'sortablejs';
 import {render as amisRender, FormItem, Icon} from 'amis';
 import {getI18nEnabled} from 'amis-editor-core';

@@ -1,5 +1,5 @@
 import {Options} from '../types';
-import isPlainObject from 'lodash/isPlainObject';
+import isPlainObject from 'lodash-es/isPlainObject';
 
 export function normalizeOptions(
   options:

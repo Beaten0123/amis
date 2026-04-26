@@ -7,11 +7,11 @@ import {
   getVariable
 } from 'amis-core';
 import Downshift from 'downshift';
-import find from 'lodash/find';
-import isInteger from 'lodash/isInteger';
-import unionWith from 'lodash/unionWith';
-import compact from 'lodash/compact';
-import uniq from 'lodash/uniq';
+import find from 'lodash-es/find';
+import isInteger from 'lodash-es/isInteger';
+import unionWith from 'lodash-es/unionWith';
+import compact from 'lodash-es/compact';
+import uniq from 'lodash-es/uniq';
 import {findDomCompat as findDOMNode} from 'amis-core';
 import {PopUp, ResultBox, SpinnerExtraProps} from 'amis-ui';
 import {autobind, filterTree, createObject} from 'amis-core';

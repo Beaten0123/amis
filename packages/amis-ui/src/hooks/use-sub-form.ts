@@ -1,8 +1,8 @@
 import {useCallback, useState} from 'react';
-import isFunction from 'lodash/isFunction';
+import isFunction from 'lodash-es/isFunction';
 import {TranslateFn} from 'amis-core';
 import {useForm, UseFormReturn} from 'react-hook-form';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash-es/debounce';
 import React from 'react';
 import useValidationResolver from './use-validation-resolver';
 

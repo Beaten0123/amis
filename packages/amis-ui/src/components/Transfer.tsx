@@ -1,9 +1,9 @@
 import React from 'react';
-import intersectionWith from 'lodash/intersectionWith';
-import includes from 'lodash/includes';
-import debounce from 'lodash/debounce';
-import isEqual from 'lodash/isEqual';
-import unionWith from 'lodash/unionWith';
+import intersectionWith from 'lodash-es/intersectionWith';
+import includes from 'lodash-es/includes';
+import debounce from 'lodash-es/debounce';
+import isEqual from 'lodash-es/isEqual';
+import unionWith from 'lodash-es/unionWith';
 import {ThemeProps, themeable, findTree, differenceFromAll} from 'amis-core';
 import {BaseSelectionProps, BaseSelection, ItemRenderStates} from './Selection';
 import {Options, Option} from './Select';

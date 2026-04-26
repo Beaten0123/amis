@@ -1,7 +1,7 @@
 import {registerEditorPlugin} from 'amis-editor-core';
 import {BaseEventContext, BasePlugin} from 'amis-editor-core';
 import {defaultValue, getSchemaTpl} from 'amis-editor-core';
-import flatten from 'lodash/flatten';
+import flatten from 'lodash-es/flatten';
 export class JsonPlugin extends BasePlugin {
   static id = 'JsonPlugin';
   // 关联渲染器名字

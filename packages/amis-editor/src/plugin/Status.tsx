@@ -4,8 +4,8 @@ import {registerEditorPlugin} from 'amis-editor-core';
 import {BasePlugin, BaseEventContext} from 'amis-editor-core';
 import {defaultValue, getSchemaTpl} from 'amis-editor-core';
 import {Icon, TooltipWrapper} from 'amis-ui';
-import cloneDeep from 'lodash/cloneDeep';
-import pick from 'lodash/pick';
+import cloneDeep from 'lodash-es/cloneDeep';
+import pick from 'lodash-es/pick';
 import {getI18nEnabled} from 'amis-editor-core';
 
 export class StatusPlugin extends BasePlugin {

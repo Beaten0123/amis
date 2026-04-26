@@ -12,7 +12,7 @@ import {
   RegionConfig
 } from 'amis-editor-core';
 import {defaultValue, getSchemaTpl} from 'amis-editor-core';
-import isArray from 'lodash/isArray';
+import isArray from 'lodash-es/isArray';
 import {generateId} from '../util';
 
 export class CustomPlugin extends BasePlugin {

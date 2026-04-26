@@ -1,0 +1,46 @@
+npm warn config ignoring workspace config at /Users/m5/installed/easymdd/amis/packages/amis/.npmrc
+
+> amis@6.13.0 build
+> npm run clean-dist && sh build.sh
+
+npm warn config ignoring workspace config at /Users/m5/installed/easymdd/amis/packages/amis/.npmrc
+
+> amis@6.13.0 clean-dist
+> rimraf lib/** esm/**
+
+===rollup build===
+[1m[33m(!) You have passed an unrecognized option[39m[22m
+Unknown output options: commonConfig. Allowed options: amd, assetFileNames, banner, chunkFileNames, compact, dir, dynamicImportFunction, entryFileNames, esModule, exports, extend, externalLiveBindings, file, footer, format, freeze, generatedCode, globals, hoistTransitiveImports, indent, inlineDynamicImports, interop, intro, manualChunks, minifyInternalExports, name, namespaceToStringTag, noConflict, outro, paths, plugins, preferConst, preserveModules, preserveModulesRoot, sanitizeFileName, sourcemap, sourcemapBaseUrl, sourcemapExcludeSources, sourcemapFile, sourcemapPathTransform, strict, systemNullSetters, validate
+[1m[33m(!) You have passed an unrecognized option[39m[22m
+Unknown output options: commonConfig. Allowed options: amd, assetFileNames, banner, chunkFileNames, compact, dir, dynamicImportFunction, entryFileNames, esModule, exports, extend, externalLiveBindings, file, footer, format, freeze, generatedCode, globals, hoistTransitiveImports, indent, inlineDynamicImports, interop, intro, manualChunks, minifyInternalExports, name, namespaceToStringTag, noConflict, outro, paths, plugins, preferConst, preserveModules, preserveModulesRoot, sanitizeFileName, sourcemap, sourcemapBaseUrl, sourcemapExcludeSources, sourcemapFile, sourcemapPathTransform, strict, systemNullSetters, validate
+[36m
+[1m./src/index.tsx[22m → [1mlib[22m...[39m
+[1m[33m(!) Use of eval is strongly discouraged[39m[22m
+[90mhttps://rollupjs.org/guide/en/#avoiding-eval[39m
+[1msrc/renderers/Chart.tsx[22m
+[90m69:                         console.warn(code, e);
+70:                     }
+71:                 }
+                    ^
+72:             }
+73:         }[39m
+[32mcreated [1mlib[22m in [1m20.6s[22m[39m
+[36m
+[1m./src/index.tsx[22m → [1mesm[22m...[39m
+[1m[33m(!) Use of eval is strongly discouraged[39m[22m
+[90mhttps://rollupjs.org/guide/en/#avoiding-eval[39m
+[1msrc/renderers/Chart.tsx[22m
+[90m62:                     try {
+63:                         if (!(code in EVAL_CACHE)) {
+64:                             EVAL_CACHE[code] = eval('(' + code + ')');
+                                                   ^
+65:                         }
+66:                         object[key] = EVAL_CACHE[code];[39m
+[32mcreated [1mesm[22m in [1m10.9s[22m[39m
+SDK build skipped - use 'npm run build:sdk' after fixing terser
+===build-schemas===
+
+> amis@6.13.0 build-schemas
+> ts-node -O '{"target":"es6"}' ../../scripts/build-schemas.ts
+
+Build complete (SDK skipped)

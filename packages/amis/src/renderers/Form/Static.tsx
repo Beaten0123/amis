@@ -11,7 +11,7 @@ import QuickEdit, {SchemaQuickEdit} from '../QuickEdit';
 
 import Copyable, {SchemaCopyable} from '../Copyable';
 import {extendObject, ucFirst} from 'amis-core';
-import omit from 'lodash/omit';
+import omit from 'lodash-es/omit';
 import {
   FormBaseControlSchema,
   SchemaObject,

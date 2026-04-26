@@ -19,7 +19,7 @@ import {uncontrollable} from 'amis-core';
 import Checkbox from './Checkbox';
 import Button from './Button';
 import {value2array, OptionProps, Option} from './Select';
-import chunk from 'lodash/chunk';
+import chunk from 'lodash-es/chunk';
 import {ClassNamesFn, themeable} from 'amis-core';
 import {columnsSplit} from 'amis-core';
 import {TestIdBuilder} from 'amis-core';

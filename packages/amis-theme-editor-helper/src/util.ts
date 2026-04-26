@@ -1,5 +1,5 @@
 import {PlainObject, filter} from 'amis-core';
-import cloneDeep from 'lodash/cloneDeep';
+import cloneDeep from 'lodash-es/cloneDeep';
 
 const THEME_CSS_VAR = [
   '--colors',

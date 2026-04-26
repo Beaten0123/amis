@@ -5,7 +5,7 @@
 import React from 'react';
 import {findDomCompat as findDOMNode} from 'amis-core';
 import cx from 'classnames';
-import get from 'lodash/get';
+import get from 'lodash-es/get';
 import Sortable from 'sortablejs';
 import {FormItem, Button, Icon, render as amisRender, toast} from 'amis';
 import {autobind} from 'amis-editor-core';

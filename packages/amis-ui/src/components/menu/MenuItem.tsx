@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import pick from 'lodash/pick';
+import pick from 'lodash-es/pick';
 import {Item as RcItem, MenuItemProps as RcMenuItemProps} from 'rc-menu';
 import {
   ClassNamesFn,

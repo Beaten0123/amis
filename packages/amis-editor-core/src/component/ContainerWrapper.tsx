@@ -3,7 +3,7 @@ import React from 'react';
 import {observer} from 'mobx-react';
 import {autobind} from '../util';
 import type {Schema} from 'amis';
-import find from 'lodash/find';
+import find from 'lodash-es/find';
 import {RegionWrapper} from './RegionWrapper';
 
 export interface ContainerWrapperProps extends NodeWrapperProps {}

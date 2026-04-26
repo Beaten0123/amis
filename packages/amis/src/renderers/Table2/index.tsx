@@ -2,9 +2,9 @@ import React from 'react';
 import {findDomCompat as findDOMNode} from 'amis-core';
 import {reaction} from 'mobx';
 import {isAlive} from 'mobx-state-tree';
-import cloneDeep from 'lodash/cloneDeep';
-import isEqual from 'lodash/isEqual';
-import intersection from 'lodash/intersection';
+import cloneDeep from 'lodash-es/cloneDeep';
+import isEqual from 'lodash-es/isEqual';
+import intersection from 'lodash-es/intersection';
 
 import {
   ScopedContext,

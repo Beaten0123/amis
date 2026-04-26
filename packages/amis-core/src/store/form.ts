@@ -1,8 +1,8 @@
 import {types, getEnv, flow, isAlive, Instance} from 'mobx-state-tree';
-import debounce from 'lodash/debounce';
-import throttle from 'lodash/throttle';
-import toPairs from 'lodash/toPairs';
-import pick from 'lodash/pick';
+import debounce from 'lodash-es/debounce';
+import throttle from 'lodash-es/throttle';
+import toPairs from 'lodash-es/toPairs';
+import pick from 'lodash-es/pick';
 import {ServiceStore} from './service';
 import type {IFormItemStore} from './formItem';
 import {
@@ -27,9 +27,9 @@ import {
   ValidateError,
   extendObject
 } from '../utils/helper';
-import isEqual from 'lodash/isEqual';
-import flatten from 'lodash/flatten';
-import find from 'lodash/find';
+import isEqual from 'lodash-es/isEqual';
+import flatten from 'lodash-es/flatten';
+import find from 'lodash-es/find';
 import {filter} from '../utils/tpl';
 import {isPureVariable} from '../utils/tpl-builtin';
 import {normalizeApiResponseData} from '../utils/api';

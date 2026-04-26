@@ -1,4 +1,4 @@
-import isPlainObject from 'lodash/isPlainObject';
+import isPlainObject from 'lodash-es/isPlainObject';
 import {keyToPath} from './keyToPath';
 import {resolveVariable} from './resolveVariable';
 

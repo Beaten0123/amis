@@ -47,7 +47,7 @@ import {
 } from '../Schema';
 import {SchemaRemark, AMISRemarkObject} from './Remark';
 import {isAlive, onAction} from 'mobx-state-tree';
-import mapValues from 'lodash/mapValues';
+import mapValues from 'lodash-es/mapValues';
 import {resolveVariable} from 'amis-core';
 import {buildStyle} from 'amis-core';
 import {PullRefresh} from 'amis-ui';

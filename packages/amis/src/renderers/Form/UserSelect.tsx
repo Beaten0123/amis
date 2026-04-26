@@ -11,7 +11,7 @@ import {
 import {SpinnerExtraProps, UserSelect} from 'amis-ui';
 import {UserTabSelect} from 'amis-ui';
 import {isEffectiveApi} from 'amis-core';
-import find from 'lodash/find';
+import find from 'lodash-es/find';
 import {createObject, autobind} from 'amis-core';
 import {PlainObject} from 'amis-core';
 import {FormOptionsSchema} from '../../Schema';

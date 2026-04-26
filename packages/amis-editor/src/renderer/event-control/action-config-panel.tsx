@@ -6,7 +6,7 @@ import {RendererProps, Schema} from 'amis-core';
 import {RendererPluginAction} from 'amis-editor-core';
 import React from 'react';
 import cx from 'classnames';
-import isFunction from 'lodash/isFunction';
+import isFunction from 'lodash-es/isFunction';
 import {renderCmptActionSelect} from './helper';
 
 export default class ActionConfigPanel extends React.Component<RendererProps> {

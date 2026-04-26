@@ -5,8 +5,8 @@
 
 import axios from 'axios';
 import cx from 'classnames';
-import pick from 'lodash/pick';
-import omit from 'lodash/omit';
+import pick from 'lodash-es/pick';
+import omit from 'lodash-es/omit';
 import React, {useState, useEffect} from 'react';
 
 import {FormItem} from 'amis';

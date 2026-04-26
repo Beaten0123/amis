@@ -17,7 +17,7 @@ import {guid, autobind, noop, isMobile} from 'amis-core';
 import {ClassNamesFn, themeable, classnames, ThemeProps} from 'amis-core';
 import {Icon} from './icons';
 import {LocaleProps, localeable, TranslateFn} from 'amis-core';
-import groupBy from 'lodash/groupBy';
+import groupBy from 'lodash-es/groupBy';
 
 interface Config {
   closeButton?: boolean;
