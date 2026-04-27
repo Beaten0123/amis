@@ -7,6 +7,8 @@
 import {create} from 'zustand';
 import {createServiceStore} from './service';
 import type {Api, fetchOptions} from '../../types';
+import {isObjectShallowModified} from '../../utils';
+import {qsstringify} from '../../utils/helper';
 
 export interface CRUDStoreState {
   // Query state
@@ -38,6 +40,13 @@ export interface CRUDStoreActions {
   setPerPage: (perPage: number) => void;
 
   // Query
+  updateQuery: (
+    values: object,
+    updater?: Function,
+    pageField?: string,
+    perPageField?: string,
+    replace?: boolean
+  ) => void;
   setQuery: (query: Record<string, any>) => void;
   resetQuery: () => void;
 
@@ -135,6 +144,53 @@ export function createCRUDStore(options: {
     },
 
     setPerPage: (perPage) => set({perPage}),
+
+    updateQuery: (
+      values: object,
+      updater?: Function,
+      pageField: string = 'page',
+      perPageField: string = 'perPage',
+      replace: boolean = false
+    ) => {
+      const state = get();
+      const originQuery = state.query;
+      const query: any = replace
+        ? {...values}
+        : {...originQuery, ...values};
+
+      const exceptedLooselyRules: [any, any][] = [
+        [0, ''],
+        [false, ''],
+        [false, '0'],
+        [false, 0],
+        [true, 1],
+        [true, '1']
+      ];
+
+      if (
+        isObjectShallowModified(originQuery, query, (lhs: any, rhs: any) => {
+          if (
+            exceptedLooselyRules.some(
+              rule => rule.includes(lhs) && rule.includes(rhs)
+            )
+          ) {
+            return lhs !== rhs;
+          }
+          return lhs != rhs;
+        })
+      ) {
+        if (query[pageField || 'page']) {
+          set({page: parseInt(query[pageField || 'page'], 10)});
+        }
+
+        if (query[perPageField || 'perPage']) {
+          set({perPage: parseInt(query[perPageField || 'perPage'], 10)});
+        }
+
+        set({query});
+        updater && setTimeout(() => updater(`?${qsstringify(query)}`), 4);
+      }
+    },
 
     setQuery: (query) => set({query}),
 
