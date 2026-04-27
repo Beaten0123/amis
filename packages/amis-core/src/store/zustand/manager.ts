@@ -7,8 +7,16 @@ import type {StoreApi} from 'zustand';
 
 type StoreType = StoreApi<any>;
 
+// Store factory type - creates a store with optional config
+type StoreFactory = (config?: {
+  id: string;
+  path?: string;
+  parentId?: string;
+}) => StoreType;
+
 class StoreManager {
   private stores: Map<string, StoreType> = new Map();
+  private factories: Map<string, StoreFactory> = new Map();
 
   addStore(id: string, store: StoreType): void {
     this.stores.set(id, store);
@@ -43,6 +51,31 @@ class StoreManager {
       store => store.getState().storeType === storeType
     );
   }
+
+  // Register a store factory by type
+  registerFactory(storeType: string, factory: StoreFactory): void {
+    this.factories.set(storeType, factory);
+  }
+
+  // Create a store using registered factory
+  createStore(storeType: string, config: {
+    id: string;
+    path?: string;
+    parentId?: string;
+  }): StoreType | null {
+    const factory = this.factories.get(storeType);
+    if (!factory) {
+      console.warn(`No factory registered for store type: ${storeType}`);
+      return null;
+    }
+    const store = factory(config);
+    this.addStore(config.id, store);
+    return store;
+  }
+
+  hasFactory(storeType: string): boolean {
+    return this.factories.has(storeType);
+  }
 }
 
 // Singleton instance
@@ -65,3 +98,6 @@ export function addStore(id: string, store: StoreType) {
 export function removeStore(id: string) {
   storeManager.removeStore(id);
 }
+
+// Export for registering factories
+export {StoreFactory};

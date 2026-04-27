@@ -9,6 +9,7 @@ import {createIRendererStore} from './iRenderer';
 
 export interface ModalStoreState {
   opened: boolean;
+  entered: boolean;
   content: any;
   contentType: string;
   draggable: boolean;
@@ -22,6 +23,7 @@ export interface ModalStoreActions {
   setContent: (content: any) => void;
   setDraggable: (draggable: boolean) => void;
   setSize: (size: string) => void;
+  setEntered: (entered: boolean) => void;
 }
 
 export type ModalStore = ReturnType<typeof createModalStore>;
@@ -46,6 +48,7 @@ export function createModalStore(options: {
 
     // ModalStore specific state
     opened: false,
+    entered: false,
     content: null,
     contentType: 'dialog',
     draggable: false,
@@ -73,6 +76,8 @@ export function createModalStore(options: {
 
     setDraggable: (draggable) => set({draggable}),
 
-    setSize: (size) => set({size})
+    setSize: (size) => set({size}),
+
+    setEntered: (entered) => set({entered})
   }));
 }

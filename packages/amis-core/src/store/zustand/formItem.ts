@@ -5,8 +5,7 @@
  */
 
 import {create} from 'zustand';
-import {createBaseStore} from './baseStore';
-import {registerStoreInManager} from './baseStore';
+import {createBaseStore, registerStoreInManager} from './baseStore';
 import type {FormItemStoreState} from './types';
 import {str2rules} from '../../utils/validations';
 import {isExpression} from '../../utils/formula';
@@ -73,7 +72,7 @@ export function createFormItemStore(options: {
       storeType: 'FormItemStore';
     };
 
-  const baseStore = createBaseStore<CombinedState>({
+  const baseStore = createBaseStore({
     id,
     path,
     storeType: 'FormItemStore',

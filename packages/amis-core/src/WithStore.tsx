@@ -1,7 +1,6 @@
 import hoistNonReactStatic from 'hoist-non-react-statics';
 import {reaction} from 'mobx';
 import {observer} from 'mobx-react';
-import {isAlive} from 'mobx-state-tree';
 import React from 'react';
 import {RendererProps} from './factory';
 import {IIRendererStore, IRendererStore} from './store';
@@ -20,6 +19,8 @@ import {
 import {dataMapping, tokenize} from './utils/tpl-builtin';
 import {RootStoreContext} from './WithRootStore';
 import {extractObjectChain} from './utils/object';
+import {storeManager} from './store/zustand/manager';
+import './store/zustand/factories';
 
 /**
  * 忽略静态数据中的 schema 属性
@@ -79,12 +80,18 @@ export function HocStoreFactory(renderer: {
         this.renderChild = this.renderChild.bind(this);
         this.refFn = this.refFn.bind(this);
 
-        const store = rootStore.addStore({
+        // Create Zustand store using storeManager
+        const storeApi = storeManager.createStore(renderer.storeType, {
           id: guid(),
           path: this.props.$path,
-          storeType: renderer.storeType,
           parentId: this.props.store ? this.props.store.id : ''
-        }) as IIRendererStore;
+        });
+
+        if (!storeApi) {
+          throw new Error(`Failed to create store of type: ${renderer.storeType}`);
+        }
+
+        const store = storeApi.getState() as IIRendererStore;
         store.setTopStore(props.topStore);
 
         props.storeRef?.(store);
@@ -395,14 +402,11 @@ export function HocStoreFactory(renderer: {
       }
 
       componentWillUnmount() {
-        const rootStore = this.context as IRendererStore;
         const store = this.store;
 
         this.unReaction?.();
-        if (isAlive(store)) {
-          store.setTopStore(null);
-          rootStore.removeStore(store);
-        }
+        store.setTopStore(null);
+        store.dispose?.();
 
         // @ts-ignore
         delete this.store;

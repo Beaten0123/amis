@@ -22,6 +22,9 @@ import {
 } from '../../utils';
 
 export interface iRendererStoreActions {
+  // Store management
+  setTopStore: (store: any) => void;
+
   // Data management
   initData: (
     data?: object,
@@ -92,7 +95,7 @@ export function createIRendererStore(options: {
 
   type CombinedState = iRendererStoreState & iRendererStoreActions;
 
-  const baseStore = createBaseStore<CombinedState>({
+  const baseStore = createBaseStore({
     id,
     path,
     storeType: 'iRendererStore',
@@ -103,7 +106,10 @@ export function createIRendererStore(options: {
   const dialogCallbacks = new Map<any, (confirmed?: any, value?: any) => void>();
   let dialogScoped: any = null;
   let drawerScoped: any = null;
-  let topStore: any = null;
+  let topStoreRef: any = null;
+
+  // Getter for topStore
+  const getTopStore = () => topStoreRef;
 
   return create<CombinedState>()((set, get) => ({
     ...baseStore.getState(),
@@ -125,6 +131,10 @@ export function createIRendererStore(options: {
     drawerData: undefined,
 
     // Actions
+    setTopStore: (store: any) => {
+      topStoreRef = store;
+    },
+
     initData: (data = {}, skipSetPristine = false, changeReason?: any) => {
       const now = Date.now();
       const state = get();
@@ -322,7 +332,7 @@ export function createIRendererStore(options: {
         state.action?.data ?? state.action?.dialog?.data;
       if (mappingData) {
         data = createObjectFromChain([
-          topStore?.downStream,
+          getTopStore()?.downStream,
           dataMapping(mappingData, data)
         ]);
       }
@@ -370,7 +380,7 @@ export function createIRendererStore(options: {
         state.action?.data ?? state.action?.drawer?.data;
       if (mappingData) {
         data = createObjectFromChain([
-          topStore?.downStream,
+          getTopStore()?.downStream,
           dataMapping(mappingData, data)
         ]);
       }

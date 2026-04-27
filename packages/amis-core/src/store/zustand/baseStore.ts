@@ -9,7 +9,6 @@ import type {StoreNodeState} from './types';
 import {storeManager} from './manager';
 
 export interface CreateStoreOptions {
-  name: string;
   id: string;
   path?: string;
   storeType: string;
@@ -26,12 +25,12 @@ export interface BaseStoreState extends StoreNodeState {
  * Create a base store with common functionality
  * Mimics MST's StoreNode behavior
  */
-export function createBaseStore<T extends object>(
-  options: CreateStoreOptions
-) {
+export function createBaseStore(options: CreateStoreOptions) {
   const {id, path = '', storeType, parentId = ''} = options;
 
-  return create<BaseStoreState & T>()((set, get) => ({
+  type CombinedState = BaseStoreState;
+
+  return create<CombinedState>()((set, get) => ({
     // StoreNode properties
     id,
     path,

@@ -5,8 +5,7 @@
  */
 
 import {create} from 'zustand';
-import {createBaseStore} from './baseStore';
-import {registerStoreInManager} from './baseStore';
+import {createBaseStore, registerStoreInManager} from './baseStore';
 import {storeManager} from './manager';
 import type {RootStoreState} from './types';
 
@@ -37,7 +36,7 @@ export function createRootStore(options: {
 
   type CombinedState = RootStoreState & RootStoreActions & {storeType: 'RootStore'};
 
-  const baseStore = createBaseStore<CombinedState>({
+  const baseStore = createBaseStore({
     id,
     path,
     storeType: 'RootStore',

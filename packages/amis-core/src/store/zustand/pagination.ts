@@ -41,7 +41,7 @@ export function createPaginationStore(options: {
   } = options;
 
   // Create base store state
-  const baseStore = createBaseStore<PaginationStoreState>({
+  const baseStore = createBaseStore({
     id,
     path,
     storeType: 'PaginationStore',
