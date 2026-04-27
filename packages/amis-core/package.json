@@ -79,7 +79,8 @@
     "react-json-view": "1.21.3",
     "react-overlays": "5.1.1",
     "tslib": "^2.3.1",
-    "uncontrollable": "7.2.1"
+    "uncontrollable": "7.2.1",
+    "zustand": "^4.5.7"
   },
   "peerDependencies": {
     "amis-formula": "*",

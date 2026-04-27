@@ -37,6 +37,15 @@ import {AppStore} from './app';
 import type {IAppStore} from './app';
 import {RootStore} from './root';
 
+// Zustand stores (Migration from MST)
+export {
+  createPaginationStore,
+  createFormItemStore,
+  createIRendererStore,
+  createRootStore,
+  storeManager
+} from './zustand';
+
 setLivelinessChecking(
   process.env.NODE_ENV === 'production' ? 'ignore' : 'error'
 );
