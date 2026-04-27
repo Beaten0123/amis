@@ -35,3 +35,7 @@ export {createModalStore} from './modal';
 export type {ModalStore, ModalStoreState, ModalStoreActions} from './modal';
 export {createAppStore} from './app';
 export type {AppStore, AppStoreState, AppStoreActions} from './app';
+export {createTableStore} from './table';
+export type {TableStore, TableStoreState, TableStoreActions, TableColumn} from './table';
+export {createComboStore} from './combo';
+export type {ComboStore, ComboStoreState, ComboStoreActions} from './combo';
