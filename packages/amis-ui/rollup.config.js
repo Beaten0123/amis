@@ -76,6 +76,8 @@ export default [
       './scss/themes/antd.scss',
       './scss/themes/ang.scss',
       './scss/themes/cxd.scss',
+      './scss/themes/cxd-layered.scss',
+      './scss/themes/cxd-auto-dark.scss',
       './scss/themes/dark.scss',
       './scss/themes/default.scss',
       './scss/helper.scss'
@@ -94,7 +96,7 @@ export default [
     external,
     plugins: getPlugins('cjs')
       .concat(
-        ['antd', 'ang', 'cxd', 'dark', 'default'].map(theme =>
+        ['antd', 'ang', 'cxd', 'cxd-layered', 'cxd-auto-dark', 'dark', 'default'].map(theme =>
           postcss({
             include: `**/${theme}.scss`,
             // process: processSass,

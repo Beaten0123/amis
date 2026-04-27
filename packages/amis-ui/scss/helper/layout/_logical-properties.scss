@@ -1,0 +1,64 @@
+// Logical Property Utility Classes
+// 仅在 $use-logical-properties: true 时输出
+@import '../../functions';
+@import '../../rtl-mixins';
+
+@if $use-logical-properties {
+  // Margin inline
+  .ms-auto {
+    margin-inline-start: auto;
+  }
+  .me-auto {
+    margin-inline-end: auto;
+  }
+
+  // Padding inline
+  .ps-0 {
+    padding-inline-start: 0;
+  }
+  .pe-0 {
+    padding-inline-end: 0;
+  }
+
+  // Text alignment
+  .text-start {
+    text-align: start;
+  }
+  .text-end {
+    text-align: end;
+  }
+
+  // Float
+  .float-start {
+    float: inline-start;
+  }
+  .float-end {
+    float: inline-end;
+  }
+
+  // Position
+  .start-0 {
+    inset-inline-start: 0;
+  }
+  .end-0 {
+    inset-inline-end: 0;
+  }
+
+  // Borders
+  .border-s {
+    border-inline-start: 1px solid var(--borderColor);
+  }
+  .border-e {
+    border-inline-end: 1px solid var(--borderColor);
+  }
+
+  // Border radius
+  .rounded-s {
+    border-start-start-radius: var(--borderRadius);
+    border-end-start-radius: var(--borderRadius);
+  }
+  .rounded-e {
+    border-start-end-radius: var(--borderRadius);
+    border-end-end-radius: var(--borderRadius);
+  }
+}

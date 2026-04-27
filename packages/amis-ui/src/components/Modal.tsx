@@ -94,6 +94,7 @@ export class Modal extends React.Component<ModalProps, ModalState> {
 
   isRootClosed = false;
   modalDom: HTMLElement;
+  private previousFocus: HTMLElement | null = null;
 
   static Header = themeable(
     localeable(
@@ -120,6 +121,7 @@ export class Modal extends React.Component<ModalProps, ModalState> {
             <a
               data-tooltip={__('Dialog.close')}
               data-position="left"
+              aria-label={__('Dialog.close')}
               onClick={onClose}
               className={cx('Modal-close')}
             >
@@ -229,6 +231,19 @@ export class Modal extends React.Component<ModalProps, ModalState> {
       true
     );
     document.body.addEventListener('mouseup', this.handleRootMouseUp);
+
+    // Focus trap: save previous focus and focus modal content
+    this.previousFocus = document.activeElement as HTMLElement;
+    if (this.modalDom) {
+      const focusable = this.modalDom.querySelectorAll<HTMLElement>(
+        'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"]), [contenteditable], [autofocus]'
+      );
+      const autofocusEl =
+        this.modalDom.querySelector<HTMLElement>('[autofocus]');
+      (
+        autofocusEl || (focusable.length > 0 ? focusable[0] : null)
+      )?.focus();
+    }
 
     onEntered && onEntered();
   };
@@ -424,6 +439,8 @@ export class Modal extends React.Component<ModalProps, ModalState> {
             <div
               ref={this.modalRef}
               role="dialog"
+              aria-modal="true"
+              data-state={show ? 'open' : 'closed'}
               className={cx(
                 `amis-dialog-widget Modal`,
                 {

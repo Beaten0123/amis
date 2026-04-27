@@ -1,0 +1,53 @@
+// Auto Dark Mode — 当系统偏好为暗色时自动激活
+// 仅在使用 cxd/default 主题且未显式设置 data-theme="light" 时生效
+@import '../functions';
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']),
+  .AMISCSSWrapper:not([data-theme='light']) {
+    // ── 原始色阶覆盖 (来自 _dark-variables.scss) ──
+    --colors-error-5: #ff4242;
+    --colors-error-6: #ff1d20;
+    --colors-error-4: #ff554f;
+    --colors-warning-5: #ff9326;
+    --colors-warning-6: #ff7b00;
+    --colors-warning-4: #ffa033;
+    --colors-success-5: #2fc40e;
+    --colors-success-6: #1fb800;
+    --colors-success-4: #3dc418;
+    --colors-brand-5: #1677ff;
+    --colors-brand-6: #0061f2;
+    --colors-brand-4: #2486ff;
+
+    // ── Neutral 覆盖 ──
+    --colors-neutral-text-1: #ffffff;
+    --colors-neutral-text-2: #f7f8fa;
+    --colors-neutral-text-6: #b8bbbf;
+    --colors-neutral-text-7: #84878c;
+    --colors-neutral-text-8: #5c6066;
+    --colors-neutral-text-9: #303640;
+    --colors-neutral-text-11: #070d14;
+    --colors-neutral-fill-9: #303640;
+    --colors-neutral-fill-10: #151c26;
+    --colors-neutral-fill-11: #070d14;
+    --colors-neutral-line-8: #5c6066;
+    --colors-neutral-line-10: #151c26;
+
+    // ── 语义变量覆盖 ──
+    --background: var(--colors-neutral-fill-9);
+    --body-bg: var(--colors-neutral-fill-9);
+    --body-color: var(--colors-neutral-text-2);
+    --text-color: var(--colors-neutral-text-2);
+    --text--muted-color: var(--colors-neutral-text-6);
+    --borderColor: var(--colors-neutral-line-8);
+    --borderColorLight: var(--colors-neutral-line-10);
+
+    // ── 语义 Token 暗色覆盖 ──
+    --surface-base: var(--colors-neutral-fill-9);
+    --surface-raised: var(--colors-neutral-fill-10);
+    --surface-sunken: var(--colors-neutral-fill-8);
+    --content-primary: var(--colors-neutral-text-2);
+    --content-secondary: var(--colors-neutral-text-6);
+    --content-inverse: var(--colors-neutral-text-11);
+  }
+}

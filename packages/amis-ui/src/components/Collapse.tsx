@@ -206,6 +206,16 @@ export class Collapse extends React.Component<CollapseProps, CollapseState> {
       <HeadingComponent
         key="header"
         onClick={this.toggleCollapsed}
+        role="button"
+        aria-expanded={!this.state.collapsed}
+        data-state={this.state.collapsed ? 'collapsed' : 'expanded'}
+        tabIndex={disabled ? -1 : 0}
+        onKeyDown={(e: React.KeyboardEvent) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            this.toggleCollapsed(e as any);
+          }
+        }}
         className={cx(
           `Collapse-header`,
           {'is-mobile': mobileUI},

@@ -162,6 +162,7 @@ class CollapseGroup extends React.Component<
         )}
         style={style}
         data-role="container"
+        role={this.props.accordion ? 'tablist' : undefined}
       >
         {this.getItems(children)}
       </div>

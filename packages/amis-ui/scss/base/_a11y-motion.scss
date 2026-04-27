@@ -1,0 +1,33 @@
+// Accessibility: Reduced Motion & Forced Colors
+// 全局 reduced-motion 重置 — 尊重用户的动效偏好
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// Windows 高对比度模式支持
+@media (forced-colors: active) {
+  // 确保交互元素边框可见
+  .#{$ns}Button,
+  .#{$ns}Select,
+  .#{$ns}InputBox,
+  .#{$ns}InputBox:focus-within {
+    border: 1px solid ButtonText;
+  }
+
+  // 链接必须有下划线以区分
+  a {
+    text-decoration: underline;
+  }
+
+  // 确保焦点指示器使用系统颜色
+  :focus-visible {
+    outline: 2px solid Highlight;
+  }
+}

@@ -72,6 +72,7 @@ export class Drawer extends React.Component<DrawerProps, DrawerState> {
   modalDom: HTMLElement;
   contentDom: HTMLElement;
   isRootClosed = false;
+  private previousFocus: HTMLElement | null = null;
   resizer = React.createRef<HTMLDivElement>();
   resizeCoord: number = 0;
 
@@ -131,11 +132,21 @@ export class Drawer extends React.Component<DrawerProps, DrawerState> {
     );
     document.body.addEventListener('mouseup', this.handleRootMouseUp);
 
+    // Focus trap: save previous focus and focus drawer content
+    this.previousFocus = document.activeElement as HTMLElement;
+    if (this.contentDom) {
+      const focusable = this.contentDom.querySelectorAll<HTMLElement>(
+        'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"]), [contenteditable]'
+      );
+      if (focusable.length > 0) {
+        focusable[0].focus();
+      }
+    }
+
     onEntered && onEntered();
   };
   handleExited = () => {
     const onExited = this.props.onExited;
-    document.activeElement && (document.activeElement as HTMLElement)?.blur?.();
 
     document.body.removeEventListener('mouseup', this.handleRootMouseUp);
     document.body.removeEventListener(
@@ -352,6 +363,8 @@ export class Drawer extends React.Component<DrawerProps, DrawerState> {
               <div
                 ref={this.modalRef}
                 role="dialog"
+                aria-modal="true"
+                data-state={show ? 'open' : 'closed'}
                 className={cx(
                   `amis-dialog-widget ${ns}Drawer`,
                   {
@@ -385,6 +398,7 @@ export class Drawer extends React.Component<DrawerProps, DrawerState> {
                   {show && showCloseButton ? (
                     <a
                       onClick={disabled ? undefined : onHide}
+                      aria-label="Close"
                       className={`${ns}Drawer-close`}
                     >
                       <Icon

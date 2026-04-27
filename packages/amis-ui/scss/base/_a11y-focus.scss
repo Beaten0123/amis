@@ -1,0 +1,49 @@
+// Accessibility: Focus-visible Styles
+// 全局焦点指示器 — 使用 :focus-visible 区分键盘和鼠标焦点
+
+:root,
+.AMISCSSWrapper {
+  // 键盘焦点环
+  .#{$ns}Button:focus-visible,
+  .#{$ns}Select:focus-visible,
+  .#{$ns}InputBox:focus-within,
+  .#{$ns}Tabs-link:focus-visible,
+  .#{$ns}Collapse-header:focus-visible,
+  .#{$ns}Pagination a:focus-visible,
+  .#{$ns}ResultBox:focus-visible,
+  [role='tab']:focus-visible,
+  [role='button']:focus-visible,
+  [role='combobox']:focus-visible,
+  [role='menuitem']:focus-visible,
+  [role='option']:focus-visible {
+    outline: none;
+    box-shadow: var(--focus-ring);
+  }
+
+  // 鼠标焦点 — 不显示环
+  .#{$ns}Button:focus:not(:focus-visible),
+  .#{$ns}Select:focus:not(:focus-visible),
+  [role='tab']:focus:not(:focus-visible),
+  [role='button']:focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+// Skip-to-content link
+.#{$ns}skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: 9999;
+  padding: var(--space-2) var(--space-3);
+  background: var(--primary);
+  color: var(--button-color);
+  text-decoration: none;
+  border-radius: var(--borderRadius);
+  font-size: var(--fontSizeBase);
+
+  &:focus {
+    top: 0;
+  }
+}

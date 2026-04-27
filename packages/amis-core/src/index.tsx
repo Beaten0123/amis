@@ -161,6 +161,10 @@ import useEnvContext, {EnvContextProvider} from './hooks/useEnvContext';
 import useRenderOptionsContext, {
   RenderOptionsContextProvider
 } from './hooks/useRenderOptionsContext';
+import {useFocusTrap} from './hooks/useFocusTrap';
+import {useKeyboardNavigation} from './hooks/useKeyboardNavigation';
+import {useLiveRegion} from './hooks/useLiveRegion';
+import {useDataState} from './hooks/useDataState';
 
 // @ts-ignore
 export const version = '__buildVersion';
@@ -291,7 +295,11 @@ export {
   getCustomVendor,
   registerCustomVendor,
   resolveVariableAndFilter,
-  resolveVariableAndFilterForAsync
+  resolveVariableAndFilterForAsync,
+  useFocusTrap,
+  useKeyboardNavigation,
+  useLiveRegion,
+  useDataState
 };
 
 export function render(

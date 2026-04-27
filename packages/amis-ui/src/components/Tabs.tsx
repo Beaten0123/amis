@@ -139,6 +139,9 @@ class TabComponent extends React.PureComponent<TabProps> {
           return (
             <div
               ref={this.contentRef}
+              role="tabpanel"
+              aria-labelledby={`tab-${eventKey}`}
+              data-state={activeKey === eventKey ? 'active' : 'inactive'}
               className={cx(
                 transitionStyles[status],
                 activeKey === eventKey ? 'is-active' : '',
@@ -678,6 +681,11 @@ export class Tabs extends React.Component<TabsProps, any> {
           tabClassName
         )}
         key={this.generateTabKey(hash, eventKey, index)}
+        role="tab"
+        aria-selected={activeKey === eventKey}
+        aria-controls={`tabpanel-${this.id}-${eventKey}`}
+        data-state={activeKey === eventKey ? 'active' : 'inactive'}
+        tabIndex={activeKey === eventKey && !disabled ? 0 : -1}
         onClick={() => (disabled ? '' : this.handleSelect(eventKey))}
         onDoubleClick={() => {
           editable &&

@@ -1,0 +1,64 @@
+// State Mixins — data-state CSS 选择器工具
+// 用于 SCSS 组件样式中，与现有 class 共存
+
+@mixin state-open {
+  &[data-state='open'] {
+    @content;
+  }
+}
+
+@mixin state-closed {
+  &[data-state='closed'] {
+    @content;
+  }
+}
+
+@mixin state-active {
+  &[data-state='active'] {
+    @content;
+  }
+}
+
+@mixin state-disabled {
+  &[data-state='disabled'] {
+    @content;
+  }
+}
+
+@mixin state-selected {
+  &[data-state='selected'] {
+    @content;
+  }
+}
+
+@mixin state-expanded {
+  &[data-state='expanded'] {
+    @content;
+  }
+}
+
+@mixin state-collapsed {
+  &[data-state='collapsed'] {
+    @content;
+  }
+}
+
+@mixin state-loading {
+  &[data-state='loading'] {
+    @content;
+  }
+}
+
+@mixin state-error {
+  &[data-state='error'] {
+    @content;
+  }
+}
+
+// 复合状态 — 同时匹配 data-state 和旧 class
+@mixin legacy-or-state($state, $class) {
+  &[data-state='#{$state}'],
+  &.#{$class} {
+    @content;
+  }
+}

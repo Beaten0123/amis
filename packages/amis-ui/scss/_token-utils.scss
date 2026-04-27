@@ -1,0 +1,44 @@
+@use 'sass:color';
+@use 'sass:math';
+
+// 根据基础色推导状态色
+@function derive-state-color($base, $state: 'default') {
+  @if $state == 'hover' {
+    @return color.adjust($base, $lightness: -8%);
+  }
+  @if $state == 'active' {
+    @return color.adjust($base, $lightness: -15%);
+  }
+  @if $state == 'disabled' {
+    @return color.adjust($base, $alpha: -0.5);
+  }
+  @return $base;
+}
+
+// 生成 10 级色阶
+@function generate-palette($base-color) {
+  $palette: ();
+  @for $i from 1 through 10 {
+    $mix: math.div($i - 1, 9);
+    $shade: shade($base-color, 1 - $mix);
+    $tint: tint($base-color, $mix);
+    $result: if($i <= 5, mix-white($base-color, $mix), mix-black($base-color, $mix - 0.5));
+    $palette: map-merge(
+      $palette,
+      (
+        $i: $result,
+      )
+    );
+  }
+  @return $palette;
+}
+
+// 从色阶中取色
+@function palette-get($palette, $level) {
+  @return map-get($palette, $level);
+}
+
+// 去除单位
+@function strip-unit($value) {
+  @return math.div($value, $value * 0 + 1);
+}

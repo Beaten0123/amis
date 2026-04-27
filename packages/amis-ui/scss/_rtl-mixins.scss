@@ -1,0 +1,169 @@
+// RTL Mixins — 逻辑属性 Mixin 系统
+// 通过 $use-logical-properties 开关控制输出
+// 默认 false = 输出物理属性（向后兼容）
+// 设置 true = 输出逻辑属性（RTL ready）
+
+$use-logical-properties: false !default;
+
+// ── Margin ──
+@mixin margin-inline($start: null, $end: null) {
+  @if $use-logical-properties {
+    @if $start {
+      margin-inline-start: $start;
+    }
+    @if $end {
+      margin-inline-end: $end;
+    }
+  } @else {
+    @if $start {
+      margin-left: $start;
+    }
+    @if $end {
+      margin-right: $end;
+    }
+  }
+}
+
+@mixin margin-block($start: null, $end: null) {
+  @if $use-logical-properties {
+    @if $start {
+      margin-block-start: $start;
+    }
+    @if $end {
+      margin-block-end: $end;
+    }
+  } @else {
+    @if $start {
+      margin-top: $start;
+    }
+    @if $end {
+      margin-bottom: $end;
+    }
+  }
+}
+
+// ── Padding ──
+@mixin padding-inline($start: null, $end: null) {
+  @if $use-logical-properties {
+    @if $start {
+      padding-inline-start: $start;
+    }
+    @if $end {
+      padding-inline-end: $end;
+    }
+  } @else {
+    @if $start {
+      padding-left: $start;
+    }
+    @if $end {
+      padding-right: $end;
+    }
+  }
+}
+
+@mixin padding-block($start: null, $end: null) {
+  @if $use-logical-properties {
+    @if $start {
+      padding-block-start: $start;
+    }
+    @if $end {
+      padding-block-end: $end;
+    }
+  } @else {
+    @if $start {
+      padding-top: $start;
+    }
+    @if $end {
+      padding-bottom: $end;
+    }
+  }
+}
+
+// ── Text Alignment ──
+@mixin text-align-start {
+  @if $use-logical-properties {
+    text-align: start;
+  } @else {
+    text-align: left;
+  }
+}
+
+@mixin text-align-end {
+  @if $use-logical-properties {
+    text-align: end;
+  } @else {
+    text-align: right;
+  }
+}
+
+// ── Float ──
+@mixin float-start {
+  @if $use-logical-properties {
+    float: inline-start;
+  } @else {
+    float: left;
+  }
+}
+
+@mixin float-end {
+  @if $use-logical-properties {
+    float: inline-end;
+  } @else {
+    float: right;
+  }
+}
+
+// ── Position (inset) ──
+@mixin inset-inline-start($value) {
+  @if $use-logical-properties {
+    inset-inline-start: $value;
+  } @else {
+    left: $value;
+  }
+}
+
+@mixin inset-inline-end($value) {
+  @if $use-logical-properties {
+    inset-inline-end: $value;
+  } @else {
+    right: $value;
+  }
+}
+
+// ── Border Radius (per-corner) ──
+@mixin border-radius-inline-start($radius) {
+  @if $use-logical-properties {
+    border-start-start-radius: $radius;
+    border-end-start-radius: $radius;
+  } @else {
+    border-top-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+  }
+}
+
+@mixin border-radius-inline-end($radius) {
+  @if $use-logical-properties {
+    border-start-end-radius: $radius;
+    border-end-end-radius: $radius;
+  } @else {
+    border-top-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+  }
+}
+
+// ── Border (inline direction) ──
+@mixin border-inline-start($width, $style, $color) {
+  @if $use-logical-properties {
+    border-inline-start: $width $style $color;
+  } @else {
+    border-left: $width $style $color;
+  }
+}
+
+@mixin border-inline-end($width, $style, $color) {
+  @if $use-logical-properties {
+    border-inline-end: $width $style $color;
+  } @else {
+    border-right: $width $style $color;
+  }
+}

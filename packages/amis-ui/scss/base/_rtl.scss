@@ -1,0 +1,28 @@
+// RTL 基础覆盖 — [dir="rtl"] 全局调整
+@import '../functions';
+
+[dir='rtl'] {
+  // 箭头图标翻转
+  .#{$ns}Button--caret > i,
+  .#{$ns}Breadcrumb-item-separator,
+  .#{$ns}Pagination-prev,
+  .#{$ns}Pagination-next {
+    transform: scaleX(-1);
+  }
+
+  // 浮动方向翻转
+  .#{$ns}pull-left {
+    float: right;
+  }
+  .#{$ns}pull-right {
+    float: left;
+  }
+
+  // 文本对齐
+  .#{$ns}text-left {
+    text-align: right;
+  }
+  .#{$ns}text-right {
+    text-align: left;
+  }
+}

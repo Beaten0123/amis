@@ -216,6 +216,8 @@ export class Pagination extends React.Component<
       >
         <a
           role="button"
+          aria-label={`Page ${page}`}
+          aria-current={page === activePage ? 'page' : undefined}
           {...testIdBuilder?.getChild(`page-${page}`).getTestId()}
         >
           {page}
@@ -444,7 +446,8 @@ export class Pagination extends React.Component<
       );
 
       return (
-        <div
+        <nav
+          aria-label={__('Pagination') || 'Pagination'}
           className={cx(
             'Pagination-wrap',
             `Pagination-wrap-size--${size}`,
@@ -515,7 +518,7 @@ export class Pagination extends React.Component<
               </span>
             </li>
           </ul>
-        </div>
+        </nav>
       );
     }
 
@@ -714,7 +717,8 @@ export class Pagination extends React.Component<
         </div>
       );
     return (
-      <div
+      <nav
+        aria-label={__('Pagination') || 'Pagination'}
         className={cx(
           'Pagination-wrap',
           `Pagination-wrap-size--${size}`,
@@ -747,7 +751,7 @@ export class Pagination extends React.Component<
             return null;
           }
         })}
-      </div>
+      </nav>
     );
   }
 }

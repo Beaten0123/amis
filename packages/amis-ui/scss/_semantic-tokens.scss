@@ -1,0 +1,65 @@
+// Semantic Token Layer
+// 建立在现有 _properties.scss 之上的语义 token，提供意图驱动的命名。
+// 所有 token 都是叠加的，不修改任何现有变量。
+@import './functions';
+
+:root,
+.AMISCSSWrapper {
+  // ── 交互状态色 ──
+  --color-action-default: var(--primary);
+  --color-action-hover: var(--primary-onHover);
+  --color-action-active: var(--primary-onActive);
+  --color-action-disabled: var(--colors-neutral-text-8);
+
+  // ── 语义反馈色 ──
+  --color-feedback-success: var(--success);
+  --color-feedback-warning: var(--warning);
+  --color-feedback-error: var(--danger);
+  --color-feedback-info: var(--info);
+
+  // ── 表面层级 ──
+  --surface-base: var(--background);
+  --surface-raised: var(--colors-neutral-fill-11);
+  --surface-sunken: var(--colors-neutral-fill-9);
+  --surface-overlay: rgba(0, 0, 0, 0.5);
+
+  // ── 内容强调 ──
+  --content-primary: var(--text-color);
+  --content-secondary: var(--text--muted-color);
+  --content-tertiary: var(--colors-neutral-text-7);
+  --content-inverse: var(--colors-neutral-text-11);
+
+  // ── 边框语义 ──
+  --border-default: var(--borderColor);
+  --border-focus: var(--colors-brand-5);
+  --border-error: var(--danger);
+
+  // ── 焦点环 ──
+  --focus-ring-color: var(--colors-brand-5);
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+  --focus-ring: 0 0 0 var(--focus-ring-offset) var(--surface-base),
+    0 0 0 calc(var(--focus-ring-offset) + var(--focus-ring-width))
+      var(--focus-ring-color);
+
+  // ── 动效 token ──
+  --motion-duration-fast: 0.1s;
+  --motion-duration-normal: var(--animation-duration);
+  --motion-duration-slow: 0.3s;
+  --motion-easing-default: cubic-bezier(0.4, 0, 0.2, 1);
+  --motion-easing-decelerate: cubic-bezier(0, 0, 0.2, 1);
+  --motion-easing-accelerate: cubic-bezier(0.4, 0, 1, 1);
+  // CSS linear() 弹性曲线近似 (bounce-out)
+  --motion-easing-spring: linear(
+    0, 0.25, 0.5, 0.75, 1, 1.1, 1.15, 1.18, 1.2, 1.19, 1.17, 1.14, 1.1,
+    1.05, 1
+  );
+
+  // ── 间距语义别名 ──
+  --space-1: var(--gap-xs);
+  --space-2: var(--gap-sm);
+  --space-3: var(--gap-base);
+  --space-4: var(--gap-md);
+  --space-5: var(--gap-lg);
+  --space-6: var(--gap-xl);
+}

@@ -896,3 +896,6 @@ $Table-strip-bg: transparent;
     --Page-body-padding: var(--gap-md);
   }
 }
+
+// 语义 Token 层 - 意图驱动的 token 映射
+@import './semantic-tokens';

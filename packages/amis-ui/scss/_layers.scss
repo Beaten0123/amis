@@ -1,0 +1,9 @@
+// CSS Cascade Layers
+// 定义层叠优先级顺序（从低到高）
+// 使用方式：在主题入口文件中用 @layer 包裹各 import
+@layer amis.reset,
+  amis.base,
+  amis.layout,
+  amis.components,
+  amis.utilities,
+  amis.overrides;

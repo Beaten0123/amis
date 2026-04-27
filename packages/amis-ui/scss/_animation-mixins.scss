@@ -1,0 +1,166 @@
+@use 'sass:math';
+
+// Animation Mixins — 基于 data-state 的声明式动画系统
+
+// ── data-state 条件选择器 ──
+@mixin when-open {
+  &[data-state='open'],
+  &.in {
+    @content;
+  }
+}
+
+@mixin when-closed {
+  &[data-state='closed'],
+  &.out {
+    @content;
+  }
+}
+
+@mixin when-active {
+  &[data-state='active'],
+  &.is-active {
+    @content;
+  }
+}
+
+@mixin when-disabled {
+  &[data-state='disabled'],
+  &.is-disabled {
+    @content;
+  }
+}
+
+@mixin when-selected {
+  &[data-state='selected'],
+  &.is-checked {
+    @content;
+  }
+}
+
+@mixin when-expanded {
+  &[data-state='expanded'],
+  &.is-opened {
+    @content;
+  }
+}
+
+@mixin when-collapsed {
+  &[data-state='collapsed'] {
+    @content;
+  }
+}
+
+@mixin when-loading {
+  &[data-state='loading'] {
+    @content;
+  }
+}
+
+@mixin when-error {
+  &[data-state='error'],
+  &.has-error {
+    @content;
+  }
+}
+
+// ── 过渡 Mixins ──
+
+// 状态过渡 — 自动尊重 reduced-motion
+@mixin state-transition($properties...) {
+  transition: $properties;
+  transition-timing-function: var(--motion-easing-default);
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
+
+// 淡入淡出（Modal overlay, Tooltip）
+@mixin fade-transition($duration: var(--motion-duration-normal)) {
+  @include when-open {
+    opacity: 1;
+  }
+  @include when-closed {
+    opacity: 0;
+  }
+  @include state-transition(opacity $duration);
+}
+
+// 缩放淡入淡出（Dropdown, Popover）
+@mixin scale-fade-transition(
+  $duration: var(--motion-duration-normal),
+  $scale-from: 0.95
+) {
+  @include when-open {
+    opacity: 1;
+    transform: scale(1);
+  }
+  @include when-closed {
+    opacity: 0;
+    transform: scale($scale-from);
+  }
+  @include state-transition(
+    opacity var(--motion-duration-fast),
+    transform $duration var(--motion-easing-decelerate)
+  );
+}
+
+// 滑动（Drawer）
+@mixin slide-transition($direction: 'left') {
+  @if $direction == 'left' {
+    @include when-open {
+      transform: translateX(0);
+    }
+    @include when-closed {
+      transform: translateX(-100%);
+    }
+  } @else if $direction == 'right' {
+    @include when-open {
+      transform: translateX(0);
+    }
+    @include when-closed {
+      transform: translateX(100%);
+    }
+  } @else if $direction == 'top' {
+    @include when-open {
+      transform: translateY(0);
+    }
+    @include when-closed {
+      transform: translateY(-100%);
+    }
+  } @else if $direction == 'bottom' {
+    @include when-open {
+      transform: translateY(0);
+    }
+    @include when-closed {
+      transform: translateY(100%);
+    }
+  }
+  @include state-transition(
+    transform var(--motion-duration-normal) var(--motion-easing-decelerate)
+  );
+}
+
+// 展开/折叠高度（Collapse, Accordion）
+@mixin collapse-transition($duration: var(--motion-duration-normal)) {
+  overflow: hidden;
+
+  @include when-expanded {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+  @include when-collapsed {
+    grid-template-rows: 0fr;
+    opacity: 0;
+  }
+
+  @include state-transition(
+    grid-template-rows $duration var(--motion-easing-default),
+    opacity var(--motion-duration-fast)
+  );
+
+  & > .#{$ns}Collapse-contentWrapper {
+    overflow: hidden;
+  }
+}

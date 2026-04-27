@@ -1,0 +1,146 @@
+// Responsive Mixins — Container Queries + Fluid Sizing
+@use 'sass:math';
+
+// ── 扩展断点 ──
+$breakpoints-modern: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  '2xl': 1536px,
+) !default;
+
+// ── Container Query 支持 ──
+$enable-container-queries: true !default;
+
+// 设置容器查询上下文
+@mixin container-type($type: inline-size) {
+  @if $enable-container-queries {
+    container-type: $type;
+  }
+}
+
+@mixin container-name($name) {
+  @if $enable-container-queries {
+    container-name: $name;
+  }
+}
+
+// 快捷设置 inline-size 容器
+@mixin container-inline-size($name: null) {
+  @if $enable-container-queries {
+    container-type: inline-size;
+    @if $name {
+      container-name: $name;
+    }
+  }
+}
+
+// 容器查询 — 最小宽度
+@mixin container-up($size, $name: null) {
+  @if $enable-container-queries {
+    @if $name {
+      @container #{$name} (min-width: $size) {
+        @content;
+      }
+    } @else {
+      @container (min-width: $size) {
+        @content;
+      }
+    }
+  }
+}
+
+// 容器查询 — 最大宽度
+@mixin container-down($size, $name: null) {
+  @if $enable-container-queries {
+    @if $name {
+      @container #{$name} (max-width: $size) {
+        @content;
+      }
+    } @else {
+      @container (max-width: $size) {
+        @content;
+      }
+    }
+  }
+}
+
+// 容器查询 — 范围
+@mixin container-between($min, $max, $name: null) {
+  @if $enable-container-queries {
+    @if $name {
+      @container #{$name} (min-width: $min) and (max-width: $max) {
+        @content;
+      }
+    } @else {
+      @container (min-width: $min) and (max-width: $max) {
+        @content;
+      }
+    }
+  }
+}
+
+// ── Fluid Sizing with clamp() ──
+
+// 流式字体大小
+@mixin fluid-type($min-size, $max-size, $min-vw: 320px, $max-vw: 1200px) {
+  $slope: math.div(strip-unit($max-size - $min-size), strip-unit($max-vw - $min-vw));
+  $intercept: strip-unit($min-size) - $slope * strip-unit($min-vw);
+  font-size: clamp(#{$min-size}, #{$slope * 100}vw + #{$intercept * 1px}, #{$max-size});
+}
+
+// 流式间距
+@mixin fluid-spacing($property, $min-size, $max-size, $min-vw: 320px, $max-vw: 1200px) {
+  $slope: math.div(strip-unit($max-size - $min-size), strip-unit($max-vw - $min-vw));
+  $intercept: strip-unit($min-size) - $slope * strip-unit($min-vw);
+  #{$property}: clamp(
+    #{$min-size},
+    #{$slope * 100}vw + #{$intercept * 1px},
+    #{$max-size}
+  );
+}
+
+// ── Intrinsic Layout ──
+
+// 自适应网格 — 无需 media query
+@mixin auto-grid($min-col-width: 250px, $gap: var(--gap-base)) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min-col-width, 1fr));
+  gap: $gap;
+}
+
+// 自适应填充网格
+@mixin auto-fill-grid($min-col-width: 250px, $gap: var(--gap-base)) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($min-col-width, 1fr));
+  gap: $gap;
+}
+
+// ── Modern Breakpoint Mixins ──
+
+@mixin media-modern-up($name) {
+  $min: map-get($breakpoints-modern, $name);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin media-modern-down($name) {
+  $breakpoint-names: map-keys($breakpoints-modern);
+  $n: index($breakpoint-names, $name);
+  $next: if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+  $max: if($next, map-get($breakpoints-modern, $next) - 1px, null);
+
+  @if $max {
+    @media (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}

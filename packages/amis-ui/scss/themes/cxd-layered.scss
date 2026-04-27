@@ -1,0 +1,10 @@
+// Layered variant of cxd theme
+// 用法：import 此文件代替 cxd.scss 以启用 CSS @layer
+//
+// 注意：SCSS @import 在 @layer 内部使用时，变量和 mixin 需要在 @layer 之前加载。
+// 这里先加载 properties（包含 variables/functions/mixins），再用 common 的方式组织 @layer。
+@import '../layers';
+@import '../properties';
+@import '../components';
+@import './cxd-variables';
+@import './common';

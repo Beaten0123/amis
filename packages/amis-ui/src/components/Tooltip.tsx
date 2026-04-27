@@ -68,6 +68,7 @@ export class Tooltip extends React.Component<TooltipProps> {
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
         role="tooltip"
+        data-state="open"
       >
         {showArrow ? (
           <div

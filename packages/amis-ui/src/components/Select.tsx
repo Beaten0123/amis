@@ -1018,6 +1018,8 @@ export class Select extends React.Component<SelectProps, SelectState> {
             disabled: item.disabled
           })}
           style={merge(style, enableVirtualRender ? {width: '100%'} : {})}
+          role="option"
+          aria-selected={checked}
           className={cx(`Select-option`, {
             'is-disabled': item.disabled,
             'is-highlight': highlightedIndex === index,
@@ -1139,6 +1141,7 @@ export class Select extends React.Component<SelectProps, SelectState> {
     const menu = (
       <div
         ref={this.menu}
+        role="listbox"
         className={cx('Select-menu', {
           'Select--longlist': enableVirtualRender,
           'is-mobile': mobileUI
@@ -1317,6 +1320,10 @@ export class Select extends React.Component<SelectProps, SelectState> {
           return (
             <div
               tabIndex={disabled ? -1 : 0}
+              role="combobox"
+              aria-expanded={isOpen}
+              aria-haspopup="listbox"
+              data-state={isOpen ? 'open' : 'closed'}
               onKeyPress={this.handleKeyPress}
               onClick={this.toggle}
               onFocus={this.onFocus}
