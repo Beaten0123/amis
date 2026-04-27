@@ -91,12 +91,15 @@ export function HocStoreFactory(renderer: {
           throw new Error(`Failed to create store of type: ${renderer.storeType}`);
         }
 
-        const store = storeApi.getState() as IIRendererStore;
-        store.setTopStore(props.topStore);
+        // Get store state and add MST compatibility
+        const storeState = storeApi.getState() as IIRendererStore;
+        // Add isAlive compatibility for MST code
+        storeState.isAlive = () => !storeState.disposed;
+        storeState.setTopStore(props.topStore);
 
-        props.storeRef?.(store);
+        props.storeRef?.(storeState);
 
-        this.store = store;
+        this.store = storeState;
 
         const extendsData =
           typeof renderer.extendsData === 'function'
@@ -104,7 +107,7 @@ export function HocStoreFactory(renderer: {
             : renderer.extendsData;
 
         if (extendsData === false) {
-          store.initData(
+          storeState.initData(
             createObject(
               (this.props.data as any)
                 ? (this.props.data as any).__super
@@ -126,7 +129,7 @@ export function HocStoreFactory(renderer: {
           (this.props.data && (this.props.data as any).__super)
         ) {
           if (this.props.store && this.props.data === this.props.scope) {
-            store.initData(
+            storeState.initData(
               createObject(this.props.store.data, {
                 ...this.formatData(
                   dataMapping(
@@ -138,7 +141,7 @@ export function HocStoreFactory(renderer: {
               })
             );
           } else {
-            store.initData(
+            storeState.initData(
               createObject(
                 (this.props.data as any).__super || this.props.scope,
                 {
@@ -155,7 +158,7 @@ export function HocStoreFactory(renderer: {
             );
           }
         } else {
-          store.initData({
+          storeState.initData({
             ...this.formatData(
               dataMapping(
                 this.props.defaultData,
@@ -256,7 +259,7 @@ export function HocStoreFactory(renderer: {
                   prevProps.data &&
                   props.data.__super !== prevProps.data.__super))
           ) {
-            store.initData(
+            storeState.initData(
               extendObject(props.data, {
                 ...this.formatData(
                   dataMapping(
@@ -283,7 +286,7 @@ export function HocStoreFactory(renderer: {
                 isSuperDataModified(props.data, prevProps.data, store)))
         ) {
           if (props.store && props.scope === props.data) {
-            store.initData(
+            storeState.initData(
               createObject(props.store.data, {
                 ...this.formatData(
                   dataMapping(
@@ -310,7 +313,7 @@ export function HocStoreFactory(renderer: {
               props.data?.__changeReason
             );
           } else if (props.data && (props.data as any).__super) {
-            store.initData(
+            storeState.initData(
               extendObject(props.data, {
                 ...this.formatData(
                   dataMapping(
@@ -343,7 +346,7 @@ export function HocStoreFactory(renderer: {
               props.data?.__changeReason
             );
           } else {
-            store.initData(
+            storeState.initData(
               createObject(props.scope, props.data),
               (props.updatePristineAfterStoreDataReInit ??
                 props.dataUpdatedAt !== prevProps.dataUpdatedAt) === false,
@@ -365,7 +368,7 @@ export function HocStoreFactory(renderer: {
               false
             )
           ) {
-            store.initData(
+            storeState.initData(
               createObject(props.data.__super, {
                 ...props.data,
                 ...store.data
@@ -388,7 +391,7 @@ export function HocStoreFactory(renderer: {
         ) {
           // 只有父级数据变动的时候才应该进来，
           // 目前看来这个 case 很少有情况下能进来
-          store.initData(
+          storeState.initData(
             createObject(props.scope, {
               // ...nextProps.data,
               ...store.data
@@ -405,8 +408,10 @@ export function HocStoreFactory(renderer: {
         const store = this.store;
 
         this.unReaction?.();
-        store.setTopStore(null);
-        store.dispose?.();
+        if (store.isAlive && store.isAlive()) {
+          store.setTopStore(null);
+          store.dispose?.();
+        }
 
         // @ts-ignore
         delete this.store;
